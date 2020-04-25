@@ -7,6 +7,7 @@ public class DetectPlayed : MonoBehaviour
     public TurnManagerMJ turnmanagerMJ = new TurnManagerMJ();
     public ShuffleFinal hands = new ShuffleFinal();
     public GameObject lastplayed;
+
     // Update is called once per frame
     void Update()
     {
@@ -14,86 +15,69 @@ public class DetectPlayed : MonoBehaviour
 
         //how to highlight if tile is about to be grabbed? using OnTriggerEnter(other = hand?)
 
-        //highlights edge of tile and pulses it
+        //move lastplayed object on top of tile. This is probably an expensive update to be running. 
+        if (hands.PlayerHands[4].playerchips.Count >= 1)
+        {
+            if (hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1] == gameObject)
+            {
+                lastplayed.transform.position = new Vector3(gameObject.transform.position.x, gameObject.transform.position.y+0.5f*hands.height_tile, gameObject.transform.position.z);
+                lastplayed.transform.rotation = gameObject.transform.rotation;
+                lastplayed.transform.parent = gameObject.transform;
+            }
+        }
     }
 
-    int CurrentPlayer()
-    {
-        int i = 0;
-        if(turnmanagerMJ.turn == TurnManager.EASTTURN)
-        {
-            i = 0;
-        }
-
-        if (turnmanagerMJ.turn == TurnManager.SOUTHTURN)
-        {
-            i = 1;
-        }
-
-        if (turnmanagerMJ.turn == TurnManager.WESTTURN)
-        {
-            i = 2;
-        }
-
-        if (turnmanagerMJ.turn == TurnManager.NORTHTURN)
-        {
-            i = 3;
-        }
-        return i;
-    }
-
-    //update below to just reorder everything by suit and value and replace all tiles for each player. 
+    //may add option to sort by suit and value?
     private void OnTriggerEnter(Collider other)
     {
+        
+
         if (other.gameObject.tag == "PlayArea")
         {
-            hands.PlayerHands[4].playerchips.Add(gameObject);
+            gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, gameObject.transform.rotation.y, 0));
+            
+            hands.PlayerHands[4].playerchips.Add(gameObject);//move to center array
+            hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips.Remove(gameObject);//remove from player array
             Debug.Log(name + " was played");
-            int position = hands.PlayerHands[CurrentPlayer()].playerchips.IndexOf(gameObject); //getting index to move dealed tile to
-            if (turnmanagerMJ.tile == 53) //move 0th tile in list, since there is no deal tile to move
+
+            int handsize = hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips.Count; //size of hand to reorder
+
+            if (turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn) == 0)
             {
-                Debug.Log("moving tile first turn");
-                hands.PlayerHands[0].playerchips[0].transform.position = new Vector3(-hands.length_table / 1.5f + (position * 2.05f * hands.length_tile) / 2, hands.height_tile * 1.2f, -hands.length_table * 1.3f);
-                hands.PlayerHands[0].playerchips.Insert(position, hands.PlayerHands[0].playerchips[0]);
-                hands.PlayerHands[0].playerchips.Remove(hands.PlayerHands[0].playerchips[0]);
-            }
-            else
-            {
-                if (hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1] != hands.pai_obj[turnmanagerMJ.tile-1]) //if played tile is not the same as dealt tile then have to move dealed tile into played tile spot
+                for (int e = 0; e < handsize; e++)
                 {
-                    Debug.Log("different tile");
-                    if (CurrentPlayer() == 0)
-                    {
-                        //there is a bug here with placing tiles for east player for some reason. 
-                        hands.pai_obj[turnmanagerMJ.tile-1].transform.position = new Vector3(-hands.length_table / 1.5f + (position * 2.05f * hands.length_tile + hands.length_tile*0.95f) / 2, hands.height_tile * 1.2f, -hands.length_table * 1.3f);
-                        Debug.Log("moving deal tile to played tile position " + hands.pai_obj[turnmanagerMJ.tile] + hands.pai_obj[turnmanagerMJ.tile].transform.position);
-                        hands.PlayerHands[0].playerchips.Insert(position, hands.pai_obj[turnmanagerMJ.tile - 1]);
-                        hands.PlayerHands[0].playerchips.RemoveAt(hands.PlayerHands[0].playerchips.Count-1);
-                    }
-                    if (CurrentPlayer() == 1)
-                    {
-                        hands.pai_obj[turnmanagerMJ.tile-1].transform.position = new Vector3(hands.length_table * 1.3f, hands.height_tile * 1.2f, -hands.length_table * 0.5f + (position * 2.05f * hands.length_tile) / 2);
-                        Debug.Log("moving deal tile to played tile position " + hands.pai_obj[turnmanagerMJ.tile] + hands.pai_obj[turnmanagerMJ.tile].transform.position);
-                        hands.PlayerHands[1].playerchips.Insert(position, hands.pai_obj[turnmanagerMJ.tile - 1]);
-                        hands.PlayerHands[1].playerchips.RemoveAt(hands.PlayerHands[1].playerchips.Count - 1);
-                    }
-                    if (CurrentPlayer() == 2)
-                    {
-                       hands.pai_obj[turnmanagerMJ.tile-1].transform.position = new Vector3(hands.length_table / 1.5f - (position * 2.05f * hands.length_tile) / 2, hands.height_tile * 1.2f, hands.length_table * 1.3f);
-                       Debug.Log("moving deal tile to played tile position " + hands.pai_obj[turnmanagerMJ.tile] + hands.pai_obj[turnmanagerMJ.tile].transform.position);
-                        hands.PlayerHands[2].playerchips.Insert(position, hands.pai_obj[turnmanagerMJ.tile - 1]);
-                        hands.PlayerHands[2].playerchips.RemoveAt(hands.PlayerHands[2].playerchips.Count - 1);
-                    }
-                    if (CurrentPlayer() == 3)
-                    {
-                        hands.pai_obj[turnmanagerMJ.tile-1].transform.position = new Vector3(-hands.length_table * 1.3f, hands.height_tile * 1.2f, hands.length_table * 0.5f - (position * 2.05f * hands.length_tile) / 2);
-                        Debug.Log("moving deal tile to played tile position " + hands.pai_obj[turnmanagerMJ.tile] + hands.pai_obj[turnmanagerMJ.tile].transform.position);
-                        hands.PlayerHands[3].playerchips.Insert(position, hands.pai_obj[turnmanagerMJ.tile - 1]);
-                        hands.PlayerHands[3].playerchips.RemoveAt(hands.PlayerHands[3].playerchips.Count - 1);
-                    }
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[e].transform.position = new Vector3(-hands.length_table / 1.5f + (e * 2.05f * hands.length_tile) / 2, hands.height_tile * 1.2f, -hands.length_table * 1.3f);
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[e].transform.rotation = hands.EastRot;
                 }
             }
-            hands.PlayerHands[CurrentPlayer()].playerchips.Remove(gameObject);
+
+            if (turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn) == 1)
+            {
+                for (int s = 0; s < handsize; s++)
+                {
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[s].transform.position = new Vector3(hands.length_table * 1.3f, hands.height_tile * 1.2f, -hands.length_table * 0.5f + (s * 2.05f * hands.length_tile) / 2);
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[s].transform.rotation = hands.SouthRot;
+                }
+            }
+
+            if (turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn) == 2)
+            {
+                for (int w = 0; w < handsize; w++)
+                {
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[w].transform.position = new Vector3(hands.length_table / 1.5f - (w * 2.05f * hands.length_tile) / 2, hands.height_tile * 1.2f, hands.length_table * 1.3f);
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[w].transform.rotation = hands.WestRot;
+                }
+            }
+
+            if (turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn) == 3)
+            {
+                for (int n = 0; n < handsize; n++)
+                {
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[n].transform.position = new Vector3(-hands.length_table * 1.3f, hands.height_tile * 1.2f, hands.length_table * 0.5f - (n * 2.05f * hands.length_tile) / 2);
+                    hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[n].transform.rotation = hands.NorthRot;
+                }
+            }
+            Debug.Log("reordered hand " + turnmanagerMJ.turn);
             turnmanagerMJ.TilePlayed(); //this goes last so that next tile dealed happens after tiles are moved
         }
     }

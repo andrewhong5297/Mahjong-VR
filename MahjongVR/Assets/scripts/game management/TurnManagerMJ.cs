@@ -1,27 +1,88 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System;
+using System.Linq;
+using UnityEngine.UI;
 
 public class TurnManagerMJ : MonoBehaviour
 {
     // Start is called before the first frame update
     public ShuffleFinal hands = new ShuffleFinal();
     public TurnManager turn;
-    public int tile = 53;
+    public int tile = 53; //start dealing from first tile not in hand
 
-    public GameObject chowbuttonEast;
-    public GameObject pongbuttonEast;
-    public GameObject kongbuttonEast;
-    public GameObject container;
+    #region boxes gameobjects
+    public GameObject discardeast;
+    public GameObject discardsouth;
+    public GameObject discardwest;
+    public GameObject discardnorth;
+
+    public GameObject removeeast;
+    public GameObject removesouth;
+    public GameObject removewest;
+    public GameObject removenorth;
+    #endregion
+
+    #region UI
+    public Text action;
+    #endregion
+
+    //will need an or function for right or left hand (x,y), or don't use rawbutton 
+    bool invokebutton, cancelbutton;
+
+    //state of chow/pong/kong
+    bool chow = false, pong = false, kong = false;
 
     void Start()
     {
         //maybe setup game here using shuffle methods
         turn = TurnManager.EASTTURN; //default always first player to start, will need to make it so east just plays a tile and doesn't get dealt one. Maybe freeze unfreeze all here.
-        chowbuttonEast.SetActive(false);
-        pongbuttonEast.SetActive(false);
-        kongbuttonEast.SetActive(false);
-        container.SetActive(false);
+    }
+
+    private void Update()
+    {
+        if(chow || pong || kong)
+        {
+            invokebutton = OVRInput.GetDown(OVRInput.RawButton.A);
+            cancelbutton = OVRInput.GetDown(OVRInput.RawButton.B);
+
+            if(turn != TurnManager.EASTTURN)
+            {
+                invokebutton = true; //auto invoke if computer
+            }
+
+            //have a timer, if timer = 10 second, invoke NoTake() and set all three to false. Pong and Kong need a way of sending the turn back to original order. 
+            Debug.Log("Waiting for input... chow: " + chow + " pong: " + pong + " kong: " + kong);
+            action.text = "Waiting for input... chow: " + chow + " pong: " + pong + " kong: " + kong;
+
+            Debug.Log(invokebutton);
+            if (invokebutton==true)
+            {
+                if (chow)
+                {
+                    ButtonChow();
+                    chow = false;
+                }
+                if (pong)
+                {
+                    ButtonPong();
+                    pong = false;
+                }
+                if (kong)
+                {
+                    ButtonKong();
+                    kong = false;
+                }
+            }
+            if(cancelbutton==true)
+            {
+                NoTake();
+                chow = false;
+                kong = false;
+                pong = false;
+            }
+        }
     }
 
     void DealTile(int player, int d_tile) //make tilemovement class that manages playing, dealing, snapback of tiles
@@ -64,18 +125,30 @@ public class TurnManagerMJ : MonoBehaviour
 
     //I think these will need to be refactored into its own class 
     #region CheckAll 
-    bool CheckMahjong(int player) 
+    bool CheckMahjong() //final boss!!!
     {
-        //check next player
-        //hands.pai_obj[1].GetComponent<Chip>
         bool avail = false;
+        for (int player = 0; player < 3; player++)
+        {
+            
+            hands.PlayerHands[player].playerchips.Add(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]);
+
+            if (avail == false)
+            {
+                hands.PlayerHands[player].playerchips.Remove(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]);
+            }
+        }
         return avail;
-        //check for all winstates in player hand given current card, run it once for each hand. 
-        //remove from hand
     }
+
     bool CheckChow(int player)
     {
         bool ChowAvail = false;
+        //three types of chows
+        bool twosides = false;
+        bool twolower = false;
+        bool twohigher = false;
+
         GameObject lastplayed = hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1];
         List<int> suitvalues = new List<int>();
 
@@ -98,28 +171,47 @@ public class TurnManagerMJ : MonoBehaviour
                 suitvalues.Add(ValueTile);
                 }
         }
-
-        //three types of chows
-        bool twosides = false;
-        bool twolower = false;
-        bool twohigher = false;
         
         if (suitvalues.Contains(ValuePlayedTile-1) && suitvalues.Contains(ValuePlayedTile-2))
         {
             twolower = true;
             ChowAvail = true;
+            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+            {
+                Chip Tile = tile.GetComponent<Chip>();
+                if (Tile.chipsuit == SuitPlayedTile && (Tile.chipvalue == ValuePlayedTile - 1 || Tile.chipvalue == ValuePlayedTile - 2))
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                }
+            }
         }
 
         if (suitvalues.Contains(ValuePlayedTile - 1) && suitvalues.Contains(ValuePlayedTile + 1))
         {
             twosides = true;
             ChowAvail = true;
+            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+            {
+                Chip Tile = tile.GetComponent<Chip>();
+                if (Tile.chipsuit == SuitPlayedTile && (Tile.chipvalue == ValuePlayedTile - 1 || Tile.chipvalue == ValuePlayedTile + 2))
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                }
+            }
         }
 
         if (suitvalues.Contains(ValuePlayedTile + 1) && suitvalues.Contains(ValuePlayedTile + 2))
         {
             twohigher = true;
             ChowAvail = true;
+            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+            {
+                Chip Tile = tile.GetComponent<Chip>();
+                if (Tile.chipsuit == SuitPlayedTile && (Tile.chipvalue == ValuePlayedTile + 1 || Tile.chipvalue == ValuePlayedTile + 2))
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                }
+            }
         }
 
         //sort suitvalues
@@ -127,7 +219,6 @@ public class TurnManagerMJ : MonoBehaviour
         if (ChowAvail)
         {
             Debug.Log("Can Chow of type twolower: " + twolower + " twohigher: " + twohigher + " twosides: " + twosides);
-            //If there is, reverse find gameobject using foreach if(value && suit) give UI button option to chow. move these tiles to revealedchips and then move them physically to the right corner.
         }
         else
         {
@@ -168,12 +259,19 @@ public class TurnManagerMJ : MonoBehaviour
         if(valuecount == 2) //two of the same tile
         {
             PongAvail = true;
+            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+            {
+                Chip Tile = tile.GetComponent<Chip>();
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile)
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                }
+            }
         }
 
         if (PongAvail)
         {
             Debug.Log(player + " player can Pong");
-            //If there is, reverse find gameobject and give UI button option to chow. move these tiles to revealedchips and then move them physically to the right corner.
         }
         return PongAvail;
     }
@@ -221,154 +319,119 @@ public class TurnManagerMJ : MonoBehaviour
         if (valuecount == 3) //3 of the same tile
         {
             KongAvail = true;
+            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+            {
+                Chip Tile = tile.GetComponent<Chip>();
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile)
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                }
+            }
         }
 
         if (KongAvail)
         {
             Debug.Log(player + " player Kong");
-            //If there is, reverse find gameobject and give UI button option to chow. move these tiles to revealedchips and then move them physically to the right corner.
         }
         return KongAvail;
     }
 
-    //currently checks in playerhand that just played too, though that shouldn't be a problem unless someone delibrately ponged/konged themself just to reveal the tiles? 
-    //currently only returns first player to have a pong, should make it an array of size 8 later to assign buttons for all
+    //shouldn't matter checking pong first, since it is strictly = not >3. 
     int CheckPongKongForAllPlayers()
     {
         for (int i = 0; i <= 3; i++)
         {
             if (CheckPong(i))
             {
-                pongbuttonEast.SetActive(true);
-                container.SetActive(true);
                 return i; 
             }
             if (CheckKong(i))
             {
-                kongbuttonEast.SetActive(true);
-                container.SetActive(true);
                 return i;
             }
         }
-        return 5;
+        return 5; //equiv of no pongs
     }
 
     #endregion
 
-    void RemoveFromHand()
+    void RemoveFromHand(int player)
     {
-        //how do we select tiles? maybe move all tiles to a revealedtiles array? what to do about multiple chows? If check chow is multiple what to do? 
-
-        //move ToMove to playercorner[i]
-        //this function removes chow,kong, or pong from hand when called. 
-        //will need to resort and move all tiles in hand
+        List<GameObject> movetiles = new List<GameObject>();
+        movetiles.AddRange(hands.PlayerHands[player].temporaryrevealedchips);
+        foreach (GameObject tile in movetiles)
+        {
+            tile.transform.position = PlayerConvRemoveBox(turn).transform.position;
+            hands.PlayerHands[player].revealedchips.Add(tile);
+            hands.PlayerHands[player].playerchips.Remove(tile);
+        }
+        hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count-1].transform.position = PlayerConvRemoveBox(turn).transform.position; //move taken tile out of middle
+        hands.PlayerHands[player].temporaryrevealedchips.Clear(); //clear temp after done
+        //will want to make this drop more organized later
+        //happens before discard tile, so these won't be pulled back in
     }
 
     #region buttons
+    public void NoTake()
+    {
+        //how do we send back a turn?
+        Debug.Log("Didn't Take");
+        action.text = "Didn't Take";
+        hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
+        StartCoroutine(Turn(0, PlayerConvNumber(turn)));
+    }
+
     public void ButtonChow()
     {
         Debug.Log("Chow!");
-        RemoveFromHand();
-        if (turn == TurnManager.EASTTURN)
-        {
-            chowbuttonEast.SetActive(false);
-            container.SetActive(false);
-            EastTurn(1);
-            return;
-        }
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            chowbuttonEast.SetActive(false);
-            container.SetActive(false);
-            SouthTurn(1);
-            return;
-        }
-        if (turn == TurnManager.WESTTURN)
-        {
-            chowbuttonEast.SetActive(false);
-            container.SetActive(false);
-            WestTurn(1);
-            return;
-        }
-        if (turn == TurnManager.NORTHTURN)
-        {
-            chowbuttonEast.SetActive(false);
-            container.SetActive(false);
-            NorthTurn(1);
-            return;
-        }
+        action.text = "Chow!";
+        //need something here to choose which chow if there are multiple
+        RemoveFromHand(PlayerConvNumber(turn));
+        StartCoroutine(Turn(1, PlayerConvNumber(turn)));
+        return;
     }
 
     public void ButtonPong()
     {
         Debug.Log("Pong!");
-        RemoveFromHand();
-        if (turn == TurnManager.EASTTURN)
-        {
-            pongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            EastTurn(1);
-            return;
-        }
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            pongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            SouthTurn(1);
-            return;
-        }
-        if (turn == TurnManager.WESTTURN)
-        {
-            pongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            WestTurn(1);
-            return;
-        }
-        if (turn == TurnManager.NORTHTURN)
-        {
-            pongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            NorthTurn(1);
-            return;
-        }
+        action.text = "Pong!";
+        RemoveFromHand(PlayerConvNumber(turn));
+        StartCoroutine(Turn(1, PlayerConvNumber(turn)));
+        return;
     }
 
     public void ButtonKong()
     {
         Debug.Log("Kong!");
-        RemoveFromHand();
-        if (turn == TurnManager.EASTTURN)
-        {
-            kongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            EastTurn(1);
-            return;
-        }
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            kongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            SouthTurn(1);
-            return;
-        }
-        if (turn == TurnManager.WESTTURN)
-        {
-            kongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            WestTurn(1);
-            return;
-        }
-        if (turn == TurnManager.NORTHTURN)
-        {
-            kongbuttonEast.SetActive(false);
-            container.SetActive(false);
-            NorthTurn(1);
-            return;
-        }
+        action.text = "Kong!";
+        RemoveFromHand(PlayerConvNumber(turn));
+        StartCoroutine(Turn(0, PlayerConvNumber(turn))); //Kong requires a draw tile
+        return;
     }
     #endregion
 
-    TurnManager NumberConvPlayer(int input)
+    //converter methods
+    public int PlayerConvNumber(TurnManager turn)
+    {
+        if (turn == TurnManager.EASTTURN)
+        {
+            return 0;
+        }
+        if (turn == TurnManager.SOUTHTURN)
+        {
+            return 1;
+        }
+        if (turn == TurnManager.WESTTURN)
+        {
+            return 2;
+        }
+        if (turn == TurnManager.NORTHTURN)
+        {
+            return 3;
+        }
+        return 0; //will never return this
+    }
+    public TurnManager NumberConvPlayer(int input)
     {
         if (input == 0)
         {
@@ -388,139 +451,125 @@ public class TurnManagerMJ : MonoBehaviour
         }
         return TurnManager.EASTTURN; //will never return this
     }
+    public GameObject PlayerConvRemoveBox(TurnManager turn)
+    {
+        if (turn == TurnManager.EASTTURN)
+        {
+            return removeeast;
+        }
+        if (turn == TurnManager.SOUTHTURN)
+        {
+            return removesouth;
+        }
+        if (turn == TurnManager.WESTTURN)
+        {
+            return removewest;
+        }
+        if (turn == TurnManager.NORTHTURN)
+        {
+            return removenorth;
+        }
+        return removeeast; //will never return this
+    }
+    public GameObject PlayerConvDiscardBox(TurnManager turn)
+    {
+        if (turn == TurnManager.EASTTURN)
+        {
+            return discardeast;
+        }
+        if (turn == TurnManager.SOUTHTURN)
+        {
+            return discardsouth;
+        }
+        if (turn == TurnManager.WESTTURN)
+        {
+            return discardwest;
+        }
+        if (turn == TurnManager.NORTHTURN)
+        {
+            return discardnorth;
+        }
+        return removeeast; //will never return this
+    }
 
     public void TilePlayed()
     {
         Debug.Log("Tile was played, now assessing for chow, pong, or kong");
+        List<TurnManager> turnArray = Enum.GetValues(typeof(TurnManager)).Cast<TurnManager>().ToList();
+        int playerTurn = 0;
+        int playerNext = 1;
 
-        if (turn == TurnManager.EASTTURN)
+        while (playerTurn < 4)
         {
-            /*
-            int interruptTurn = CheckPongKongForAllPlayers(); //this will assign a turn 
-            if(interruptTurn != 5)
+            if (turn == turnArray[playerTurn])
             {
-                //turn = NumberConvPlayer(interruptTurn); //will need to make option to ignore kong. Need to refactor this function and turn function below.
-                //move box to player? 
-                //return;
-            }
-            */
-            turn = TurnManager.SOUTHTURN;
+                /*
+                if(playerNext!=0)
+                {
+                    invokebutton = true; //autoinvoke button press for non-east player
+                }
+                */
 
-            if (CheckChow(1))
-            {
-                SouthTurn(0);
-                //chowbuttonEast.SetActive(true);
-                //container.SetActive(true);
-                return; //should just be able to return out afterwards
-            }
-            else
-            {
-                SouthTurn(0);
-            }
-            return;
-        }
+                int interruptTurn = CheckPongKongForAllPlayers(); //this will assign a turn if pong/kong is available
 
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            //CheckPongKongForAllPlayers();
-            turn = TurnManager.WESTTURN;
-            if (CheckChow(2))
-            {
-                WestTurn(0);
+                if (turn == NumberConvPlayer(interruptTurn))
+                {
+                    interruptTurn = 5; //make sure you can't pong a tile you just played lmao
+                }
+
+                if (interruptTurn != 5) //5 is default return for no players have avail
+                {
+                    Debug.Log("turn interrupted to: " + NumberConvPlayer(interruptTurn));
+                    turn = NumberConvPlayer(interruptTurn);
+                    pong = true; //going to need way to set turn backwards if invoke is no. Also how to set OVRInput to each player?
+                    return;
+                }
+                turn = turnArray[playerNext];
+
+                if (CheckChow(playerNext)) //only next player can chow
+                {
+                    chow = true;
+                    return;
+                }
+                else
+                {
+                    StartCoroutine(Turn(0, playerNext));
+                }
                 return;
             }
-            else
-            {
-                WestTurn(0);
-            }
-            return;
-        }
+            playerTurn += 1;
 
-        if (turn == TurnManager.WESTTURN)
-        {
-            //CheckPongKongForAllPlayers();
-            turn = TurnManager.NORTHTURN;
-            if (CheckChow(3))
+            if (playerNext != 3)
             {
-                NorthTurn(0);
-                return;
+                playerNext += 1;
             }
             else
             {
-                 NorthTurn(0);
+                playerNext = 0; //so that when PlayerTurn is 3 (north), it sets PlayerNext to 0 (east) instead of 4 which is the center
             }
-            return;
-        }
-
-        if (turn == TurnManager.NORTHTURN)
-        {
-            //CheckPongKongForAllPlayers();
-            turn = TurnManager.EASTTURN;
-            if (CheckChow(0))
-            {
-                EastTurn(0);
-                return;
-            }
-            else
-            {
-                EastTurn(0);
-            }
-            return;
         }
     }
 
-    #region Turns
-    void EastTurn(int interruption)
+    IEnumerator Turn(int interruption, int player)
     {
+        //UI shift text, timer start, etc. 
+        action.text = "no actions";
+
         if (interruption == 0)
         {
-            DealTile(0, tile); //don't deal if chow or pong
+            DealTile(player, tile); //don't deal if chow or pong
             tile += 1;
         }
-        Debug.Log("Currently East Turn");
-        //code for random discard 
-        //UI shift text, timer start, etc. 
-        //CheckMahjong
-    }
 
-    void SouthTurn(int interruption)
-    {
-        if (interruption == 0)
+        //if(CheckMahjong) { Debug.Log(player + " has won!"); Win(player); the function which displays TurnManager.WIN to player if player = 0 and LOST if not. 
+        Debug.Log("Currently " + NumberConvPlayer(player) + " Turn");
+        
+        if(player != 0) //AI code, lowest level random discard and invoke all
         {
-            DealTile(1, tile);
-            tile += 1;
+            yield return new WaitForSeconds(2f);//computer delay
+            GameObject discardtile = hands.PlayerHands[player].playerchips[UnityEngine.Random.Range(0, hands.PlayerHands[player].playerchips.Count - 1)];
+            Debug.Log(NumberConvPlayer(player) + " has played " + discardtile);
+            discardtile.transform.position = PlayerConvDiscardBox(turn).transform.position;
         }
-        Debug.Log("Currently South Turn");
-        //code for random discard 
-        //UI shift text, timer start, etc. 
-        //CheckMahJong()
     }
-
-    void WestTurn(int interruption)
-    {
-        if (interruption == 0)
-        {
-            DealTile(2, tile); 
-            tile += 1;
-        }
-        Debug.Log("Currently West Turn");
-        //code for random discard 
-        //UI shift text, timer start, etc. 
-        //CheckMahJong()
-    }
-
-    void NorthTurn(int interruption)
-    {
-        if (interruption == 0)
-        {
-            DealTile(3, tile); 
-            tile += 1;
-        }
-        Debug.Log("Currently North Turn");
-        //code for random discard 
-        //UI shift text, timer start, etc. 
-        //CheckMahJong()
-    }
-
-    #endregion
 }

@@ -4,11 +4,12 @@ using UnityEngine;
 
 //functions are shown in order they are called/state is moved
 //can we put clapping hands in as the dealer and to kind of bring life to AI?
-public enum TurnManager { START, EASTTURN, SOUTHTURN, WESTTURN, NORTHTURN, WON, LOST } //how to manage four canvases? 
+public enum TurnManager { EASTTURN, SOUTHTURN, WESTTURN, NORTHTURN, START, WON, LOST } //how to manage four canvases? 
 
 public class ShuffleFinal : MonoBehaviour
 {
 	public int state = 0;
+	
 	public float tile_speed = 0.5f;
 	int i = 4; //counting tiles for moving/distributing in state 2. Starting from 4 to include tiles 0-3 in first group
 	GameObject setup_dist;
@@ -16,6 +17,7 @@ public class ShuffleFinal : MonoBehaviour
 	public List<GameObject> pai_obj;
 
 	public float length_table, length_tile, height_tile, height_tile_double;
+
 	//for show rotation
 	public Quaternion EastRot = Quaternion.Euler(new Vector3(90f, 180f, 0));
 	public Quaternion SouthRot = Quaternion.Euler(new Vector3(90f, 0, -90f));
@@ -25,7 +27,7 @@ public class ShuffleFinal : MonoBehaviour
 	public GameHandData[] PlayerHands; //contains playerchips[]
 
 	// Start is called before the first frame update
-	void Start()
+	void Awake()
 	{
 		pai_obj = tile.GetTiles();
 		setup_dist = new GameObject("setup_dist"); //to deal tiles out in groups
@@ -37,7 +39,7 @@ public class ShuffleFinal : MonoBehaviour
 		GameObject tile2 = GameObject.Find("psouzu_5"); //random tile to get size
 		BoxCollider tile_collider = tile2.GetComponent<BoxCollider>();
 		length_tile = tile_collider.size.x/10f;
-		height_tile = tile_collider.size.y/10f;
+		height_tile = tile_collider.size.y/10f *0.6f;
 		height_tile_double = height_tile * 2f;
 	}
 

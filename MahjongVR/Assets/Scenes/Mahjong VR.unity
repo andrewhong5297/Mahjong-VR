@@ -198,6 +198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &20783540 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 9786648221bd1744e9888d95b40850c8,
@@ -269,6 +270,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &30473837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4352a1e49365e584caad183d8cfe9c7f,
@@ -334,6 +336,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &32379655 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 558887b337fadb84e80143c150ab6a66,
@@ -399,6 +402,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &34618669
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -787,6 +791,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &55712521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 520bf4a3ab2b71149b5843efd003c451,
@@ -1122,6 +1127,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &76653950 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: abf6021b9148ce64eb019211afce6a9b,
@@ -1547,6 +1553,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &130086764 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 5c1422e585493d64b8ab12b80ad55be1,
@@ -1612,6 +1619,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &130470943 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: dde77bbc9b9e98c40bf5c0287d5280df,
@@ -1695,6 +1703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &153843966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1785,7 +1794,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 180, y: 0, z: -0.59698486}
 --- !u!1001 &171995999
 PrefabInstance:
@@ -1960,85 +1969,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cb1645d7e446f4747a27549ca852e638, type: 3}
---- !u!1 &172945037
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 172945038}
-  - component: {fileID: 172945041}
-  - component: {fileID: 172945040}
-  m_Layer: 0
-  m_Name: highlighted area
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &172945038
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172945037}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.484, z: 0}
-  m_LocalScale: {x: 1, y: 0.03975094, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1666490426}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &172945040
-MeshRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172945037}
-  m_Enabled: 1
-  m_CastShadows: 1
-  m_ReceiveShadows: 1
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RayTracingMode: 2
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 3759c7ec7df41c441ac198e2c802e053, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 3
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
---- !u!33 &172945041
-MeshFilter:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 172945037}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1001 &173205692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2188,6 +2118,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &174313973 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e08b56f7447b97948a6766367d9260ea,
@@ -2253,6 +2184,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &175659227
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2474,6 +2406,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &199750952 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e69149675593e0b4392fc5dc2c49f4ec,
@@ -2539,6 +2472,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &213354260
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2604,17 +2538,17 @@ PrefabInstance:
     - target: {fileID: -4216859302048453862, guid: 400bc4e7d5af9a1488dd1a06c8c6e79e,
         type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.4724335
+      value: 0.40607032
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 400bc4e7d5af9a1488dd1a06c8c6e79e,
         type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.4724335
+      value: 0.40607032
       objectReference: {fileID: 0}
     - target: {fileID: -4216859302048453862, guid: 400bc4e7d5af9a1488dd1a06c8c6e79e,
         type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.4724335
+      value: 0.40607032
       objectReference: {fileID: 0}
     - target: {fileID: -927199367670048503, guid: 400bc4e7d5af9a1488dd1a06c8c6e79e,
         type: 3}
@@ -2704,6 +2638,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &228280876
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2937,6 +2872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &250786595 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 073ef69e51ce1b64cb6e4f49973ca75c,
@@ -3002,6 +2938,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &252620729 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: bb288479b728c6e4cbb2559bd3d33e7b,
@@ -3067,6 +3004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &256438047 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: dde77bbc9b9e98c40bf5c0287d5280df,
@@ -3138,6 +3076,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &263008099
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3539,6 +3478,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &288610552
 GameObject:
   m_ObjectHideFlags: 0
@@ -3799,6 +3739,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &302823030
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3936,7 +3877,7 @@ Transform:
   - {fileID: 1387180997}
   - {fileID: 908074783}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &322273413
 PrefabInstance:
@@ -4255,6 +4196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &338257209 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3efec4b0d6bbc3140b1225113c79e19b,
@@ -4351,7 +4293,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &343498871 stripped
 GameObject:
@@ -4418,6 +4360,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &343674908
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4651,6 +4594,106 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
+--- !u!1 &358282068
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 358282069}
+  - component: {fileID: 358282072}
+  - component: {fileID: 358282071}
+  - component: {fileID: 358282070}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &358282069
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358282068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_Children:
+  - {fileID: 1103962202}
+  m_Father: {fileID: 1125110390}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
+--- !u!114 &358282070
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358282068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &358282071
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358282068}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+--- !u!223 &358282072
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 358282068}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
 --- !u!1 &359933001 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 80fd51eb888ace041a766879d9eb0a15,
@@ -4716,6 +4759,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
+--- !u!1 &364035922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1870938896605422, guid: 835e735ca71bf78459fb2cababd74112,
+    type: 3}
+  m_PrefabInstance: {fileID: 175659227}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &364035924
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364035922}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82c00c5e436b7a438f3d87861e2ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_moveHandPosition: 0
+  m_gripTransform: {fileID: 0}
+  m_grabVolumes: []
+  m_controller: 0
+  m_parentTransform: {fileID: 0}
+  m_player: {fileID: 0}
+  pinchThreshold: 0.7
+--- !u!54 &364035925
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364035922}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &364035930
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 364035922}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1001 &372633219
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4865,6 +4966,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &378244102
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5066,6 +5168,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &393994372 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e08b56f7447b97948a6766367d9260ea,
@@ -5131,6 +5234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &396134572
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5280,6 +5384,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &414133744 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6bc678e2119e18247a31eaabe1fbdd25,
@@ -5351,6 +5456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &433831863 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 940ecfd26c30c3740abb7c5f0e827fa3,
@@ -5416,6 +5522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &435168512
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5571,6 +5678,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &439179212 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 7fb8a04027c0eae4aa6e02c08dc449db,
@@ -5636,6 +5744,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &444914862 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 3efec4b0d6bbc3140b1225113c79e19b,
@@ -5701,6 +5810,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &445662667 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 52edffde2d8b3ad45bb43abb094c0e5f,
@@ -5772,6 +5882,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &455676476
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -6029,6 +6140,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &478328536 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8e618d67ea0e95142bfc1eda406adf28,
@@ -6094,6 +6206,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &485608932 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3efec4b0d6bbc3140b1225113c79e19b,
@@ -6486,6 +6599,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &536172579 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 52edffde2d8b3ad45bb43abb094c0e5f,
@@ -6551,6 +6665,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &540054972 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 80fd51eb888ace041a766879d9eb0a15,
@@ -6634,6 +6749,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &562577178 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8d4a5e20dbd50a8419106e370e804d72,
@@ -6699,6 +6815,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &568556541 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8e618d67ea0e95142bfc1eda406adf28,
@@ -6764,6 +6881,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &570741292 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 1985d8564cbf6e748a21abb992b86212,
@@ -6835,6 +6953,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &577490232 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: cae1ba744e62c9b4b836dd46b5571d23,
@@ -6900,6 +7019,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &588712080
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7061,6 +7181,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &602270125
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7210,6 +7331,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &603769251 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: bb288479b728c6e4cbb2559bd3d33e7b,
@@ -7275,6 +7397,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &604445868 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 89d5f5fe0a969dd4fb275861ab715e5c,
@@ -7340,6 +7463,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &604694766 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 865372c8087629a49bb545b129259b16,
@@ -7405,6 +7529,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &607248042 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 940ecfd26c30c3740abb7c5f0e827fa3,
@@ -7470,6 +7595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &611663865 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5c1422e585493d64b8ab12b80ad55be1,
@@ -7541,6 +7667,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &616990062 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e08b56f7447b97948a6766367d9260ea,
@@ -7606,6 +7733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &619428422 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: abf6021b9148ce64eb019211afce6a9b,
@@ -7671,6 +7799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &628667303 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8d4a5e20dbd50a8419106e370e804d72,
@@ -7825,7 +7954,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &641230966 stripped
 GameObject:
@@ -7892,6 +8021,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &642953238 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 30980bbeda3b23847b5b1d16149ccab5,
@@ -8053,6 +8183,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &657069933 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b395d6f23b7dcff45928daa60b9f1117,
@@ -8322,6 +8453,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &709541851
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8471,6 +8603,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &712199802 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e69149675593e0b4392fc5dc2c49f4ec,
@@ -8536,6 +8669,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &713846652
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8775,6 +8909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &731126841
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9594,6 +9729,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &777401736
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -9743,6 +9879,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &785021956 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: a77555510fa902744bdb3a4599f78263,
@@ -9808,6 +9945,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &790747616 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 67901d17d1a108c4ab67c9db285e5126,
@@ -9873,6 +10011,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &806829593 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: bb288479b728c6e4cbb2559bd3d33e7b,
@@ -10028,6 +10167,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &810679605 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6d3a39aa8b9bd144fb3e43abf9c322bc,
@@ -10229,6 +10369,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &825258819 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 865372c8087629a49bb545b129259b16,
@@ -10294,6 +10435,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &831912440
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10495,6 +10637,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &852200447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 67901d17d1a108c4ab67c9db285e5126,
@@ -10560,6 +10703,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &855312449 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e69149675593e0b4392fc5dc2c49f4ec,
@@ -10625,6 +10769,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &856161856 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 558887b337fadb84e80143c150ab6a66,
@@ -10690,6 +10835,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &862545076
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10774,6 +10920,63 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: dde77bbc9b9e98c40bf5c0287d5280df, type: 3}
+--- !u!1 &869989853 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1870938896605422, guid: 835e735ca71bf78459fb2cababd74112,
+    type: 3}
+  m_PrefabInstance: {fileID: 517498584}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &869989855
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869989853}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b82c00c5e436b7a438f3d87861e2ff45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_moveHandPosition: 0
+  m_gripTransform: {fileID: 0}
+  m_grabVolumes: []
+  m_controller: 0
+  m_parentTransform: {fileID: 0}
+  m_player: {fileID: 0}
+  pinchThreshold: 0.7
+--- !u!54 &869989856
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869989853}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
+--- !u!135 &869989861
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 869989853}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &873979661 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 7fb8a04027c0eae4aa6e02c08dc449db,
@@ -10857,6 +11060,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &908074783 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 46d30027471762840a6c29adf649f25c,
@@ -10928,6 +11132,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &913533599 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4d71434f494150543a98b821f6d9d668,
@@ -10993,6 +11198,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &923329259 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 865372c8087629a49bb545b129259b16,
@@ -11470,6 +11676,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &944831639 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a42e6939b44be34419fc7d6bed6a1590,
@@ -11643,6 +11850,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &987061041
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11882,6 +12090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1021193921
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12115,6 +12324,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1039483171 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 831c4094843ca11458c8616bbad5f428,
@@ -12186,6 +12396,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1047153834 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6da6f5e8d61e15e4f8c7826847e2f084,
@@ -12251,6 +12462,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1052369889 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5c1422e585493d64b8ab12b80ad55be1,
@@ -12322,6 +12534,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1073065592
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12523,6 +12736,83 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 2060615754}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1103962201
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1103962202}
+  - component: {fileID: 1103962204}
+  - component: {fileID: 1103962203}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1103962202
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103962201}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 358282069}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1103962203
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103962201}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Can Chow!
+--- !u!222 &1103962204
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1103962201}
+  m_CullTransparentMesh: 0
 --- !u!1 &1104604385 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 5c1422e585493d64b8ab12b80ad55be1,
@@ -12588,6 +12878,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1104741293
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12737,6 +13028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1123522715 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 67901d17d1a108c4ab67c9db285e5126,
@@ -12802,6 +13094,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
+--- !u!4 &1125110390 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811843734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1138442691 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 9786648221bd1744e9888d95b40850c8,
@@ -12867,6 +13166,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1142587309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -12876,7 +13176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_Name
-      value: OVRCameraRig (1)
+      value: HandTrackingRig
       objectReference: {fileID: 0}
     - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
       propertyPath: m_IsActive
@@ -13036,7 +13336,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1149496654 stripped
 Transform:
@@ -13109,6 +13409,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1166120824
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13258,6 +13559,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1175477816
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13491,6 +13793,64 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
+--- !u!1001 &1203211599
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1540178237}
+    m_Modifications:
+    - target: {fileID: 158226, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_Name
+      value: LocalAvatar
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 463470, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 84c8b8609f9bb434eaf5248f17ff1293, type: 3}
 --- !u!1 &1206549117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 46d30027471762840a6c29adf649f25c,
@@ -13957,6 +14317,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1233976789 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5a5dddb7edf9ac844b0d67372673a0d2,
@@ -14028,6 +14389,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1244540945 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 520bf4a3ab2b71149b5843efd003c451,
@@ -14148,7 +14510,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1272788553 stripped
 GameObject:
@@ -14215,6 +14577,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1277458060
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14454,6 +14817,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1282956906 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 80fd51eb888ace041a766879d9eb0a15,
@@ -14531,6 +14895,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1289164073
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14788,6 +15153,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1346501964 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: e69149675593e0b4392fc5dc2c49f4ec,
@@ -14871,6 +15237,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1366275199
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15122,6 +15489,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1405978464
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15451,7 +15819,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1430961428
 MonoBehaviour:
@@ -15485,6 +15853,7 @@ MonoBehaviour:
   pongbuttonEast: {fileID: 1104412041219340}
   kongbuttonEast: {fileID: 1950708325397716}
   container: {fileID: 1096577228}
+  tablecenter: {fileID: 1666490422}
 --- !u!4 &1434806390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 89d5f5fe0a969dd4fb275861ab715e5c,
@@ -15975,6 +16344,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1471469461
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16059,6 +16429,69 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a77555510fa902744bdb3a4599f78263, type: 3}
+--- !u!1 &1473689687 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 113768, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811843734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1473689688 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 487254, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811843734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &1473689689
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473689687}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.08
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1473689690
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473689687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_moveHandPosition: 0
+  m_gripTransform: {fileID: 1473689688}
+  m_grabVolumes:
+  - {fileID: 1473689689}
+  m_controller: 2
+  m_parentTransform: {fileID: 0}
+  m_player: {fileID: 0}
+--- !u!54 &1473689691
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1473689687}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1001 &1479442191
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16208,6 +16641,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1482756214 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 8e618d67ea0e95142bfc1eda406adf28,
@@ -16273,6 +16707,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1489961095
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16437,6 +16872,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1497970106 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 073ef69e51ce1b64cb6e4f49973ca75c,
@@ -16604,6 +17040,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1531340760
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16772,6 +17209,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 30980bbeda3b23847b5b1d16149ccab5, type: 3}
+--- !u!4 &1540178237 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 459718, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811843734}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1541454090
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16940,6 +17383,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1542378733 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 30980bbeda3b23847b5b1d16149ccab5,
@@ -17005,6 +17449,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1544152020
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -17238,6 +17683,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1550021185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: a77555510fa902744bdb3a4599f78263,
@@ -17944,6 +18390,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1588189889 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4352a1e49365e584caad183d8cfe9c7f,
@@ -18009,6 +18456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1590601622 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 5c1422e585493d64b8ab12b80ad55be1,
@@ -18074,6 +18522,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1591755912 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 4d71434f494150543a98b821f6d9d668,
@@ -18319,6 +18768,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1618473268 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: e08b56f7447b97948a6766367d9260ea,
@@ -18384,6 +18834,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1620232725
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -18887,6 +19338,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1652200224 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 558887b337fadb84e80143c150ab6a66,
@@ -18952,6 +19404,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1663888996
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -19092,7 +19545,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: a1ad768eb9871ee44b7e5151ab479444, type: 2}
+  - {fileID: 2100000, guid: 3759c7ec7df41c441ac198e2c802e053, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -19129,12 +19582,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1666490422}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.484, z: 0}
-  m_LocalScale: {x: 0.4509721, y: 1.0063442, z: 0.4509721}
-  m_Children:
-  - {fileID: 172945038}
+  m_LocalPosition: {x: 0, y: 0.014, z: 0}
+  m_LocalScale: {x: 0.38762364, y: 0.072162, z: 0.38762364}
+  m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1667394456 stripped
 Transform:
@@ -19219,6 +19671,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1682828798 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 073ef69e51ce1b64cb6e4f49973ca75c,
@@ -19284,6 +19737,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1685779023 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 940ecfd26c30c3740abb7c5f0e827fa3,
@@ -19355,6 +19809,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1703902424 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 30980bbeda3b23847b5b1d16149ccab5,
@@ -19420,6 +19875,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1706099185 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6da6f5e8d61e15e4f8c7826847e2f084,
@@ -19749,6 +20205,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1755616806 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 6da6f5e8d61e15e4f8c7826847e2f084,
@@ -19814,6 +20271,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1756641651 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 940ecfd26c30c3740abb7c5f0e827fa3,
@@ -19975,6 +20433,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1792815389 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4352a1e49365e584caad183d8cfe9c7f,
@@ -20040,6 +20499,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1793294813
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20273,6 +20733,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1799040840 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: b395d6f23b7dcff45928daa60b9f1117,
@@ -20338,6 +20799,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1802182692
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -20590,6 +21052,79 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52edffde2d8b3ad45bb43abb094c0e5f, type: 3}
+--- !u!1001 &1811843734
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_Name
+      value: ControllerTrackingRig
+      objectReference: {fileID: 0}
+    - target: {fileID: 100004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.432
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.756
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 400004, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 126d619cf4daa52469682f85c1378b4a, type: 3}
 --- !u!4 &1814311612 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 865372c8087629a49bb545b129259b16,
@@ -20661,6 +21196,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1817632818 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: dc949234df6eba040bd8431de6ebe43b,
@@ -20996,6 +21532,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1843818352 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 3efec4b0d6bbc3140b1225113c79e19b,
@@ -21067,6 +21604,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1847642120
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21268,6 +21806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1855710718
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -21777,6 +22316,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &1893579722 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6bc678e2119e18247a31eaabe1fbdd25,
@@ -21944,6 +22484,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1927870169
 GameObject:
   m_ObjectHideFlags: 0
@@ -22265,6 +22806,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1938832309
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22420,6 +22962,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1946339332 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: cb1645d7e446f4747a27549ca852e638,
@@ -22485,6 +23028,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &1946491075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22814,6 +23358,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1994043237 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 400bc4e7d5af9a1488dd1a06c8c6e79e,
@@ -22833,6 +23378,69 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 10.999998, y: 0.08, z: 10.999998}
   m_Center: {x: 0, y: -0.03, z: 0.0000002384186}
+--- !u!1 &2007971620 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 109308, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811843734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &2007971621 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 482130, guid: 126d619cf4daa52469682f85c1378b4a,
+    type: 3}
+  m_PrefabInstance: {fileID: 1811843734}
+  m_PrefabAsset: {fileID: 0}
+--- !u!135 &2007971622
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007971620}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &2007971623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007971620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd425c2d06f39bf4899d07c05d0f10eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  grabBegin: 0.55
+  grabEnd: 0.35
+  m_parentHeldObject: 0
+  m_moveHandPosition: 0
+  m_gripTransform: {fileID: 2007971621}
+  m_grabVolumes:
+  - {fileID: 2007971622}
+  m_controller: 1
+  m_parentTransform: {fileID: 0}
+  m_player: {fileID: 0}
+--- !u!54 &2007971624
+Rigidbody:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2007971620}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 0
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!4 &2015583246 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 8d4a5e20dbd50a8419106e370e804d72,
@@ -22904,6 +23512,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &2018122054 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 4d71434f494150543a98b821f6d9d668,
@@ -22969,6 +23578,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &2019963761 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 6c93e7c4e7950b944893a5df705aba4d,
@@ -23652,6 +24262,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &2102782681
 GameObject:
   m_ObjectHideFlags: 0
@@ -23815,6 +24426,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1001 &2106255620
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23964,6 +24576,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &2117624526 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 831c4094843ca11458c8616bbad5f428,
@@ -24029,6 +24642,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!4 &2119543175 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 30980bbeda3b23847b5b1d16149ccab5,
@@ -24190,6 +24804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   turnmanagerMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
+  lastplayed: {fileID: 0}
 --- !u!1 &1041114801007922
 GameObject:
   m_ObjectHideFlags: 0
@@ -24830,7 +25445,7 @@ Transform:
   m_Children:
   - {fileID: 4352477810887410}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4108151761826448
 Transform:

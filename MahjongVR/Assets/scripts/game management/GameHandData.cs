@@ -12,4 +12,5 @@ public class GameHandData
 {
     public List<GameObject> playerchips;
     public List<GameObject> revealedchips;
+    public List<GameObject> temporaryrevealedchips;
 }

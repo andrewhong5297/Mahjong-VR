@@ -119,7 +119,7 @@ namespace OculusSampleFramework
 					break;
 			}
 		}
-		
+
 		private void SustainEventsOnDepth(InteractableCollisionDepth depth, InteractableTool collidingTool)
 		{
 			switch (depth)
