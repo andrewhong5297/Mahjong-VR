@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 //functions are shown in order they are called/state is moved
 //can we put clapping hands in as the dealer and to kind of bring life to AI?
@@ -8,9 +9,9 @@ public enum TurnManager { EASTTURN, SOUTHTURN, WESTTURN, NORTHTURN, START, WON, 
 
 public class ShuffleFinal : MonoBehaviour
 {
-	public int state = 0;
-	
-	public float tile_speed = 0.5f;
+	public int state;
+
+	public float tile_speed;
 	int i = 4; //counting tiles for moving/distributing in state 2. Starting from 4 to include tiles 0-3 in first group
 	GameObject setup_dist;
 	Tiles tile = new Tiles();
@@ -26,9 +27,12 @@ public class ShuffleFinal : MonoBehaviour
 
 	public GameHandData[] PlayerHands; //contains playerchips[]
 
+	public Text action;
+
 	// Start is called before the first frame update
 	void Awake()
 	{
+		action.text = "East Turn to start the game";
 		pai_obj = tile.GetTiles();
 		setup_dist = new GameObject("setup_dist"); //to deal tiles out in groups
 		
@@ -265,7 +269,6 @@ public class ShuffleFinal : MonoBehaviour
 			set_player_tiles(); //use this until movetiles is fixed
 			show_tiles();
 			state = 10;
-			GameObject button = pai_obj[0];
 		}
 
 		//below doesn't matter until movetiles is fixed

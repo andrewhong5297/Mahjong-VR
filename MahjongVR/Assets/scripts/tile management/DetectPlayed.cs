@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DetectPlayed : MonoBehaviour
 {
     public TurnManagerMJ turnmanagerMJ = new TurnManagerMJ();
     public ShuffleFinal hands = new ShuffleFinal();
+    public UpdateBoxManager scroll = new UpdateBoxManager();
+    
     public GameObject lastplayed;
+    public Text action;
 
     // Update is called once per frame
     void Update()
@@ -30,15 +34,16 @@ public class DetectPlayed : MonoBehaviour
     //may add option to sort by suit and value?
     private void OnTriggerEnter(Collider other)
     {
-        
 
         if (other.gameObject.tag == "PlayArea")
         {
+            action.text = action.text + "\n" + turnmanagerMJ.turn + "just played: " + name;
+            scroll.ScrollToBottom(); //this gets called after every text update
+
             gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, gameObject.transform.rotation.y, 0));
             
             hands.PlayerHands[4].playerchips.Add(gameObject);//move to center array
             hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips.Remove(gameObject);//remove from player array
-            Debug.Log(name + " was played");
 
             int handsize = hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips.Count; //size of hand to reorder
 
@@ -77,7 +82,6 @@ public class DetectPlayed : MonoBehaviour
                     hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[n].transform.rotation = hands.NorthRot;
                 }
             }
-            Debug.Log("reordered hand " + turnmanagerMJ.turn);
             turnmanagerMJ.TilePlayed(); //this goes last so that next tile dealed happens after tiles are moved
         }
     }

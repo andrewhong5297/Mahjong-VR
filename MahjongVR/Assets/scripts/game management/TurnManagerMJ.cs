@@ -9,7 +9,10 @@ public class TurnManagerMJ : MonoBehaviour
 {
     // Start is called before the first frame update
     public ShuffleFinal hands = new ShuffleFinal();
+    public UpdateBoxManager scroll = new UpdateBoxManager();
     public TurnManager turn;
+    public TurnManager previousturn;
+
     public int tile = 53; //start dealing from first tile not in hand
 
     #region boxes gameobjects
@@ -29,40 +32,118 @@ public class TurnManagerMJ : MonoBehaviour
     #endregion
 
     //will need an or function for right or left hand (x,y), or don't use rawbutton 
-    bool invokebutton, cancelbutton;
+    bool invokebutton, cancelbutton, invokegrab, invoketrigger, invokestick;
 
     //state of chow/pong/kong
     bool chow = false, pong = false, kong = false;
 
     void Start()
     {
-        //maybe setup game here using shuffle methods
-        turn = TurnManager.EASTTURN; //default always first player to start, will need to make it so east just plays a tile and doesn't get dealt one. Maybe freeze unfreeze all here.
+        //maybe setup game here using shuffle methods. Will need method to reset game? maybe a button?
+        //turn = TurnManager.EASTTURN;
     }
 
     private void Update()
     {
+
+        if(hands.state==10)
+        {
+            //checkmahjong test
+            hands.PlayerHands[0].playerchips.Clear();
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[4]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[1]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[2]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[0]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[4]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[5]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[6]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[7]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[8]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[9]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[19]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[29]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[40]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[49]);
+
+            CheckMahjong(true);
+            Debug.Log("checked");
+            hands.state = 11;
+        }
+
         if(chow || pong || kong)
         {
             invokebutton = OVRInput.GetDown(OVRInput.RawButton.A);
             cancelbutton = OVRInput.GetDown(OVRInput.RawButton.B);
+            invokegrab = OVRInput.GetDown(OVRInput.RawButton.RHandTrigger);
+            invoketrigger = OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger);
+            invokestick = OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown);
+            //need one more for if three are possible for chow ;-;
 
-            if(turn != TurnManager.EASTTURN)
+            if (turn != TurnManager.EASTTURN)
             {
                 invokebutton = true; //auto invoke if computer
+                invokegrab = true; //auto take first part of chow
             }
 
             //have a timer, if timer = 10 second, invoke NoTake() and set all three to false. Pong and Kong need a way of sending the turn back to original order. 
-            Debug.Log("Waiting for input... chow: " + chow + " pong: " + pong + " kong: " + kong);
-            action.text = "Waiting for input... chow: " + chow + " pong: " + pong + " kong: " + kong;
+            Debug.Log("Confirm | chow: " + chow + "| pong: " + pong + "| kong: " + kong);
+            action.text = action.text + "\nConfirm | chow: " + chow + " | pong: " + pong + " | kong: " + kong;
 
-            Debug.Log(invokebutton);
             if (invokebutton==true)
             {
                 if (chow)
                 {
-                    ButtonChow();
-                    chow = false;
+                    if (hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Count == 4)
+                    {
+                        if (invokegrab)
+                        {
+                            action.text = action.text + "\nConfirmed grab chow";
+                            //keep only index 0 and 1
+                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
+                            ButtonChow();
+                            chow = false;
+                        }
+                        else if(invoketrigger)
+                        {
+                            action.text = action.text + "\nConfirmed trigger chow";
+                            //keep only index 2 and 3
+                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
+                            ButtonChow();
+                            chow = false;
+                        }
+                    }
+                    else if (hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Count == 6)
+                    {
+                        if (invokegrab)
+                        {
+                            action.text = action.text + "\nConfirmed grab chow";
+                            //keep only index 0 and 1
+                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
+                            ButtonChow();
+                            chow = false;
+                        }
+                        else if (invoketrigger)
+                        {
+                            action.text = action.text + "\nConfirmed trigger chow";
+                            //keep only index 2 and 3
+                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
+                            ButtonChow();
+                            chow = false;
+                        }
+                        else if (invokestick)
+                        {
+                            action.text = action.text + "\nConfirmed stick chow";
+                            //keep only index 4 and 5
+                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(4, 2);
+                            ButtonChow();
+                            chow = false;
+                        }
+                    }
+                    else
+                    { 
+                        ButtonChow();
+                        chow = false;
+                    }
                 }
                 if (pong)
                 {
@@ -125,20 +206,226 @@ public class TurnManagerMJ : MonoBehaviour
 
     //I think these will need to be refactored into its own class 
     #region CheckAll 
-    bool CheckMahjong() //final boss!!!
+    void CheckMahjong(bool ondraw) //final boss!!! need to check for Mahjong on the drawtile too, just switch don't add and remove last played tile if ondraw = true
     {
-        bool avail = false;
-        for (int player = 0; player < 3; player++)
+        for (int player = 0; player < 4; player++)
         {
-            
-            hands.PlayerHands[player].playerchips.Add(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]);
+            Debug.Log("checking" + player);
+            bool avail = false;
+            bool pairtaken = false; //this is just so we don't take two or three pairs and accidently count a Mahjong. Refreshes for each player.
 
-            if (avail == false)
+            List<int> suitvalues = new List<int>();
+            List<GameObject> mahjongcheck = new List<GameObject>(); //list to store mahjongcheck hand just so it is easier to clear after if false
+            if (!ondraw)
             {
-                hands.PlayerHands[player].playerchips.Remove(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]);
+                mahjongcheck.Add(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]); //add last played tile if this check is not after dealtile()
             }
+            mahjongcheck.AddRange(hands.PlayerHands[player].playerchips);
+            List<GameObject> mahjongcheckmaster = new List<GameObject>();
+            mahjongcheckmaster.AddRange(mahjongcheck);
+
+            //moving melds and pairs out of mahjongcheck
+            foreach (GameObject random in mahjongcheckmaster) //store this in a seperate list, mahjongcheckmaster, and remove from mahjongcheck and check if it is exists in the mahjongcheck before running the loop.
+            {
+                if (mahjongcheck.Contains(random))
+                {
+                    suitvalues.Clear();
+                    Chip randomtile = random.GetComponent<Chip>();
+                    ChipSuit SuitRandomTile = randomtile.chipsuit;
+                    int ValueRandomTile = randomtile.chipvalue;
+
+                    //all possible tiles, used to make sure only first occurance of tile is picked up. 
+                    bool minusone = false;
+                    bool minustwo = false;
+                    bool plusone = false;
+                    bool plustwo = false;
+
+                    //filling suitvalues
+                    foreach (GameObject tile in mahjongcheck) //getting values in the same suit in an array
+                    {
+                        Chip Tile = tile.GetComponent<Chip>();
+                        if (Tile.chipsuit == SuitRandomTile)
+                        {
+                            int ValueTile = Tile.chipvalue;
+                            suitvalues.Add(ValueTile);
+                        }
+                    }
+                    suitvalues.Sort(); //see what max number in a row is, if we have 5 then just let algo do it's thing and rerun chow at the end. If it is 6 or 9 or 12 then remove all of them. 
+
+                    //Chow must be removed first. otherwise pair or pong could break it. 
+                    if (SuitRandomTile == ChipSuit.Winds || SuitRandomTile == ChipSuit.Dragons)
+                    {
+                        //don't check chow, do nothing 
+                    }
+                    else
+                    {
+                        //check chow, MUST only take first occurances of tile. Also check for a string, i.e. 3,6,9, or 12 tiles in a row and take all if true.
+
+                        if (suitvalues.Contains(ValueRandomTile - 1) && suitvalues.Contains(ValueRandomTile - 2))
+                        {
+                            minusone = false;
+                            minustwo = false;
+
+                            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+                            {
+                                Chip Tile = tile.GetComponent<Chip>();
+                                if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile - 1 && !minusone)
+                                {
+                                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                                    minusone = true;
+                                }
+
+                                if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile - 2 && !minustwo)
+                                {
+                                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                                    minustwo = true;
+                                }
+                            }
+                        }
+
+                        if (suitvalues.Contains(ValueRandomTile - 1) && suitvalues.Contains(ValueRandomTile + 1))
+                        {
+                            plusone = false;
+                            minusone = false;
+
+                            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+                            {
+                                Chip Tile = tile.GetComponent<Chip>();
+                                if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile - 1 && !minusone)
+                                {
+                                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                                    minusone = true;
+                                }
+
+                                if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile + 1 && !plusone)
+                                {
+                                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                                    plusone = true;
+                                }
+                            }
+                        }
+
+                        if (suitvalues.Contains(ValueRandomTile + 1) && suitvalues.Contains(ValueRandomTile + 2))
+                        {
+                            plusone = false;
+                            plustwo = false;
+
+                            foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+                            {
+                                Chip Tile = tile.GetComponent<Chip>();
+                                if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile + 2 && !plustwo)
+                                {
+                                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                                    plustwo = true;
+                                }
+
+                                if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile + 1 && !plusone)
+                                {
+                                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                                    plusone = true;
+                                }
+                            }
+                        }
+
+                        if (hands.PlayerHands[player].temporaryrevealedchips.Count == 2)
+                        {
+                            mahjongcheck.Remove(random); // remove the tile used as base. Only called if a single chow is found. 
+                            action.text = action.text + "\nRemoved chow " + random;
+                            foreach (GameObject tile in hands.PlayerHands[player].temporaryrevealedchips)
+                            {
+                                mahjongcheck.Remove(tile); //remove other tiles in chow
+                                action.text = action.text + "\nRemoved chow " + tile;
+                            }
+                        }
+                        hands.PlayerHands[player].temporaryrevealedchips.Clear();
+                    }
+
+                    int valuecount = 0;
+                    foreach (int x in suitvalues)
+                    {
+                        if (x == ValueRandomTile)
+                        {
+                            valuecount += 1;
+                        }
+                    }
+                    action.text = action.text + "\n Tile " + random + " pair/pong/kong count: " + valuecount;
+
+                    //remove pair if valuecount = 2 and this is first pair to be taken.
+                    if (valuecount == 2 && pairtaken == false)
+                    {
+                        foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+                        {
+                            Chip Tile = tile.GetComponent<Chip>();
+                            if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile)
+                            {
+                                mahjongcheck.Remove(tile);
+                                action.text = action.text + "\nRemoved pair " + tile;
+                            }
+                        }
+                        pairtaken = true;
+                    }
+
+                    //remove concealed pong if valuecount = 3
+                    if (valuecount == 3)
+                    {
+                        foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+                        {
+                            Chip Tile = tile.GetComponent<Chip>();
+                            if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile)
+                            {
+                                mahjongcheck.Remove(tile);
+                                action.text = action.text + "\nRemoved pong " + tile;
+                            }
+                        }
+                    }
+
+                    //remove concealed kong if valuecount = 4
+                    if (valuecount == 4)
+                    {
+                        foreach (GameObject tile in hands.PlayerHands[player].playerchips)
+                        {
+                            Chip Tile = tile.GetComponent<Chip>();
+                            if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile)
+                            {
+                                mahjongcheck.Remove(tile);
+                                action.text = action.text + "\nRemoved kong " + tile;
+                            }
+                        }
+                    }
+                }
+            }
+
+            //if mahjongcheck size is 0, that means that all tiles are in a pair or a meld.
+            if (mahjongcheck.Count == 0)
+            {
+                avail = true; //Mahjong!!!
+            }
+
+            if (avail == true)
+            {
+                if (player == PlayerConvNumber(TurnManager.EASTTURN))
+                {
+                    turn = TurnManager.WON;
+                    //enable a seperate textbox later
+                    action.text = action.text + "\nYou Win! :)";
+                    //won UI and sound
+                    //move temporaryreveal into reveal, then revealedchips.transform.LookAt(PlayArea);
+                    return;
+                }
+                else
+                {
+                    turn = TurnManager.LOST;
+                    //enable a seperate textbox later
+                    action.text = action.text + "\nYou Lose! :(";
+                    //lost UI and sound
+                    return;
+                }
+            }
+
+            action.text = action.text + "\n" + NumberConvPlayer(player) + " has tiles left until mahjong: " + mahjongcheck.Count();
+            mahjongcheck.Clear();
+            mahjongcheckmaster.Clear();
         }
-        return avail;
     }
 
     bool CheckChow(int player)
@@ -149,9 +436,14 @@ public class TurnManagerMJ : MonoBehaviour
         bool twolower = false;
         bool twohigher = false;
 
+        //all possible tiles, used to make sure only first occurance of tile is picked up. 
+        bool minusone = false;
+        bool minustwo = false;
+        bool plusone = false;
+        bool plustwo = false;
+
         GameObject lastplayed = hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1];
         List<int> suitvalues = new List<int>();
-
         Chip PlayedTile = lastplayed.GetComponent<Chip>();
         ChipSuit SuitPlayedTile = PlayedTile.chipsuit;
         int ValuePlayedTile = PlayedTile.chipvalue;
@@ -176,12 +468,22 @@ public class TurnManagerMJ : MonoBehaviour
         {
             twolower = true;
             ChowAvail = true;
+            minusone = false;
+            minustwo = false; 
+
             foreach (GameObject tile in hands.PlayerHands[player].playerchips)
             {
                 Chip Tile = tile.GetComponent<Chip>();
-                if (Tile.chipsuit == SuitPlayedTile && (Tile.chipvalue == ValuePlayedTile - 1 || Tile.chipvalue == ValuePlayedTile - 2))
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile - 1 && !minusone) 
                 {
                     hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                    minusone = true;
+                }
+
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile - 2 && !minustwo)
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                    minustwo = true;
                 }
             }
         }
@@ -190,12 +492,22 @@ public class TurnManagerMJ : MonoBehaviour
         {
             twosides = true;
             ChowAvail = true;
+            plusone = false;
+            minusone = false;
+
             foreach (GameObject tile in hands.PlayerHands[player].playerchips)
             {
                 Chip Tile = tile.GetComponent<Chip>();
-                if (Tile.chipsuit == SuitPlayedTile && (Tile.chipvalue == ValuePlayedTile - 1 || Tile.chipvalue == ValuePlayedTile + 2))
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile - 1 && !minusone)
                 {
                     hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                    minusone = true;
+                }
+
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile + 1 && !plusone)
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                    plusone = true;
                 }
             }
         }
@@ -204,18 +516,26 @@ public class TurnManagerMJ : MonoBehaviour
         {
             twohigher = true;
             ChowAvail = true;
+            plusone = false;
+            plustwo = false;
+
             foreach (GameObject tile in hands.PlayerHands[player].playerchips)
             {
                 Chip Tile = tile.GetComponent<Chip>();
-                if (Tile.chipsuit == SuitPlayedTile && (Tile.chipvalue == ValuePlayedTile + 1 || Tile.chipvalue == ValuePlayedTile + 2))
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile + 2 && !plustwo)
                 {
                     hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                    plustwo = true;
+                }
+
+                if (Tile.chipsuit == SuitPlayedTile && Tile.chipvalue == ValuePlayedTile + 1 && !plusone)
+                {
+                    hands.PlayerHands[player].temporaryrevealedchips.Add(tile);
+                    plusone = true;
                 }
             }
         }
 
-        //sort suitvalues
-        //Check for three consecutive values -> sort, then remove duplicates. Then check if there are three one's in a row when a difference is taken. 
         if (ChowAvail)
         {
             Debug.Log("Can Chow of type twolower: " + twolower + " twohigher: " + twohigher + " twosides: " + twosides);
@@ -255,7 +575,6 @@ public class TurnManagerMJ : MonoBehaviour
                 valuecount += 1;
             }
         }
-        Debug.Log("Count of same tile for player " +player + ": " + valuecount);
         if(valuecount == 2) //two of the same tile
         {
             PongAvail = true;
@@ -366,26 +685,30 @@ public class TurnManagerMJ : MonoBehaviour
             hands.PlayerHands[player].playerchips.Remove(tile);
         }
         hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count-1].transform.position = PlayerConvRemoveBox(turn).transform.position; //move taken tile out of middle
+        hands.PlayerHands[player].revealedchips.Add(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]); //add taken tile to revealchips array
         hands.PlayerHands[player].temporaryrevealedchips.Clear(); //clear temp after done
         //will want to make this drop more organized later
-        //happens before discard tile, so these won't be pulled back in
+        
+        //function takes in chow to decide whether to further filter what gets removed. 
     }
 
     #region buttons
     public void NoTake()
     {
-        //how do we send back a turn?
-        Debug.Log("Didn't Take");
-        action.text = "Didn't Take";
+        turn = previousturn; //sends to the supposed next player
+        action.text = action.text + "\nDidn't Take going to " + turn;
+        scroll.ScrollToBottom(); //this gets called after every text update
+
         hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
         StartCoroutine(Turn(0, PlayerConvNumber(turn)));
     }
 
     public void ButtonChow()
     {
-        Debug.Log("Chow!");
-        action.text = "Chow!";
-        //need something here to choose which chow if there are multiple
+        action.text = action.text + "\n" + turn + " Chow!";
+        scroll.ScrollToBottom(); //this gets called after every text update
+
+        //need something here to choose which chow if there are multiple hmmm
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(1, PlayerConvNumber(turn)));
         return;
@@ -393,8 +716,9 @@ public class TurnManagerMJ : MonoBehaviour
 
     public void ButtonPong()
     {
-        Debug.Log("Pong!");
-        action.text = "Pong!";
+        action.text = action.text + "\n" + turn + " Pong!";
+        scroll.ScrollToBottom(); //this gets called after every text update
+
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(1, PlayerConvNumber(turn)));
         return;
@@ -402,8 +726,9 @@ public class TurnManagerMJ : MonoBehaviour
 
     public void ButtonKong()
     {
-        Debug.Log("Kong!");
-        action.text = "Kong!";
+        action.text = action.text + "\n" + turn + " Kong!";
+        scroll.ScrollToBottom(); //this gets called after every text update
+
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(0, PlayerConvNumber(turn))); //Kong requires a draw tile
         return;
@@ -494,22 +819,16 @@ public class TurnManagerMJ : MonoBehaviour
 
     public void TilePlayed()
     {
-        Debug.Log("Tile was played, now assessing for chow, pong, or kong");
         List<TurnManager> turnArray = Enum.GetValues(typeof(TurnManager)).Cast<TurnManager>().ToList();
         int playerTurn = 0;
         int playerNext = 1;
+
+        CheckMahjong(false); //turn will be changed so that the bottom loop doesn't do anything
 
         while (playerTurn < 4)
         {
             if (turn == turnArray[playerTurn])
             {
-                /*
-                if(playerNext!=0)
-                {
-                    invokebutton = true; //autoinvoke button press for non-east player
-                }
-                */
-
                 int interruptTurn = CheckPongKongForAllPlayers(); //this will assign a turn if pong/kong is available
 
                 if (turn == NumberConvPlayer(interruptTurn))
@@ -520,6 +839,12 @@ public class TurnManagerMJ : MonoBehaviour
                 if (interruptTurn != 5) //5 is default return for no players have avail
                 {
                     Debug.Log("turn interrupted to: " + NumberConvPlayer(interruptTurn));
+                    int nextturn = playerNext;
+                    if(nextturn == 4)
+                    {
+                        nextturn = 0; //setting east to loop
+                    }
+                    previousturn = turnArray[nextturn]; //save who the nextturn should be
                     turn = NumberConvPlayer(interruptTurn);
                     pong = true; //going to need way to set turn backwards if invoke is no. Also how to set OVRInput to each player?
                     return;
@@ -553,7 +878,6 @@ public class TurnManagerMJ : MonoBehaviour
     IEnumerator Turn(int interruption, int player)
     {
         //UI shift text, timer start, etc. 
-        action.text = "no actions";
 
         if (interruption == 0)
         {
@@ -561,15 +885,24 @@ public class TurnManagerMJ : MonoBehaviour
             tile += 1;
         }
 
-        //if(CheckMahjong) { Debug.Log(player + " has won!"); Win(player); the function which displays TurnManager.WIN to player if player = 0 and LOST if not. 
-        Debug.Log("Currently " + NumberConvPlayer(player) + " Turn");
-        
-        if(player != 0) //AI code, lowest level random discard and invoke all
+        CheckMahjong(true); //will check all players but only current player has 14 tiles. mathematically other players cannot mahjong. 
+
+        if (player != 0) //AI code, lowest level random discard and invoke all
         {
-            yield return new WaitForSeconds(2f);//computer delay
+            yield return new WaitForSeconds(1f);//computer delay
             GameObject discardtile = hands.PlayerHands[player].playerchips[UnityEngine.Random.Range(0, hands.PlayerHands[player].playerchips.Count - 1)];
             Debug.Log(NumberConvPlayer(player) + " has played " + discardtile);
             discardtile.transform.position = PlayerConvDiscardBox(turn).transform.position;
+            yield break;
         }
+
+        //action.text = action.text + "\n30 seconds to play!"; //need seperate UI element later
+
+        //HOW TO RESET COUNTDOWN, since this is invoking too quickly if player doesn't take up full 30 seconds
+
+        //yield return new WaitForSeconds(30f);//human only has 10 seconds to play
+        //GameObject discardtileplayer = hands.PlayerHands[player].playerchips[UnityEngine.Random.Range(0, hands.PlayerHands[player].playerchips.Count - 1)];
+        //Debug.Log(NumberConvPlayer(player) + " has played " + discardtileplayer);
+        //discardtileplayer.transform.position = PlayerConvDiscardBox(turn).transform.position;
     }
 }
