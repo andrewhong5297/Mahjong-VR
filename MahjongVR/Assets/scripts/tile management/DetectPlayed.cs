@@ -82,7 +82,6 @@ public class DetectPlayed : MonoBehaviour
                     hands.PlayerHands[turnmanagerMJ.PlayerConvNumber(turnmanagerMJ.turn)].playerchips[n].transform.rotation = hands.NorthRot;
                 }
             }
-            
             turnmanagerMJ.TilePlayed(); //this goes last so that next tile dealed happens after tiles are moved
         }
     }
