@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 98
+  controlID: 153
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 126
+  controlID: 42
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 127
+  controlID: 43
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 159
+  controlID: 110
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -450,7 +450,7 @@ MonoBehaviour:
   m_Position:
     m_Target: {x: -0.018747985, y: -0.04492588, z: -0.55116457}
     speed: 2
-    m_Value: {x: 0.08009964, y: 0.2131179, z: 0.37249386}
+    m_Value: {x: -0.018747985, y: -0.04492588, z: -0.55116457}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -498,11 +498,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: 0.16758958, y: 0.0020077045, z: 0.0006246929, w: 0.98625475}
     speed: 2
-    m_Value: {x: -0.13495013, y: -0.007862593, z: 0.00074528623, w: -0.99118906}
+    m_Value: {x: -0.16758959, y: -0.0020077045, z: -0.00062469294, w: -0.9862548}
   m_Size:
     m_Target: 2.0789754
     speed: 2
-    m_Value: 1.7789755
+    m_Value: 2.0789754
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -582,9 +582,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 504f0000
-      m_LastClickedID: 20304
-      m_ExpandedIDs: d6f7ffff44fbffff
+      m_SelectedIDs: 203e0000
+      m_LastClickedID: 15904
+      m_ExpandedIDs: 44fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -647,20 +647,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Scenes
+    - Assets/scripts
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Scenes
+  - Assets/scripts
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Andrew\Documents\Unity Projects\Mahjong-VR\MahjongVR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: a2470000
-    m_LastClickedID: 18338
-    m_ExpandedIDs: 00000000b8440000ba440000bc440000be440000c0440000c2440000c4440000c6440000c8440000ca440000cc440000ce44000000ca9a3b
+    m_SelectedIDs: f0460000
+    m_LastClickedID: 18160
+    m_ExpandedIDs: 00000000084400000a4400000c4400000e44000010440000124400001444000016440000184400001a4400001c4400001e440000f046000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -688,7 +688,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000b8440000ba440000bc440000be440000c0440000c2440000c4440000c6440000c8440000ca440000cc440000ce440000
+    m_ExpandedIDs: 00000000084400000a4400000c4400000e44000010440000124400001444000016440000184400001a4400001c4400001e440000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
