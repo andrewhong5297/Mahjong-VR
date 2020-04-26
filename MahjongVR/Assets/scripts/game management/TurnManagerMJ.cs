@@ -9,7 +9,6 @@ public class TurnManagerMJ : MonoBehaviour
 {
     // Start is called before the first frame update
     public ShuffleFinal hands = new ShuffleFinal();
-    public UpdateBoxManager scroll = new UpdateBoxManager();
     public TurnManager turn;
     public TurnManager previousturn;
 
@@ -40,20 +39,20 @@ public class TurnManagerMJ : MonoBehaviour
     void Start()
     {
         //maybe setup game here using shuffle methods. Will need method to reset game? maybe a button?
-        //turn = TurnManager.EASTTURN;
+        turn = TurnManager.EASTTURN;
     }
 
     private void Update()
     {
-
-        if(hands.state==10)
+        //for testing only 
+        if(hands.state==11)
         {
             //checkmahjong test
             hands.PlayerHands[0].playerchips.Clear();
-            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[4]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[0]);
             hands.PlayerHands[0].playerchips.Add(hands.pai_obj[1]);
             hands.PlayerHands[0].playerchips.Add(hands.pai_obj[2]);
-            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[0]);
+            hands.PlayerHands[0].playerchips.Add(hands.pai_obj[3]);
             hands.PlayerHands[0].playerchips.Add(hands.pai_obj[4]);
             hands.PlayerHands[0].playerchips.Add(hands.pai_obj[5]);
             hands.PlayerHands[0].playerchips.Add(hands.pai_obj[6]);
@@ -330,11 +329,11 @@ public class TurnManagerMJ : MonoBehaviour
                         if (hands.PlayerHands[player].temporaryrevealedchips.Count == 2)
                         {
                             mahjongcheck.Remove(random); // remove the tile used as base. Only called if a single chow is found. 
-                            action.text = action.text + "\nRemoved chow " + random;
+                            //action.text = action.text + "\nRemoved chow " + random;
                             foreach (GameObject tile in hands.PlayerHands[player].temporaryrevealedchips)
                             {
                                 mahjongcheck.Remove(tile); //remove other tiles in chow
-                                action.text = action.text + "\nRemoved chow " + tile;
+                                //action.text = action.text + "\nRemoved chow " + tile;
                             }
                         }
                         hands.PlayerHands[player].temporaryrevealedchips.Clear();
@@ -348,7 +347,6 @@ public class TurnManagerMJ : MonoBehaviour
                             valuecount += 1;
                         }
                     }
-                    action.text = action.text + "\n Tile " + random + " pair/pong/kong count: " + valuecount;
 
                     //remove pair if valuecount = 2 and this is first pair to be taken.
                     if (valuecount == 2 && pairtaken == false)
@@ -359,7 +357,7 @@ public class TurnManagerMJ : MonoBehaviour
                             if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile)
                             {
                                 mahjongcheck.Remove(tile);
-                                action.text = action.text + "\nRemoved pair " + tile;
+                                //action.text = action.text + "\nRemoved pair " + tile;
                             }
                         }
                         pairtaken = true;
@@ -697,7 +695,6 @@ public class TurnManagerMJ : MonoBehaviour
     {
         turn = previousturn; //sends to the supposed next player
         action.text = action.text + "\nDidn't Take going to " + turn;
-        scroll.ScrollToBottom(); //this gets called after every text update
 
         hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
         StartCoroutine(Turn(0, PlayerConvNumber(turn)));
@@ -706,7 +703,6 @@ public class TurnManagerMJ : MonoBehaviour
     public void ButtonChow()
     {
         action.text = action.text + "\n" + turn + " Chow!";
-        scroll.ScrollToBottom(); //this gets called after every text update
 
         //need something here to choose which chow if there are multiple hmmm
         RemoveFromHand(PlayerConvNumber(turn));
@@ -717,7 +713,6 @@ public class TurnManagerMJ : MonoBehaviour
     public void ButtonPong()
     {
         action.text = action.text + "\n" + turn + " Pong!";
-        scroll.ScrollToBottom(); //this gets called after every text update
 
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(1, PlayerConvNumber(turn)));
@@ -727,8 +722,6 @@ public class TurnManagerMJ : MonoBehaviour
     public void ButtonKong()
     {
         action.text = action.text + "\n" + turn + " Kong!";
-        scroll.ScrollToBottom(); //this gets called after every text update
-
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(0, PlayerConvNumber(turn))); //Kong requires a draw tile
         return;

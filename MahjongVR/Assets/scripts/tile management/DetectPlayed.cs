@@ -7,7 +7,6 @@ public class DetectPlayed : MonoBehaviour
 {
     public TurnManagerMJ turnmanagerMJ = new TurnManagerMJ();
     public ShuffleFinal hands = new ShuffleFinal();
-    public UpdateBoxManager scroll = new UpdateBoxManager();
     
     public GameObject lastplayed;
     public Text action;
@@ -38,7 +37,6 @@ public class DetectPlayed : MonoBehaviour
         if (other.gameObject.tag == "PlayArea")
         {
             action.text = action.text + "\n" + turnmanagerMJ.turn + "just played: " + name;
-            scroll.ScrollToBottom(); //this gets called after every text update
 
             gameObject.transform.rotation = Quaternion.Euler(new Vector3(0, gameObject.transform.rotation.y, 0));
             
