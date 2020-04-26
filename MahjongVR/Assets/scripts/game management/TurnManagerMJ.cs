@@ -100,7 +100,6 @@ public class TurnManagerMJ : MonoBehaviour
                             //keep only index 0 and 1
                             hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
                             ButtonChow();
-                            chow = false;
                         }
                         else if(invoketrigger)
                         {
@@ -108,7 +107,6 @@ public class TurnManagerMJ : MonoBehaviour
                             //keep only index 2 and 3
                             hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
                             ButtonChow();
-                            chow = false;
                         }
                     }
                     else if (hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Count == 6)
@@ -119,7 +117,6 @@ public class TurnManagerMJ : MonoBehaviour
                             //keep only index 0 and 1
                             hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
                             ButtonChow();
-                            chow = false;
                         }
                         else if (invoketrigger)
                         {
@@ -127,7 +124,6 @@ public class TurnManagerMJ : MonoBehaviour
                             //keep only index 2 and 3
                             hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
                             ButtonChow();
-                            chow = false;
                         }
                         else if (invokestick)
                         {
@@ -135,32 +131,25 @@ public class TurnManagerMJ : MonoBehaviour
                             //keep only index 4 and 5
                             hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(4, 2);
                             ButtonChow();
-                            chow = false;
                         }
                     }
                     else
                     { 
                         ButtonChow();
-                        chow = false;
                     }
                 }
                 if (pong)
                 {
                     ButtonPong();
-                    pong = false;
                 }
                 if (kong)
                 {
                     ButtonKong();
-                    kong = false;
                 }
             }
             if(cancelbutton==true)
             {
                 NoTake();
-                chow = false;
-                kong = false;
-                pong = false;
             }
         }
     }
@@ -372,7 +361,7 @@ public class TurnManagerMJ : MonoBehaviour
                             if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile)
                             {
                                 mahjongcheck.Remove(tile);
-                                action.text = action.text + "\nRemoved pong " + tile;
+                                //action.text = action.text + "\nRemoved pong " + tile;
                             }
                         }
                     }
@@ -386,7 +375,7 @@ public class TurnManagerMJ : MonoBehaviour
                             if (Tile.chipsuit == SuitRandomTile && Tile.chipvalue == ValueRandomTile)
                             {
                                 mahjongcheck.Remove(tile);
-                                action.text = action.text + "\nRemoved kong " + tile;
+                                //action.text = action.text + "\nRemoved kong " + tile;
                             }
                         }
                     }
@@ -420,7 +409,7 @@ public class TurnManagerMJ : MonoBehaviour
                 }
             }
 
-            action.text = action.text + "\n" + NumberConvPlayer(player) + " has tiles left until mahjong: " + mahjongcheck.Count();
+            //action.text = action.text + "\n" + NumberConvPlayer(player) + " has tiles left until mahjong: " + mahjongcheck.Count();
             mahjongcheck.Clear();
             mahjongcheckmaster.Clear();
         }
@@ -693,9 +682,15 @@ public class TurnManagerMJ : MonoBehaviour
     #region buttons
     public void NoTake()
     {
-        turn = previousturn; //sends to the supposed next player
+        if (pong || kong)
+        {
+            turn = previousturn; //sends to the supposed next player
+        }
         action.text = action.text + "\nDidn't Take going to " + turn;
 
+        chow = false;
+        kong = false;
+        pong = false;
         hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
         StartCoroutine(Turn(0, PlayerConvNumber(turn)));
     }
@@ -703,6 +698,7 @@ public class TurnManagerMJ : MonoBehaviour
     public void ButtonChow()
     {
         action.text = action.text + "\n" + turn + " Chow!";
+        chow = false;
 
         //need something here to choose which chow if there are multiple hmmm
         RemoveFromHand(PlayerConvNumber(turn));
@@ -713,6 +709,7 @@ public class TurnManagerMJ : MonoBehaviour
     public void ButtonPong()
     {
         action.text = action.text + "\n" + turn + " Pong!";
+        pong = false;
 
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(1, PlayerConvNumber(turn)));
@@ -722,6 +719,8 @@ public class TurnManagerMJ : MonoBehaviour
     public void ButtonKong()
     {
         action.text = action.text + "\n" + turn + " Kong!";
+        kong = false;
+
         RemoveFromHand(PlayerConvNumber(turn));
         StartCoroutine(Turn(0, PlayerConvNumber(turn))); //Kong requires a draw tile
         return;
