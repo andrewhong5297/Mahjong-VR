@@ -44,7 +44,7 @@ public class TurnManagerMJ : MonoBehaviour
 
     private void Update()
     {
-
+        //for testing only 
         if(hands.state==11)
         {
             //checkmahjong test
