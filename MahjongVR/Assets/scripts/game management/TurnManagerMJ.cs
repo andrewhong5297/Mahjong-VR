@@ -669,14 +669,13 @@ public class TurnManagerMJ : MonoBehaviour
         {
             tile.transform.position = PlayerConvRemoveBox(turn).transform.position;
             hands.PlayerHands[player].revealedchips.Add(tile);
-            hands.PlayerHands[player].playerchips.Remove(tile);
+            hands.PlayerHands[player].playerchips.Remove(tile); 
         }
         hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count-1].transform.position = PlayerConvRemoveBox(turn).transform.position; //move taken tile out of middle
         hands.PlayerHands[player].revealedchips.Add(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]); //add taken tile to revealchips array
         hands.PlayerHands[player].temporaryrevealedchips.Clear(); //clear temp after done
-        //will want to make this drop more organized later
         
-        //function takes in chow to decide whether to further filter what gets removed. 
+        //will want to make this drop more organized in the box later
     }
 
     #region buttons
