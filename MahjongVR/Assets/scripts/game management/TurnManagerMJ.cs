@@ -9,26 +9,13 @@ public class TurnManagerMJ : MonoBehaviour
 {
     // Start is called before the first frame update
     public ShuffleFinal hands = new ShuffleFinal();
+    public Converters convert = new Converters();
     public TurnManager turn;
     public TurnManager previousturn;
 
     public int tile = 53; //start dealing from first tile not in hand
 
-    #region boxes gameobjects
-    public GameObject discardeast;
-    public GameObject discardsouth;
-    public GameObject discardwest;
-    public GameObject discardnorth;
-
-    public GameObject removeeast;
-    public GameObject removesouth;
-    public GameObject removewest;
-    public GameObject removenorth;
-    #endregion
-
-    #region UI
-    public Text action;
-    #endregion
+    public Text action; 
 
     //will need an or function for right or left hand (x,y), or don't use rawbutton 
     bool invokebutton, cancelbutton, invokegrab, invoketrigger, invokestick;
@@ -92,44 +79,44 @@ public class TurnManagerMJ : MonoBehaviour
             {
                 if (chow)
                 {
-                    if (hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Count == 4)
+                    if (hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.Count == 4)
                     {
                         if (invokegrab)
                         {
                             action.text = action.text + "\nConfirmed grab chow";
                             //keep only index 0 and 1
-                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
+                            hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
                             ButtonChow();
                         }
                         else if(invoketrigger)
                         {
                             action.text = action.text + "\nConfirmed trigger chow";
                             //keep only index 2 and 3
-                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
+                            hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
                             ButtonChow();
                         }
                     }
-                    else if (hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Count == 6)
+                    else if (hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.Count == 6)
                     {
                         if (invokegrab)
                         {
                             action.text = action.text + "\nConfirmed grab chow";
                             //keep only index 0 and 1
-                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
+                            hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(0, 2);
                             ButtonChow();
                         }
                         else if (invoketrigger)
                         {
                             action.text = action.text + "\nConfirmed trigger chow";
                             //keep only index 2 and 3
-                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
+                            hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(2, 2);
                             ButtonChow();
                         }
                         else if (invokestick)
                         {
                             action.text = action.text + "\nConfirmed stick chow";
                             //keep only index 4 and 5
-                            hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(4, 2);
+                            hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(4, 2);
                             ButtonChow();
                         }
                     }
@@ -390,7 +377,7 @@ public class TurnManagerMJ : MonoBehaviour
 
             if (avail == true)
             {
-                if (player == PlayerConvNumber(TurnManager.EASTTURN))
+                if (player == convert.PlayerConvNumber(TurnManager.EASTTURN))
                 {
                     turn = TurnManager.WON;
                     //enable a seperate textbox later
@@ -667,11 +654,11 @@ public class TurnManagerMJ : MonoBehaviour
         movetiles.AddRange(hands.PlayerHands[player].temporaryrevealedchips);
         foreach (GameObject tile in movetiles)
         {
-            tile.transform.position = PlayerConvRemoveBox(turn).transform.position;
+            tile.transform.position = convert.PlayerConvRemoveBox(turn).transform.position;
             hands.PlayerHands[player].revealedchips.Add(tile);
             hands.PlayerHands[player].playerchips.Remove(tile); 
         }
-        hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count-1].transform.position = PlayerConvRemoveBox(turn).transform.position; //move taken tile out of middle
+        hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count-1].transform.position = convert.PlayerConvRemoveBox(turn).transform.position; //move taken tile out of middle
         hands.PlayerHands[player].revealedchips.Add(hands.PlayerHands[4].playerchips[hands.PlayerHands[4].playerchips.Count - 1]); //add taken tile to revealchips array
         hands.PlayerHands[player].temporaryrevealedchips.Clear(); //clear temp after done
         
@@ -690,8 +677,8 @@ public class TurnManagerMJ : MonoBehaviour
         chow = false;
         kong = false;
         pong = false;
-        hands.PlayerHands[PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
-        StartCoroutine(Turn(0, PlayerConvNumber(turn)));
+        hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
+        StartCoroutine(Turn(0, convert.PlayerConvNumber(turn)));
     }
 
     public void ButtonChow()
@@ -700,8 +687,8 @@ public class TurnManagerMJ : MonoBehaviour
         chow = false;
 
         //need something here to choose which chow if there are multiple hmmm
-        RemoveFromHand(PlayerConvNumber(turn));
-        StartCoroutine(Turn(1, PlayerConvNumber(turn)));
+        RemoveFromHand(convert.PlayerConvNumber(turn));
+        StartCoroutine(Turn(1, convert.PlayerConvNumber(turn)));
         return;
     }
 
@@ -710,8 +697,8 @@ public class TurnManagerMJ : MonoBehaviour
         action.text = action.text + "\n" + turn + " Pong!";
         pong = false;
 
-        RemoveFromHand(PlayerConvNumber(turn));
-        StartCoroutine(Turn(1, PlayerConvNumber(turn)));
+        RemoveFromHand(convert.PlayerConvNumber(turn));
+        StartCoroutine(Turn(1, convert.PlayerConvNumber(turn)));
         return;
     }
 
@@ -720,93 +707,11 @@ public class TurnManagerMJ : MonoBehaviour
         action.text = action.text + "\n" + turn + " Kong!";
         kong = false;
 
-        RemoveFromHand(PlayerConvNumber(turn));
-        StartCoroutine(Turn(0, PlayerConvNumber(turn))); //Kong requires a draw tile
+        RemoveFromHand(convert.PlayerConvNumber(turn));
+        StartCoroutine(Turn(0, convert.PlayerConvNumber(turn))); //Kong requires a draw tile
         return;
     }
     #endregion
-
-    //converter methods
-    public int PlayerConvNumber(TurnManager turn)
-    {
-        if (turn == TurnManager.EASTTURN)
-        {
-            return 0;
-        }
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            return 1;
-        }
-        if (turn == TurnManager.WESTTURN)
-        {
-            return 2;
-        }
-        if (turn == TurnManager.NORTHTURN)
-        {
-            return 3;
-        }
-        return 0; //will never return this
-    }
-    public TurnManager NumberConvPlayer(int input)
-    {
-        if (input == 0)
-        {
-            return TurnManager.EASTTURN;
-        }
-        if (input == 1)
-        {
-            return TurnManager.SOUTHTURN;
-        }
-        if (input == 2)
-        {
-            return TurnManager.WESTTURN;
-        }
-        if (input == 3)
-        {
-            return TurnManager.NORTHTURN;
-        }
-        return TurnManager.EASTTURN; //will never return this
-    }
-    public GameObject PlayerConvRemoveBox(TurnManager turn)
-    {
-        if (turn == TurnManager.EASTTURN)
-        {
-            return removeeast;
-        }
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            return removesouth;
-        }
-        if (turn == TurnManager.WESTTURN)
-        {
-            return removewest;
-        }
-        if (turn == TurnManager.NORTHTURN)
-        {
-            return removenorth;
-        }
-        return removeeast; //will never return this
-    }
-    public GameObject PlayerConvDiscardBox(TurnManager turn)
-    {
-        if (turn == TurnManager.EASTTURN)
-        {
-            return discardeast;
-        }
-        if (turn == TurnManager.SOUTHTURN)
-        {
-            return discardsouth;
-        }
-        if (turn == TurnManager.WESTTURN)
-        {
-            return discardwest;
-        }
-        if (turn == TurnManager.NORTHTURN)
-        {
-            return discardnorth;
-        }
-        return removeeast; //will never return this
-    }
 
     public void TilePlayed()
     {
@@ -822,21 +727,21 @@ public class TurnManagerMJ : MonoBehaviour
             {
                 int interruptTurn = CheckPongKongForAllPlayers(); //this will assign a turn if pong/kong is available
 
-                if (turn == NumberConvPlayer(interruptTurn))
+                if (turn == convert.NumberConvPlayer(interruptTurn))
                 {
                     interruptTurn = 5; //make sure you can't pong a tile you just played lmao
                 }
 
                 if (interruptTurn != 5) //5 is default return for no players have avail
                 {
-                    Debug.Log("turn interrupted to: " + NumberConvPlayer(interruptTurn));
+                    Debug.Log("turn interrupted to: " + convert.NumberConvPlayer(interruptTurn));
                     int nextturn = playerNext;
                     if(nextturn == 4)
                     {
                         nextturn = 0; //setting east to loop
                     }
                     previousturn = turnArray[nextturn]; //save who the nextturn should be
-                    turn = NumberConvPlayer(interruptTurn);
+                    turn = convert.NumberConvPlayer(interruptTurn);
                     pong = true; //going to need way to set turn backwards if invoke is no. Also how to set OVRInput to each player?
                     return;
                 }
@@ -882,8 +787,8 @@ public class TurnManagerMJ : MonoBehaviour
         {
             yield return new WaitForSeconds(1f);//computer delay
             GameObject discardtile = hands.PlayerHands[player].playerchips[UnityEngine.Random.Range(0, hands.PlayerHands[player].playerchips.Count - 1)];
-            Debug.Log(NumberConvPlayer(player) + " has played " + discardtile);
-            discardtile.transform.position = PlayerConvDiscardBox(turn).transform.position;
+            Debug.Log(convert.NumberConvPlayer(player) + " has played " + discardtile);
+            discardtile.transform.position = convert.PlayerConvDiscardBox(turn).transform.position;
             yield break;
         }
 

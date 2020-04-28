@@ -22,7 +22,7 @@ public class ShuffleFinal : MonoBehaviour
 	//for show rotation
 	public Quaternion EastRot = Quaternion.Euler(new Vector3(90f, 180f, 0));
 	public Quaternion SouthRot = Quaternion.Euler(new Vector3(90f, 0, -90f));
-	public Quaternion WestRot = Quaternion.Euler(new Vector3(90f,-180f, 0));
+	public Quaternion WestRot = Quaternion.Euler(new Vector3(90f, -180f, 0));
 	public Quaternion NorthRot = Quaternion.Euler(new Vector3(90f, 0, 90f));
 
 	public GameHandData[] PlayerHands; //contains playerchips[]
@@ -35,15 +35,15 @@ public class ShuffleFinal : MonoBehaviour
 		action.text = "East Turn to start the game";
 		pai_obj = tile.GetTiles();
 		setup_dist = new GameObject("setup_dist"); //to deal tiles out in groups
-		
+
 		GameObject table = GameObject.Find("table");
 		BoxCollider table_collider = table.GetComponent<BoxCollider>();
-		length_table = table_collider.size.x/35f; //change the divide to adjust positioning of tiles if scale was changed
+		length_table = table_collider.size.x / 35f; //change the divide to adjust positioning of tiles if scale was changed
 
 		GameObject tile2 = GameObject.Find("psouzu_5"); //random tile to get size
 		BoxCollider tile_collider = tile2.GetComponent<BoxCollider>();
-		length_tile = tile_collider.size.x/10f;
-		height_tile = tile_collider.size.y/10f *0.6f;
+		length_tile = tile_collider.size.x / 10f;
+		height_tile = tile_collider.size.y / 10f * 0.6f;
 		height_tile_double = height_tile * 2f;
 	}
 
@@ -74,7 +74,7 @@ public class ShuffleFinal : MonoBehaviour
 			{ PlayerHands[3].playerchips.Add(pai_obj[i]); }
 		}
 	}
-	
+
 	void set_tiles()
 	{
 		Vector3 end = new Vector3();
@@ -83,16 +83,16 @@ public class ShuffleFinal : MonoBehaviour
 
 		for (int a = 0; a < pai_obj.Count; a++)
 		{
-			if (a <= 33 && a >=0) //first wall
+			if (a <= 33 && a >= 0) //first wall
 			{
 				if (a % 2 == 0) //even
 				{
-					end = new Vector3(-length_table/1.3f + (a * length_tile) / 2, height_tile_double, -length_table*0.9f);
+					end = new Vector3(-length_table / 1.3f + (a * length_tile) / 2, height_tile_double, -length_table * 0.9f);
 					pai_obj[a].transform.position = end;
 				}
 				else //odd
 				{
-					end = new Vector3(-length_table/1.3f + ((a - 1) * length_tile) / 2, height_tile, -length_table*0.9f);
+					end = new Vector3(-length_table / 1.3f + ((a - 1) * length_tile) / 2, height_tile, -length_table * 0.9f);
 					pai_obj[a].transform.position = end;
 				}
 			}
@@ -101,13 +101,13 @@ public class ShuffleFinal : MonoBehaviour
 			{
 				if (a % 2 == 0) //even
 				{
-					end = new Vector3(length_table, height_tile_double, -length_table*0.8f + ((a-33) * length_tile) / 2);
+					end = new Vector3(length_table, height_tile_double, -length_table * 0.8f + ((a - 33) * length_tile) / 2);
 					pai_obj[a].transform.position = end;
 					pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
 				}
 				else //odd
 				{
-					end = new Vector3(length_table, height_tile, -length_table*0.8f + ((a-34) * length_tile) / 2);
+					end = new Vector3(length_table, height_tile, -length_table * 0.8f + ((a - 34) * length_tile) / 2);
 					pai_obj[a].transform.position = end;
 					pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
 				}
@@ -117,12 +117,12 @@ public class ShuffleFinal : MonoBehaviour
 			{
 				if (a % 2 == 0) //even
 				{
-					end = new Vector3(-length_table/1.3f + ((a - 67) * length_tile) / 2, height_tile_double, length_table*0.9f);
+					end = new Vector3(-length_table / 1.3f + ((a - 67) * length_tile) / 2, height_tile_double, length_table * 0.9f);
 					pai_obj[a].transform.position = end;
 				}
 				else //odd
 				{
-					end = new Vector3(-length_table/1.3f + ((a - 68) * length_tile) / 2, height_tile, length_table*0.9f);
+					end = new Vector3(-length_table / 1.3f + ((a - 68) * length_tile) / 2, height_tile, length_table * 0.9f);
 					pai_obj[a].transform.position = end;
 				}
 			}
@@ -131,13 +131,13 @@ public class ShuffleFinal : MonoBehaviour
 			{
 				if (a % 2 == 0) //even
 				{
-					end = new Vector3(-length_table, height_tile_double, -length_table*0.8f + ((a - 101) * length_tile) / 2);
+					end = new Vector3(-length_table, height_tile_double, -length_table * 0.8f + ((a - 101) * length_tile) / 2);
 					pai_obj[a].transform.position = end;
 					pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
 				}
 				else //odd
 				{
-					end = new Vector3(-length_table, height_tile, -length_table*0.8f + ((a - 102) * length_tile) / 2);
+					end = new Vector3(-length_table, height_tile, -length_table * 0.8f + ((a - 102) * length_tile) / 2);
 					pai_obj[a].transform.position = end;
 					pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
 				}
@@ -156,36 +156,36 @@ public class ShuffleFinal : MonoBehaviour
 		{
 			if (PlayerHands[0].playerchips.Contains(pai_obj[a])) //east wall
 			{
-					end = new Vector3(-length_table / 1.5f + (e * 2.05f * length_tile) / 2, height_tile * 1.2f, -length_table * 1.3f);
-					pai_obj[a].transform.position = end;
-					e += 1;
+				end = new Vector3(-length_table / 1.5f + (e * 2.05f * length_tile) / 2, height_tile * 1.2f, -length_table * 1.3f);
+				pai_obj[a].transform.position = end;
+				e += 1;
 			}
 
 			if (PlayerHands[1].playerchips.Contains(pai_obj[a])) //south wall
 			{
-					end = new Vector3(length_table * 1.3f, height_tile * 1.2f, -length_table * 0.5f + (s * 2.05f * length_tile) / 2);
-					pai_obj[a].transform.position = end;
-					pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
-					s += 1;
+				end = new Vector3(length_table * 1.3f, height_tile * 1.2f, -length_table * 0.5f + (s * 2.05f * length_tile) / 2);
+				pai_obj[a].transform.position = end;
+				pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
+				s += 1;
 			}
 
 			if (PlayerHands[2].playerchips.Contains(pai_obj[a])) //west wall
 			{
-					end = new Vector3(length_table / 1.5f - (w * 2.05f * length_tile) / 2, height_tile * 1.2f, length_table * 1.3f);
-					pai_obj[a].transform.position = end;
-					w += 1;
+				end = new Vector3(length_table / 1.5f - (w * 2.05f * length_tile) / 2, height_tile * 1.2f, length_table * 1.3f);
+				pai_obj[a].transform.position = end;
+				w += 1;
 			}
 
 			if (PlayerHands[3].playerchips.Contains(pai_obj[a])) //north wall
 			{
-					end = new Vector3(-length_table *1.3f, height_tile * 1.2f, length_table * 0.5f - (n * 2.05f * length_tile) / 2);
-					pai_obj[a].transform.position = end;
-					pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
-					n += 1;
+				end = new Vector3(-length_table * 1.3f, height_tile * 1.2f, length_table * 0.5f - (n * 2.05f * length_tile) / 2);
+				pai_obj[a].transform.position = end;
+				pai_obj[a].transform.rotation = Quaternion.Euler(new Vector3(pai_obj[a].transform.rotation.x, -90f, 180));
+				n += 1;
 			}
 		}
-		}
-	 
+	}
+
 	void show_tiles()
 	{
 
@@ -223,43 +223,6 @@ public class ShuffleFinal : MonoBehaviour
 		}
 	}
 
-	bool movetiles(int i) // 4 out 12 times, east then ccw to s,w,n. first and 3rd top tiles go to east, then bottom first to south, top to west and last bottom to north. 
-	{
-		bool done = false;
-		setup_dist.transform.position = pai_obj[i - 4].transform.position; //set it to position of first in group
-
-		for (int x = i - 4; x < i; x++)
-		{
-			pai_obj[x].transform.parent = setup_dist.transform; //create parent to hold (i-4,i) from list.
-		}
-		//Move parent to player spread out by length_tile on x.
-		Vector3 end = new Vector3(-length_table * 0.6f + (i-4)* length_tile * 1.01f, height_tile_double, -length_table*1.3f);
-		setup_dist.transform.position = Vector3.MoveTowards(setup_dist.transform.position, end, tile_speed* Time.deltaTime);
-
-		done = setup_dist.transform.position == end; //spread out children after it reaches end
-		Debug.Log(done);
-		if(done)
-		{
-			setup_dist.transform.DetachChildren(); //moving top tiles down
-			Vector3 end1 = new Vector3(-length_table * 0.6f + (i-2) * length_tile * 1.01f, height_tile, -length_table * 1.3f);
-			Vector3 end2 = new Vector3(-length_table * 0.6f + (i-1) * length_tile * 1.01f, height_tile, -length_table * 1.3f);
-			pai_obj[i-3].transform.position = Vector3.MoveTowards(pai_obj[i-3].transform.position, end1, tile_speed * Time.deltaTime);
-			pai_obj[i-1].transform.position = Vector3.MoveTowards(pai_obj[i-1].transform.position, end2, tile_speed * Time.deltaTime);
-			done = pai_obj[i-3].transform.position == end1 && pai_obj[i - 1].transform.position == end2;
-			Debug.Log(done);
-		}
-		// send tiles to list<gameobject> for each player each pass. 
-		if (i > 48)
-		{
-			//move double tile
-			if (i > 50)
-			{
-				//move single tiles
-			}
-		}
-		return done;
-	}
-	
 	private void Update()
 	{
 		if (state == 0)
@@ -269,28 +232,6 @@ public class ShuffleFinal : MonoBehaviour
 			set_player_tiles(); //use this until movetiles is fixed
 			show_tiles();
 			state = 10;
-		}
-
-		//below doesn't matter until movetiles is fixed
-		if (state == 1)
-		{
-			if (i < 13 )
-			{
-				movetiles(i);
-				if (movetiles(i)) 
-				{
-					for (int a = 0; a < i; a++)
-					{
-						pai_obj[a].GetComponent<BoxCollider>().isTrigger = false;
-						pai_obj[a].AddComponent<Rigidbody>();
-					}
-					i+=4;
-				}
-			}
-			else
-			{
-				state = 2;
-			}
 		}
 	}
 }
