@@ -10,8 +10,10 @@ public class TurnManagerMJ : MonoBehaviour
     // Start is called before the first frame update
     public ShuffleFinal hands = new ShuffleFinal();
     public Converters convert = new Converters();
-    public TurnManager turn;
-    public TurnManager previousturn;
+    //public Buttons button = new Buttons();
+
+    public TurnManager turn = TurnManager.START;
+    public TurnManager previousturn = TurnManager.START;
 
     public int tile = 53; //start dealing from first tile not in hand
 
@@ -21,7 +23,7 @@ public class TurnManagerMJ : MonoBehaviour
     bool invokebutton, cancelbutton, invokegrab, invoketrigger, invokestick;
 
     //state of chow/pong/kong
-    bool chow = false, pong = false, kong = false;
+    public bool chow = false, pong = false, kong = false;
 
     void Start()
     {
@@ -119,24 +121,29 @@ public class TurnManagerMJ : MonoBehaviour
                             hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips = hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.GetRange(4, 2);
                             ButtonChow();
                         }
+                        StartCoroutine(Turn(1));
                     }
                     else
                     { 
                         ButtonChow();
+                        StartCoroutine(Turn(1));
                     }
                 }
                 if (pong)
                 {
                     ButtonPong();
+                    StartCoroutine(Turn(1));
                 }
                 if (kong)
                 {
                     ButtonKong();
+                    StartCoroutine(Turn(0)); //Kong requires a draw tile
                 }
             }
             if(cancelbutton==true)
             {
                 NoTake();
+                StartCoroutine(Turn(0));
             }
         }
     }
@@ -648,8 +655,9 @@ public class TurnManagerMJ : MonoBehaviour
 
     #endregion
 
-    void RemoveFromHand(int player)
+    public void RemoveFromHand()
     {
+        int player = convert.PlayerConvNumber(turn);
         List<GameObject> movetiles = new List<GameObject>();
         movetiles.AddRange(hands.PlayerHands[player].temporaryrevealedchips);
         foreach (GameObject tile in movetiles)
@@ -678,7 +686,6 @@ public class TurnManagerMJ : MonoBehaviour
         kong = false;
         pong = false;
         hands.PlayerHands[convert.PlayerConvNumber(turn)].temporaryrevealedchips.Clear();
-        StartCoroutine(Turn(0, convert.PlayerConvNumber(turn)));
     }
 
     public void ButtonChow()
@@ -687,9 +694,7 @@ public class TurnManagerMJ : MonoBehaviour
         chow = false;
 
         //need something here to choose which chow if there are multiple hmmm
-        RemoveFromHand(convert.PlayerConvNumber(turn));
-        StartCoroutine(Turn(1, convert.PlayerConvNumber(turn)));
-        return;
+        RemoveFromHand();
     }
 
     public void ButtonPong()
@@ -697,9 +702,7 @@ public class TurnManagerMJ : MonoBehaviour
         action.text = action.text + "\n" + turn + " Pong!";
         pong = false;
 
-        RemoveFromHand(convert.PlayerConvNumber(turn));
-        StartCoroutine(Turn(1, convert.PlayerConvNumber(turn)));
-        return;
+        RemoveFromHand();
     }
 
     public void ButtonKong()
@@ -707,9 +710,7 @@ public class TurnManagerMJ : MonoBehaviour
         action.text = action.text + "\n" + turn + " Kong!";
         kong = false;
 
-        RemoveFromHand(convert.PlayerConvNumber(turn));
-        StartCoroutine(Turn(0, convert.PlayerConvNumber(turn))); //Kong requires a draw tile
-        return;
+        RemoveFromHand();
     }
     #endregion
 
@@ -719,7 +720,7 @@ public class TurnManagerMJ : MonoBehaviour
         int playerTurn = 0;
         int playerNext = 1;
 
-        CheckMahjong(false); //turn will be changed so that the bottom loop doesn't do anything
+        CheckMahjong(false); 
 
         while (playerTurn < 4)
         {
@@ -754,10 +755,11 @@ public class TurnManagerMJ : MonoBehaviour
                 }
                 else
                 {
-                    StartCoroutine(Turn(0, playerNext));
+                    StartCoroutine(Turn(0));
                 }
                 return;
             }
+
             playerTurn += 1;
 
             if (playerNext != 3)
@@ -771,9 +773,9 @@ public class TurnManagerMJ : MonoBehaviour
         }
     }
 
-    IEnumerator Turn(int interruption, int player)
+    public IEnumerator Turn(int interruption)
     {
-        //UI shift text, timer start, etc. 
+        int player = convert.PlayerConvNumber(turn);
 
         if (interruption == 0)
         {

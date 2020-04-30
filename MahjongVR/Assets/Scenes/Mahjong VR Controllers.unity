@@ -15550,6 +15550,7 @@ GameObject:
   - component: {fileID: 1430961428}
   - component: {fileID: 1430961429}
   - component: {fileID: 1430961430}
+  - component: {fileID: 1430961431}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -15642,6 +15643,9 @@ MonoBehaviour:
   previousturn: 0
   tile: 53
   action: {fileID: 54207200}
+  chow: 0
+  pong: 0
+  kong: 0
 --- !u!114 &1430961430
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15662,6 +15666,20 @@ MonoBehaviour:
   removesouth: {fileID: 1733958}
   removewest: {fileID: 1990184554}
   removenorth: {fileID: 1588742720}
+--- !u!114 &1430961431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430961425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fdd1fdab8f844c548ae690071bc324e6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  convert: {fileID: 1430961430}
+  TurnMJ: {fileID: 1430961429}
 --- !u!4 &1434806390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 89d5f5fe0a969dd4fb275861ab715e5c,
