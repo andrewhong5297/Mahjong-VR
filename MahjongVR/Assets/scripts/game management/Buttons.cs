@@ -1,12 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// I think it invokes these methods after a button is pressed
+/// </summary>
 public class Buttons : MonoBehaviour
 {
-    public Converters convert = new Converters();
-    public TurnManagerMJ TurnMJ = new TurnManagerMJ();
-    
+    public Converters convert;
+    public TurnManagerMJ TurnMJ;
+    public delegate void ChowEvent(); //subscribes methods to this variables
+    public ChowEvent OnChow;
+
     public void NoTake()
     {
         if (TurnMJ.pong || TurnMJ.kong)
@@ -24,6 +28,7 @@ public class Buttons : MonoBehaviour
 
     public void ButtonChow()
     {
+        OnChow();
         TurnMJ.action.text = TurnMJ.action.text + "\n" + TurnMJ.turn + " Chow!";
         TurnMJ.chow = false;
 

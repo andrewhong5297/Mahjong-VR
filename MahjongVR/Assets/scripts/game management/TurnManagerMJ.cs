@@ -7,10 +7,9 @@ using UnityEngine.UI;
 
 public class TurnManagerMJ : MonoBehaviour
 {
-    // Start is called before the first frame update
-    public ShuffleFinal hands = new ShuffleFinal();
-    public Converters convert = new Converters();
-    //public Buttons button = new Buttons();
+    public ShuffleFinal hands;
+    public Converters convert;
+    public Buttons button;
 
     public TurnManager turn = TurnManager.START;
     public TurnManager previousturn = TurnManager.START;
@@ -24,11 +23,18 @@ public class TurnManagerMJ : MonoBehaviour
 
     //state of chow/pong/kong
     public bool chow = false, pong = false, kong = false;
+    public bool InvokeButton { get { return OVRInput.GetDown(OVRInput.RawButton.A); } } //maybe call in virtual somehow
 
     void Start()
     {
         //maybe setup game here using shuffle methods. Will need method to reset game? maybe a button?
         turn = TurnManager.EASTTURN;
+        //assign a delegate
+        button.OnChow += InvokeChow;//function InvokeChow will be listening for button.OnChow
+    }
+    void InvokeChow()
+    {
+        //launched at same time
     }
 
     private void Update()
@@ -60,9 +66,9 @@ public class TurnManagerMJ : MonoBehaviour
 
         if(chow || pong || kong)
         {
-            invokebutton = OVRInput.GetDown(OVRInput.RawButton.A);
+
             cancelbutton = OVRInput.GetDown(OVRInput.RawButton.B);
-            invokegrab = OVRInput.GetDown(OVRInput.RawButton.RHandTrigger);
+            invokegrab = OVRInput.GetDown(OVRInput.RawButton.RHandTrigger); //use an action? callback for invoking an event? 
             invoketrigger = OVRInput.GetDown(OVRInput.RawButton.RIndexTrigger);
             invokestick = OVRInput.GetDown(OVRInput.RawButton.RThumbstickDown);
             //need one more for if three are possible for chow ;-;
@@ -77,7 +83,7 @@ public class TurnManagerMJ : MonoBehaviour
             Debug.Log("Confirm | chow: " + chow + "| pong: " + pong + "| kong: " + kong);
             action.text = action.text + "\nConfirm | chow: " + chow + " | pong: " + pong + " | kong: " + kong;
 
-            if (invokebutton==true)
+            if (InvokeButton)
             {
                 if (chow)
                 {
