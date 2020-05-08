@@ -6,9 +6,9 @@ using UnityEngine.Events;
 
 public class DetectPlayed : MonoBehaviour
 {
-    public TurnManagerMJ turnmanagerMJ = new TurnManagerMJ();
-    public ShuffleFinal hands = new ShuffleFinal();
-    public Converters convert = new Converters();
+    public TurnManagerMJ turnmanagerMJ;
+    public ShuffleFinal hands;
+    public Converters convert;
 
     public GameObject lastplayed;
     public Text action;

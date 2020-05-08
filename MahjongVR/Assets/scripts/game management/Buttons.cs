@@ -8,9 +8,11 @@ public class Buttons : MonoBehaviour
 {
     public Converters convert;
     public TurnManagerMJ TurnMJ;
+    public Check check;
+
     public delegate void ChowEvent(); //subscribes methods to this variables
     public ChowEvent OnChow;
-
+     
     public void NoTake()
     {
         if (TurnMJ.pong || TurnMJ.kong)
@@ -27,14 +29,13 @@ public class Buttons : MonoBehaviour
     }
 
     public void ButtonChow()
-    {
+    { 
         OnChow();
         TurnMJ.action.text = TurnMJ.action.text + "\n" + TurnMJ.turn + " Chow!";
         TurnMJ.chow = false;
 
         //need something here to choose which chow if there are multiple hmmm
-        TurnMJ.RemoveFromHand();
-        StartCoroutine(TurnMJ.Turn(1));
+        check.RemoveFromHand();
         return;
     }
 
@@ -43,8 +44,7 @@ public class Buttons : MonoBehaviour
         TurnMJ.action.text = TurnMJ.action.text + "\n" + TurnMJ.turn + " Pong!";
         TurnMJ.pong = false;
 
-        TurnMJ.RemoveFromHand();
-        StartCoroutine(TurnMJ.Turn(1));
+        check.RemoveFromHand();
         return;
     }
 
@@ -53,8 +53,7 @@ public class Buttons : MonoBehaviour
         TurnMJ.action.text = TurnMJ.action.text + "\n" + TurnMJ.turn + " Kong!";
         TurnMJ.kong = false;
 
-        TurnMJ.RemoveFromHand();
-        StartCoroutine(TurnMJ.Turn(0)); //Kong requires a draw tile
+        check.RemoveFromHand();
         return;
     }
 }

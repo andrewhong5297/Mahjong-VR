@@ -115,7 +115,7 @@ MonoBehaviour:
   m_MinSize: {x: 709, y: 492}
   m_MaxSize: {x: 18004, y: 14042}
   vertical: 0
-  controlID: 164
+  controlID: 138
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -140,7 +140,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 492}
   m_MaxSize: {x: 14003, y: 14042}
   vertical: 1
-  controlID: 136
+  controlID: 143
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 137
+  controlID: 144
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -243,7 +243,7 @@ MonoBehaviour:
   m_MinSize: {x: 433, y: 271}
   m_MaxSize: {x: 14003, y: 10021}
   vertical: 0
-  controlID: 83
+  controlID: 117
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -448,9 +448,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0, y: 0.432, z: -0.667}
+    m_Target: {x: 0.016061312, y: -0.106680095, z: -0.16756392}
     speed: 2
-    m_Value: {x: 0, y: 0.432, z: -0.667}
+    m_Value: {x: 0.016061312, y: -0.106680095, z: -0.16756392}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -498,11 +498,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.14825943, y: -0.005343363, z: 0.0007995635, w: -0.9889395}
     speed: 2
-    m_Value: {x: -0.14825943, y: -0.005343363, z: 0.0007995634, w: -0.9889395}
+    m_Value: {x: -0.14825858, y: -0.0053433324, z: 0.0007995589, w: -0.98893386}
   m_Size:
-    m_Target: 22
+    m_Target: 1.0658197
     speed: 2
-    m_Value: 22
+    m_Value: 1.3658197
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -635,7 +635,7 @@ MonoBehaviour:
     height: 438
   m_ViewDataDictionary: {fileID: 0}
   m_SearchFilter:
-    m_NameFilter: ovrinput
+    m_NameFilter: 
     m_ClassNames: []
     m_AssetLabels: []
     m_AssetBundleNames: []
@@ -647,20 +647,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Oculus/VR/Scripts/Util
+    - Assets/scripts/game management
   m_ViewMode: 1
   m_StartGridSize: 16
   m_LastFolders:
-  - Assets/Oculus/VR/Scripts/Util
+  - Assets/scripts/game management
   m_LastFoldersGridSize: 16
   m_LastProjectPath: C:\Users\Andrew\Documents\Unity Projects\Mahjong-VR\MahjongVR
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 62}
-    m_SelectedIDs: 
-    m_LastClickedID: 0
-    m_ExpandedIDs: 00000000084c00000a4c00000c4c00000e4c0000104c0000124c0000144c0000164c0000184c00001a4c00001c4c00001e4c0000204c0000224c0000244c000000ca9a3b
+    scrollPos: {x: 0, y: 0}
+    m_SelectedIDs: 14500000
+    m_LastClickedID: 20500
+    m_ExpandedIDs: 00000000084c00000a4c00000c4c00000e4c0000104c0000124c0000144c0000164c0000184c00001a4c00001e4c0000204c0000224c0000244c000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -715,7 +715,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

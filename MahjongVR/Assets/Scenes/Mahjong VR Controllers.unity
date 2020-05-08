@@ -15551,6 +15551,7 @@ GameObject:
   - component: {fileID: 1430961429}
   - component: {fileID: 1430961430}
   - component: {fileID: 1430961431}
+  - component: {fileID: 1430961432}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -15640,6 +15641,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   button: {fileID: 1430961431}
+  check: {fileID: 1430961432}
   turn: 0
   previousturn: 0
   tile: 53
@@ -15681,6 +15683,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   convert: {fileID: 1430961430}
   TurnMJ: {fileID: 1430961429}
+  check: {fileID: 1430961432}
+--- !u!114 &1430961432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1430961425}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9a2b216035e0bec4ca1f980d4953236a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TurnMJ: {fileID: 1430961429}
+  hands: {fileID: 1430961426}
+  convert: {fileID: 1430961430}
+  action: {fileID: 54207200}
 --- !u!4 &1434806390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 89d5f5fe0a969dd4fb275861ab715e5c,
