@@ -33,7 +33,7 @@ public class TurnManagerMJ : MonoBehaviour
         //maybe setup game here using shuffle methods. Will need method to reset game? maybe a button?
         turn = TurnManager.EASTTURN;
         //assign a delegate
-        //button.OnChow += InvokeChow;//function InvokeChow will be listening for button.OnChow
+        button.OnChow += InvokeChow;//function InvokeChow will be listening for button.OnChow
     }
 
     void InvokeChow()

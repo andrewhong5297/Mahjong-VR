@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Events;
+using OVR;
+using DG.Tweening;
 
 public class DetectPlayed : MonoBehaviour
 {
@@ -12,13 +14,27 @@ public class DetectPlayed : MonoBehaviour
 
     public GameObject lastplayed;
     public Text action;
+    public Audiom audiom;
 
     //[SerializeField]
     //private UnityEvent OnUsed = null; //invoke event on certain condition
     //OnUsed?.Invoke();//? is for nullable. Or use delegates? "point to method" functions similarly 
 
-    private void OnTriggerEnter(Collider other)
+    private void OnCollisionEnter(Collision collision)
     {
+        if(collision.gameObject.tag == "Tile")
+        {
+            audiom.Play("klak");
+        }
+    }
+
+    private void OnTriggerEnter(Collider other)
+    {        
+        if (other.gameObject.tag == "table")
+        {
+            audiom.Play("thunk");
+        }
+
         if (other.gameObject.tag == "PlayArea")
         {
             MovingTileOutofPlayerHand();
@@ -30,6 +46,8 @@ public class DetectPlayed : MonoBehaviour
             ReorderingTilesInFrontofPlayer();
             turnmanagerMJ.TilePlayed(); //this goes last so that next tile dealed happens after tiles are moved
         }
+
+
     }
 
     void HighlightingLastTile()

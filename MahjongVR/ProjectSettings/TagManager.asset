@@ -6,6 +6,8 @@ TagManager:
   tags:
   - souzu_1_1
   - PlayArea
+  - Tile
+  - table
   layers:
   - Default
   - TransparentFX
