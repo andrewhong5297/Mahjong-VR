@@ -1,4 +1,4 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
@@ -161,7 +161,7 @@ namespace Doozy.Engine.Utils
                 DirectoryInfo baseDir = fileInfo.Directory.Parent.Parent;
                 UnityEngine.Debug.Assert(baseDir != null, "baseDir != null");
                 Assert.AreEqual(DOOZY, baseDir.Name);
-                string baseDirPath = baseDir.ToString().Replace('\\', '/');
+                string baseDirPath = ReplaceBackslashesWithForwardSlashes(baseDir.ToString());
                 int index = baseDirPath.LastIndexOf(ASSETS_PATH, StringComparison.Ordinal);
                 Assert.IsTrue(index >= 0);
                 baseDirPath = baseDirPath.Substring(index);
@@ -171,6 +171,12 @@ namespace Doozy.Engine.Utils
                 return "";
 #endif
             }
+        }
+
+        /// <summary> Replaces \ with / and returns the path string </summary>
+        public static string ReplaceBackslashesWithForwardSlashes(string path)
+        {
+            return path.Replace('\\', '/');
         }
 
         public static void CreateMissingFolders(bool silentMode = false)

@@ -1,4 +1,4 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
@@ -41,7 +41,7 @@ namespace Doozy.Engine.Themes
         /// <summary> System.Guid unique id for the variant property </summary>
         public Guid PressedSpritePropertyId = Guid.Empty;
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
         /// <summary> System.Guid unique id for the variant property </summary>
         public Guid SelectedSpritePropertyId = Guid.Empty;
 #endif
@@ -62,7 +62,7 @@ namespace Doozy.Engine.Themes
         /// <summary> Vector array describing the System.Guid for the variant property </summary>
         [SerializeField] private byte[] PressedPropertyIdSerializedGuid;
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
         /// <summary> Vector array describing the System.Guid for the variant property </summary>
         [SerializeField] private byte[] SelectedPropertyIdSerializedGuid;
 #endif
@@ -79,7 +79,7 @@ namespace Doozy.Engine.Themes
             if (ThemeId == Guid.Empty) return;
             if (HighlightedSpritePropertyId == Guid.Empty) return;
             if (PressedSpritePropertyId == Guid.Empty) return;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
             if (SelectedSpritePropertyId == Guid.Empty) return;
 #endif
             if (DisabledSpritePropertyId == Guid.Empty) return;
@@ -91,7 +91,7 @@ namespace Doozy.Engine.Themes
             base.OnBeforeSerialize();
             HighlightedPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(HighlightedSpritePropertyId);
             PressedPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(PressedSpritePropertyId);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
             SelectedPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(SelectedSpritePropertyId);
 #endif
             DisabledPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(DisabledSpritePropertyId);
@@ -102,7 +102,7 @@ namespace Doozy.Engine.Themes
             base.OnAfterDeserialize();
             HighlightedSpritePropertyId = GuidUtils.SerializedGuidToGuid(HighlightedPropertyIdSerializedGuid);
             PressedSpritePropertyId = GuidUtils.SerializedGuidToGuid(PressedPropertyIdSerializedGuid);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
             SelectedSpritePropertyId = GuidUtils.SerializedGuidToGuid(SelectedPropertyIdSerializedGuid);
 #endif
             DisabledSpritePropertyId = GuidUtils.SerializedGuidToGuid(DisabledPropertyIdSerializedGuid);
@@ -134,7 +134,7 @@ namespace Doozy.Engine.Themes
                     ? theme.ActiveVariant.GetSprite(PressedSpritePropertyId)
                     : spriteState.pressedSprite,
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
                 selectedSprite = SelectedSpritePropertyId != Guid.Empty
                     ? theme.ActiveVariant.GetSprite(SelectedSpritePropertyId)
                     : spriteState.selectedSprite,
@@ -158,7 +158,7 @@ namespace Doozy.Engine.Themes
 
             HighlightedSpritePropertyId = Guid.Empty;
             PressedSpritePropertyId = Guid.Empty;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
             SelectedSpritePropertyId = Guid.Empty;
 #endif
             DisabledSpritePropertyId = Guid.Empty;

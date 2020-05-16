@@ -1,4 +1,4 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
@@ -417,6 +417,13 @@ namespace Doozy.Engine.Progress
                           .SetUpdate(ignoreTimescale)
                           .SetAutoKill(false)
                           .SetRecyclable(true);
+        }
+
+        /// <summary> If the animation is running it will get stopped </summary>
+        /// <param name="complete"> If TRUE completes the animation before stopping it </param>
+        public void StopAnimation(bool complete = false)
+        {
+            KillAnimation(complete);
         }
 
         #endregion

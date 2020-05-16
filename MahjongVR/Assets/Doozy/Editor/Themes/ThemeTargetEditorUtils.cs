@@ -1,8 +1,9 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
 using System;
+using System.Linq;
 using Doozy.Editor.Windows;
 using Doozy.Engine.Themes;
 using Doozy.Engine.Utils;
@@ -166,6 +167,11 @@ namespace Doozy.Editor.Themes
         {
             GUIStyle colorButtonStyle = Styles.GetStyle(Styles.StyleName.ColorButton);
             GUIStyle colorButtonSelectedStyle = Styles.GetStyle(Styles.StyleName.ColorButtonSelected);
+
+            if (themeData.ColorLabels.Count != themeData.ActiveVariant.Colors.Count)
+                foreach (LabelId labelId in themeData.ColorLabels.Where(labelId => !themeData.ActiveVariant.ContainsColor(labelId.Id)))
+                    themeData.ActiveVariant.AddColorProperty(labelId.Id);
+            
             for (int i = 0; i < themeData.ColorLabels.Count; i++)
             {
                 LabelId colorProperty = themeData.ColorLabels[i];
@@ -214,6 +220,11 @@ namespace Doozy.Editor.Themes
         {
             GUIStyle buttonStyleDisabled = Styles.GetStyle(Styles.StyleName.CheckBoxDisabled);
             GUIStyle buttonStyleEnabled = Styles.GetStyle(Styles.StyleName.CheckBoxEnabled);
+            
+            if (themeData.SpriteLabels.Count != themeData.ActiveVariant.Sprites.Count)
+                foreach (LabelId labelId in themeData.SpriteLabels.Where(labelId => !themeData.ActiveVariant.ContainsSprite(labelId.Id)))
+                    themeData.ActiveVariant.AddSpriteProperty(labelId.Id);
+            
             for (int i = 0; i < themeData.SpriteLabels.Count; i++)
             {
                 LabelId spriteProperty = themeData.SpriteLabels[i];
@@ -260,6 +271,11 @@ namespace Doozy.Editor.Themes
         {
             GUIStyle buttonStyleDisabled = Styles.GetStyle(Styles.StyleName.CheckBoxDisabled);
             GUIStyle buttonStyleEnabled = Styles.GetStyle(Styles.StyleName.CheckBoxEnabled);
+            
+            if (themeData.TextureLabels.Count != themeData.ActiveVariant.Textures.Count)
+                foreach (LabelId labelId in themeData.TextureLabels.Where(labelId => !themeData.ActiveVariant.ContainsTexture(labelId.Id)))
+                    themeData.ActiveVariant.AddTextureProperty(labelId.Id);
+            
             for (int i = 0; i < themeData.TextureLabels.Count; i++)
             {
                 LabelId textureProperty = themeData.TextureLabels[i];
@@ -306,6 +322,11 @@ namespace Doozy.Editor.Themes
         {
             GUIStyle buttonStyleDisabled = Styles.GetStyle(Styles.StyleName.CheckBoxDisabled);
             GUIStyle buttonStyleEnabled = Styles.GetStyle(Styles.StyleName.CheckBoxEnabled);
+            
+            if (themeData.FontLabels.Count != themeData.ActiveVariant.Fonts.Count)
+                foreach (LabelId labelId in themeData.FontLabels.Where(labelId => !themeData.ActiveVariant.ContainsFont(labelId.Id)))
+                    themeData.ActiveVariant.AddFontProperty(labelId.Id);
+            
             for (int i = 0; i < themeData.FontLabels.Count; i++)
             {
                 LabelId fontProperty = themeData.FontLabels[i];
@@ -352,6 +373,13 @@ namespace Doozy.Editor.Themes
         {
             GUIStyle buttonStyleDisabled = Styles.GetStyle(Styles.StyleName.CheckBoxDisabled);
             GUIStyle buttonStyleEnabled = Styles.GetStyle(Styles.StyleName.CheckBoxEnabled);
+            
+#if dUI_TextMeshPro
+            if (themeData.FontAssetLabels.Count != themeData.ActiveVariant.FontAssets.Count)
+                foreach (LabelId labelId in themeData.FontAssetLabels.Where(labelId => !themeData.ActiveVariant.ContainsFontAsset(labelId.Id)))
+                    themeData.ActiveVariant.AddFontAssetProperty(labelId.Id);
+#endif
+            
             for (int i = 0; i < themeData.FontAssetLabels.Count; i++)
             {
                 LabelId fontAssetProperty = themeData.FontAssetLabels[i];

@@ -33,6 +33,7 @@ public class Audiom : AudioManager
             //s.source.pitch = s.pitch;
             s.source.spatialBlend = 0;
             s.source.loop = s.loop;
+            //setting doppler and max distance to lower
         }
     }
     public void StopPlaying(string sound)

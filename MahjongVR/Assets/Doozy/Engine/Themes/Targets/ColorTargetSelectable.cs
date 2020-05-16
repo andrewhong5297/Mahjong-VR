@@ -1,4 +1,4 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
@@ -44,7 +44,7 @@ namespace Doozy.Engine.Themes
 		/// <summary> System.Guid unique id for the variant property </summary>
 		public Guid PressedColorPropertyId = Guid.Empty;
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 		/// <summary> System.Guid unique id for the variant property </summary>
 		public Guid SelectedColorPropertyId = Guid.Empty;
 #endif
@@ -68,7 +68,7 @@ namespace Doozy.Engine.Themes
 		/// <summary> Vector array describing the System.Guid for the variant property </summary>
 		[SerializeField] private byte[] PressedPropertyIdSerializedGuid;
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 		/// <summary> Vector array describing the System.Guid for the variant property </summary>
 		[SerializeField] private byte[] SelectedPropertyIdSerializedGuid;
 #endif
@@ -86,7 +86,7 @@ namespace Doozy.Engine.Themes
 			if (NormalColorPropertyId == Guid.Empty) return;
 			if (HighlightedColorPropertyId == Guid.Empty) return;
 			if (PressedColorPropertyId == Guid.Empty) return;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			if (SelectedColorPropertyId == Guid.Empty) return;
 #endif
 			if (DisabledColorPropertyId == Guid.Empty) return;
@@ -99,7 +99,7 @@ namespace Doozy.Engine.Themes
 			NormalPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(NormalColorPropertyId);
 			HighlightedPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(HighlightedColorPropertyId);
 			PressedPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(PressedColorPropertyId);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			SelectedPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(SelectedColorPropertyId);
 #endif
 			DisabledPropertyIdSerializedGuid = GuidUtils.GuidToSerializedGuid(DisabledColorPropertyId);
@@ -111,7 +111,7 @@ namespace Doozy.Engine.Themes
 			NormalColorPropertyId = GuidUtils.SerializedGuidToGuid(NormalPropertyIdSerializedGuid);
 			HighlightedColorPropertyId = GuidUtils.SerializedGuidToGuid(HighlightedPropertyIdSerializedGuid);
 			PressedColorPropertyId = GuidUtils.SerializedGuidToGuid(PressedPropertyIdSerializedGuid);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			SelectedColorPropertyId = GuidUtils.SerializedGuidToGuid(SelectedPropertyIdSerializedGuid);
 #endif
 			DisabledColorPropertyId = GuidUtils.SerializedGuidToGuid(DisabledPropertyIdSerializedGuid);
@@ -146,7 +146,7 @@ namespace Doozy.Engine.Themes
 					? theme.ActiveVariant.GetColor(PressedColorPropertyId)
 					: colors.pressedColor,
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 				selectedColor = SelectedColorPropertyId != Guid.Empty
 					? theme.ActiveVariant.GetColor(SelectedColorPropertyId)
 					: colors.selectedColor,
@@ -174,7 +174,7 @@ namespace Doozy.Engine.Themes
 			NormalColorPropertyId = Guid.Empty;
 			HighlightedColorPropertyId = Guid.Empty;
 			PressedColorPropertyId = Guid.Empty;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			SelectedColorPropertyId = Guid.Empty;
 #endif
 			DisabledColorPropertyId = Guid.Empty;

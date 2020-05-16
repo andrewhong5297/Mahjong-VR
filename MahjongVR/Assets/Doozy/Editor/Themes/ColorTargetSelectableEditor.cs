@@ -1,8 +1,9 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
 using System;
+using System.Linq;
 using Doozy.Editor.Internal;
 using Doozy.Engine.Themes;
 using Doozy.Engine.Utils;
@@ -49,7 +50,7 @@ namespace Doozy.Editor.Themes
 			m_normalAnimBool,
 			m_highlightedAnimBool,
 			m_pressedAnimBool,
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			m_selectedAnimBool,
 #endif
 			m_disabledAnimBool;
@@ -62,7 +63,7 @@ namespace Doozy.Editor.Themes
 		private int m_selectedNormalPropertyIndex;
 		private int m_selectedHighlightedPropertyIndex;
 		private int m_selectedPressedPropertyIndex;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 		private int m_selectedSelectedPropertyIndex;
 #endif
 		private int m_selectedDisabledPropertyIndex;
@@ -86,7 +87,7 @@ namespace Doozy.Editor.Themes
 			m_normalAnimBool = new AnimBool(false, Repaint);
 			m_highlightedAnimBool = new AnimBool(false, Repaint);
 			m_pressedAnimBool = new AnimBool(false, Repaint);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			m_selectedAnimBool = new AnimBool(false, Repaint);
 #endif
 			m_disabledAnimBool = new AnimBool(false, Repaint);
@@ -115,7 +116,7 @@ namespace Doozy.Editor.Themes
 			DrawPropertyIndex(Target.NormalColorPropertyId, SelectionState.Normal, m_normalAnimBool);
 			DrawPropertyIndex(Target.HighlightedColorPropertyId, SelectionState.Highlighted, m_highlightedAnimBool);
 			DrawPropertyIndex(Target.PressedColorPropertyId, SelectionState.Pressed, m_pressedAnimBool);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			DrawPropertyIndex(Target.SelectedColorPropertyId, SelectionState.Selected, m_selectedAnimBool);
 #endif
 			DrawPropertyIndex(Target.DisabledColorPropertyId, SelectionState.Disabled, m_disabledAnimBool);
@@ -158,6 +159,11 @@ namespace Doozy.Editor.Themes
 		{
 			GUIStyle colorButtonStyle = Styles.GetStyle(Styles.StyleName.ColorButton);
 			GUIStyle colorButtonSelectedStyle = Styles.GetStyle(Styles.StyleName.ColorButtonSelected);
+			
+			if (themeData.ColorLabels.Count != themeData.ActiveVariant.Colors.Count)
+				foreach (LabelId labelId in themeData.ColorLabels.Where(labelId => !themeData.ActiveVariant.ContainsColor(labelId.Id)))
+					themeData.ActiveVariant.AddColorProperty(labelId.Id);
+			
 			for (int i = 0; i < themeData.ColorLabels.Count; i++)
 			{
 				LabelId colorProperty = themeData.ColorLabels[i];
@@ -189,7 +195,7 @@ namespace Doozy.Editor.Themes
 										case SelectionState.Pressed:
 											themeTarget.PressedColorPropertyId = themeData.ColorLabels[index].Id;
 											break;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 										case SelectionState.Selected:
 											themeTarget.SelectedColorPropertyId = themeData.ColorLabels[index].Id;
 											break;
@@ -216,7 +222,7 @@ namespace Doozy.Editor.Themes
 									case SelectionState.Pressed:
 										Target.PressedColorPropertyId = themeData.ColorLabels[index].Id;
 										break;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 									case SelectionState.Selected:
 										Target.SelectedColorPropertyId = themeData.ColorLabels[index].Id;
 										break;
@@ -266,7 +272,7 @@ namespace Doozy.Editor.Themes
 					? m_theme.ColorLabels[0].Id
 					: Guid.Empty;
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			//SelectedColorPropertyId
 			if (!m_theme.ContainsColorProperty(Target.SelectedColorPropertyId))
 				Target.SelectedColorPropertyId = m_theme.ColorLabels.Count > 0

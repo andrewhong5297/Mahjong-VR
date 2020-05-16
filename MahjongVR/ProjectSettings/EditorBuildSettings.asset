@@ -5,15 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Unity Hand Interactions Testing.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 0
-    path: Assets/Oculus/SampleFramework/Usage/HandsInteractionTrainScene.unity
-    guid: a9c41884ef0c347628dfd8a4af4a022e
-  - enabled: 0
-    path: Assets/Scenes/Mahjong VR.unity
-    guid: c8b0f411426a73c41bd3ff83c922a9c3
+  - enabled: 1
+    path: Assets/Scenes/Launcher.unity
+    guid: 36cd3b780d1ad494da9cebdce8311deb
   - enabled: 1
     path: Assets/Scenes/Mahjong VR Controllers.unity
     guid: 87f91813891e11c4a8048d1ad763979f

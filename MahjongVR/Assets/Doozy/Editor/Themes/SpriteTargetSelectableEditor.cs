@@ -1,8 +1,9 @@
-// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
 using System;
+using System.Linq;
 using Doozy.Editor.Internal;
 using Doozy.Engine.Themes;
 using Doozy.Engine.Utils;
@@ -49,7 +50,7 @@ namespace Doozy.Editor.Themes
 		private AnimBool
 			m_highlightedAnimBool,
 			m_pressedAnimBool,
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			m_selectedAnimBool,
 #endif
 			m_disabledAnimBool;
@@ -61,7 +62,7 @@ namespace Doozy.Editor.Themes
 		private int m_selectedPropertyIndex;
 		private int m_selectedHighlightedPropertyIndex;
 		private int m_selectedPressedPropertyIndex;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 		private int m_selectedSelectedPropertyIndex;
 #endif
 		private int m_selectedDisabledPropertyIndex;
@@ -84,7 +85,7 @@ namespace Doozy.Editor.Themes
 
 			m_highlightedAnimBool = new AnimBool(false, Repaint);
 			m_pressedAnimBool = new AnimBool(false, Repaint);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			m_selectedAnimBool = new AnimBool(false, Repaint);
 #endif
 			m_disabledAnimBool = new AnimBool(false, Repaint);
@@ -111,7 +112,7 @@ namespace Doozy.Editor.Themes
 
 			DrawPropertyIndex(Target.HighlightedSpritePropertyId, ThemeTargetEditorUtils.SelectionState.Highlighted, m_highlightedAnimBool);
 			DrawPropertyIndex(Target.PressedSpritePropertyId, ThemeTargetEditorUtils.SelectionState.Pressed, m_pressedAnimBool);
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			DrawPropertyIndex(Target.SelectedSpritePropertyId, ThemeTargetEditorUtils.SelectionState.Selected, m_selectedAnimBool);
 #endif
 			DrawPropertyIndex(Target.DisabledSpritePropertyId, ThemeTargetEditorUtils.SelectionState.Disabled, m_disabledAnimBool);
@@ -145,6 +146,11 @@ namespace Doozy.Editor.Themes
 		{
 			GUIStyle buttonStyleDisabled = Styles.GetStyle(Styles.StyleName.CheckBoxDisabled);
 			GUIStyle buttonStyleEnabled = Styles.GetStyle(Styles.StyleName.CheckBoxEnabled);
+			
+			if (themeData.SpriteLabels.Count != themeData.ActiveVariant.Sprites.Count)
+				foreach (LabelId labelId in themeData.SpriteLabels.Where(labelId => !themeData.ActiveVariant.ContainsSprite(labelId.Id)))
+					themeData.ActiveVariant.AddSpriteProperty(labelId.Id);
+			
 			for (var i = 0; i < themeData.SpriteLabels.Count; i++)
 			{
 				LabelId spriteProperty = themeData.SpriteLabels[i];
@@ -170,7 +176,7 @@ namespace Doozy.Editor.Themes
 									case ThemeTargetEditorUtils.SelectionState.Pressed:
 										themeTarget.PressedSpritePropertyId = themeData.SpriteLabels[index].Id;
 										break;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 									case ThemeTargetEditorUtils.SelectionState.Selected:
 										themeTarget.SelectedSpritePropertyId = themeData.SpriteLabels[index].Id;
 										break;
@@ -194,7 +200,7 @@ namespace Doozy.Editor.Themes
 								case ThemeTargetEditorUtils.SelectionState.Pressed:
 									Target.PressedSpritePropertyId = themeData.SpriteLabels[index].Id;
 									break;
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 								case ThemeTargetEditorUtils.SelectionState.Selected:
 									Target.SelectedSpritePropertyId = themeData.SpriteLabels[index].Id;
 									break;
@@ -237,7 +243,7 @@ namespace Doozy.Editor.Themes
 					? m_theme.SpriteLabels[0].Id
 					: Guid.Empty;
 
-#if UNITY_2019_3_OR_NEWER
+#if UNITY_2019_1_OR_NEWER
 			//SelectedSpritePropertyId
 			if (!m_theme.ContainsSpriteProperty(Target.SelectedSpritePropertyId))
 				Target.SelectedSpritePropertyId = m_theme.SpriteLabels.Count > 0

@@ -26,7 +26,7 @@ MonoBehaviour:
   m_version: 1
   m_description: 
   m_id: 0fa633eb-f3f4-40ac-80cd-3811dc10839b
-  m_lastModified: 132177235326784961
+  m_lastModified: 132254597022667555
 --- !u!114 &114046612501343850
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,6 +237,7 @@ MonoBehaviour:
   UIDrawerTriggerAction: 0
   DrawerName: Unnamed
   CustomDrawerName: 0
+  SwitchBackMode: 0
 --- !u!114 &114181609256747244
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -578,6 +579,7 @@ MonoBehaviour:
   UIDrawerTriggerAction: 0
   DrawerName: Unnamed
   CustomDrawerName: 0
+  SwitchBackMode: 0
 --- !u!114 &114585174386706184
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -778,6 +780,7 @@ MonoBehaviour:
   UIDrawerTriggerAction: 0
   DrawerName: Unnamed
   CustomDrawerName: 0
+  SwitchBackMode: 0
 --- !u!114 &114934597295472718
 MonoBehaviour:
   m_ObjectHideFlags: 1

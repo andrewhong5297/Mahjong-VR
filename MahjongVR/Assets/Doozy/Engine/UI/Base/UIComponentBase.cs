@@ -1,4 +1,4 @@
-﻿// Copyright (c) 2015 - 2019 Doozy Entertainment. All Rights Reserved.
+﻿// Copyright (c) 2015 - 2020 Doozy Entertainment. All Rights Reserved.
 // This code can only be used under the standard Unity Asset Store End User License Agreement
 // A Copy of the EULA APPENDIX 1 is available at http://unity3d.com/company/legal/as_terms
 
@@ -268,7 +268,7 @@ namespace Doozy.Engine.UI.Base
 		/// <summary> Removes any null references from the Database </summary>
 		protected static void RemoveAnyNullReferencesFromTheDatabase()
 		{
-			for (int i = Database.Count; i >= 0; i--)
+			for (int i = Database.Count - 1; i >= 0; i--)
 				if (Database[i] == null)
 					Database.RemoveAt(i);
 		}
