@@ -29,7 +29,25 @@ public class GameManager : MonoBehaviourPunCallbacks
             {
                 Debug.LogFormat("We are Instantiating LocalPlayer from {0}", SceneManagerHelper.ActiveSceneName);
                 // we're in a room. spawn a character for the local player. it gets synced by using PhotonNetwork.Instantiate
-                PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+
+                //count number of players so we can instantiate in a seperate location?
+                if (PhotonNetwork.CurrentRoom.PlayerCount == 0) //east
+                {
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                }
+                if (PhotonNetwork.CurrentRoom.PlayerCount == 1) //south
+                {
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                }
+                if (PhotonNetwork.CurrentRoom.PlayerCount == 2) //west
+                {
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                }
+                if (PhotonNetwork.CurrentRoom.PlayerCount == 3) //north
+                {
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                }
+
             }
             else
             {
