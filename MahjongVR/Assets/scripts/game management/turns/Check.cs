@@ -8,7 +8,19 @@ public class Check : MonoBehaviour
     public TurnManagerMJ TurnMJ;
     public ShuffleFinal hands;
     public Converters convert;
-    public Text action;
+    public Text action; //actions already exist in c# :c
+    public AssignText assignTextScript;
+    
+    public void DoAssigning()
+    {
+        assignTextScript.OnAssignText += GetAssignText; //called onenable
+    }
+
+    public void GetAssignText(Text text)
+    {
+        Debug.Log($"The text is {text}");
+        action = text;
+    }
 
     public void CheckMahjong(bool ondraw) //final boss!!!
     {

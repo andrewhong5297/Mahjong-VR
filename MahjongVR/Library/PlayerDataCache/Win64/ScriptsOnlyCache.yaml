@@ -1,0 +1,3854 @@
+ScriptsOnlyBuild:
+  usedScripts:
+    Assembly-CSharp-Editor.dll:
+    - Doozy.Editor.Internal.ProcessorsSettings
+    Assembly-CSharp.dll:
+    - AssignText
+    - Audiom
+    - Billboard
+    - Buttons
+    - Check
+    - Chip
+    - Com.MyCompany.MyGame.Launcher
+    - Com.MyCompany.MyGame.PlayerNameInputField
+    - Converters
+    - DetectPlayed
+    - Doozy.Engine.Nody.NodySettings
+    - Doozy.Engine.Progress.ProgressTargetAnimator
+    - Doozy.Engine.Progress.Progressor
+    - Doozy.Engine.Settings.DoozySettings
+    - Doozy.Engine.Soundy.SoundDatabase
+    - Doozy.Engine.Soundy.SoundGroupData
+    - Doozy.Engine.Soundy.SoundyDatabase
+    - Doozy.Engine.Soundy.SoundySettings
+    - Doozy.Engine.Themes.ThemeData
+    - Doozy.Engine.Themes.ThemesDatabase
+    - Doozy.Engine.Themes.ThemesSettings
+    - Doozy.Engine.Touchy.TouchySettings
+    - Doozy.Engine.UI.Animation.UIAnimationData
+    - Doozy.Engine.UI.Animation.UIAnimationDatabase
+    - Doozy.Engine.UI.Animation.UIAnimations
+    - Doozy.Engine.UI.Base.ListOfNames
+    - Doozy.Engine.UI.Base.NamesDatabase
+    - Doozy.Engine.UI.Settings.UIButtonSettings
+    - Doozy.Engine.UI.Settings.UICanvasSettings
+    - Doozy.Engine.UI.Settings.UIDrawerSettings
+    - Doozy.Engine.UI.Settings.UIPopupSettings
+    - Doozy.Engine.UI.Settings.UIToggleSettings
+    - Doozy.Engine.UI.Settings.UIViewSettings
+    - Doozy.Engine.UI.UIButton
+    - Doozy.Engine.UI.UIPopup
+    - Doozy.Engine.UI.UIPopupDatabase
+    - Doozy.Engine.UI.UIPopupLink
+    - Doozy.Engine.Utils.UILanguagePack
+    - EnvironmentSound
+    - GameManager
+    - HandedInputSelector
+    - LaserPointer
+    - ONSPSettings
+    - OvrAvatar
+    - OvrAvatarLocalDriver
+    - OvrAvatarSettings
+    - ShuffleFinal
+    - Tiles
+    - TurnManagerMJ
+    - UIManager
+    DOTween.dll:
+    - DG.Tweening.Core.DOTweenSettings
+    Oculus.VR.Editor.dll:
+    - OVRConfig
+    Oculus.VR.dll:
+    - OVRCameraRig
+    - OVRGrabbable
+    - OVRGrabber
+    - OVRHeadsetEmulator
+    - OVRManager
+    - OVRRaycaster
+    - UnityEngine.EventSystems.OVRInputModule
+    PhotonUnityNetworking.Demos.dll:
+    - Photon.Pun.Demo.Asteroids.Asteroid
+    - Photon.Pun.Demo.Asteroids.Bullet
+    - Photon.Pun.Demo.Asteroids.Spaceship
+    - Photon.Pun.Demo.PunBasics.CameraWork
+    - Photon.Pun.Demo.PunBasics.PlayerAnimatorManager
+    - Photon.Pun.Demo.PunBasics.PlayerManager
+    - Photon.Pun.Demo.PunBasics.PlayerUI
+    - Photon.Pun.Demo.SlotRacer.PlayerControl
+    - Photon.Pun.Demo.SlotRacer.Utils.SplineWalker
+    PhotonUnityNetworking.dll:
+    - Photon.Pun.PhotonAnimatorView
+    - Photon.Pun.PhotonRigidbodyView
+    - Photon.Pun.PhotonTransformView
+    - Photon.Pun.PhotonView
+    - Photon.Pun.ServerSettings
+    Unity.Rider.Editor.dll:
+    - Packages.Rider.Editor.UnitTesting.CallbackData
+    Unity.TerrainTools.Editor.dll:
+    - UnityEditor.Experimental.TerrainAPI.BillowNoise
+    - UnityEditor.Experimental.TerrainAPI.BridgeTool
+    - UnityEditor.Experimental.TerrainAPI.CloneBrushTool
+    - UnityEditor.Experimental.TerrainAPI.ContrastTool
+    - UnityEditor.Experimental.TerrainAPI.FbmFractalType
+    - UnityEditor.Experimental.TerrainAPI.MeshStampTool
+    - UnityEditor.Experimental.TerrainAPI.NoiseBlitShaderGenerator
+    - UnityEditor.Experimental.TerrainAPI.NoiseFillShaderGenerator
+    - UnityEditor.Experimental.TerrainAPI.NoiseHeightTool
+    - UnityEditor.Experimental.TerrainAPI.NoneFractalType
+    - UnityEditor.Experimental.TerrainAPI.PaintHeightTool
+    - UnityEditor.Experimental.TerrainAPI.PaintHolesTool
+    - UnityEditor.Experimental.TerrainAPI.PaintTextureTool
+    - UnityEditor.Experimental.TerrainAPI.PerlinNoise
+    - UnityEditor.Experimental.TerrainAPI.RidgeNoise
+    - UnityEditor.Experimental.TerrainAPI.SetHeightTool
+    - UnityEditor.Experimental.TerrainAPI.SharpenPeaksTool
+    - UnityEditor.Experimental.TerrainAPI.SlopeFlattenTool
+    - UnityEditor.Experimental.TerrainAPI.SmoothHeightTool
+    - UnityEditor.Experimental.TerrainAPI.StampTool
+    - UnityEditor.Experimental.TerrainAPI.StrataFractalType
+    - UnityEditor.Experimental.TerrainAPI.TerraceErosion
+    - UnityEditor.Experimental.TerrainAPI.ThermalErosionTool
+    - UnityEditor.Experimental.TerrainAPI.ValueNoise
+    - UnityEditor.Experimental.TerrainAPI.VoronoiNoise
+    - UnityEditor.Experimental.TerrainAPI.WindErosionTool
+    Unity.TerrainTools.dll:
+    - TerrainGroup
+    Unity.TextMeshPro.dll:
+    - TMPro.TMP_FontAsset
+    - TMPro.TMP_Settings
+    - TMPro.TMP_SpriteAsset
+    - TMPro.TMP_StyleSheet
+    - TMPro.TextMeshProUGUI
+    UnityEditor.TestRunner.dll:
+    - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
+    - UnityEditor.TestTools.TestRunner.TestListCacheData
+    - UnityEditor.TestTools.TestRunner.TestRun.TestJobDataHolder
+    UnityEngine.UI.dll:
+    - UnityEngine.EventSystems.EventSystem
+    - UnityEngine.UI.Button
+    - UnityEngine.UI.CanvasScaler
+    - UnityEngine.UI.GraphicRaycaster
+    - UnityEngine.UI.Image
+    - UnityEngine.UI.InputField
+    - UnityEngine.UI.Mask
+    - UnityEngine.UI.RectMask2D
+    - UnityEngine.UI.ScrollRect
+    - UnityEngine.UI.Scrollbar
+    - UnityEngine.UI.Shadow
+    - UnityEngine.UI.Slider
+    - UnityEngine.UI.Text
+  sceneClasses:
+    Assets/Scenes/Launcher.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 49
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 109
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11476}
+    - Class: 114
+      Script: {instanceID: 11614}
+    - Class: 114
+      Script: {instanceID: 11626}
+    - Class: 114
+      Script: {instanceID: 11784}
+    - Class: 114
+      Script: {instanceID: 11824}
+    - Class: 114
+      Script: {instanceID: 11852}
+    - Class: 114
+      Script: {instanceID: 11874}
+    - Class: 114
+      Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 11944}
+    - Class: 114
+      Script: {instanceID: 11948}
+    - Class: 114
+      Script: {instanceID: 12008}
+    - Class: 114
+      Script: {instanceID: 12028}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12142}
+    - Class: 114
+      Script: {instanceID: 12260}
+    - Class: 114
+      Script: {instanceID: 12442}
+    - Class: 114
+      Script: {instanceID: 12512}
+    - Class: 114
+      Script: {instanceID: 12632}
+    - Class: 114
+      Script: {instanceID: 12702}
+    - Class: 114
+      Script: {instanceID: 12730}
+    - Class: 114
+      Script: {instanceID: 12800}
+    - Class: 114
+      Script: {instanceID: 12806}
+    - Class: 114
+      Script: {instanceID: 12894}
+    - Class: 114
+      Script: {instanceID: 12966}
+    - Class: 114
+      Script: {instanceID: 12992}
+    - Class: 114
+      Script: {instanceID: 13066}
+    - Class: 114
+      Script: {instanceID: 13114}
+    - Class: 114
+      Script: {instanceID: 13144}
+    - Class: 114
+      Script: {instanceID: 13194}
+    - Class: 114
+      Script: {instanceID: 13476}
+    - Class: 114
+      Script: {instanceID: 13494}
+    - Class: 114
+      Script: {instanceID: 13618}
+    - Class: 114
+      Script: {instanceID: 13638}
+    - Class: 114
+      Script: {instanceID: 13778}
+    - Class: 114
+      Script: {instanceID: 13832}
+    - Class: 114
+      Script: {instanceID: 13912}
+    - Class: 114
+      Script: {instanceID: 13986}
+    - Class: 114
+      Script: {instanceID: 13992}
+    - Class: 114
+      Script: {instanceID: 14058}
+    - Class: 114
+      Script: {instanceID: 14164}
+    - Class: 114
+      Script: {instanceID: 14282}
+    - Class: 114
+      Script: {instanceID: 14308}
+    - Class: 114
+      Script: {instanceID: 14456}
+    - Class: 114
+      Script: {instanceID: 14480}
+    - Class: 114
+      Script: {instanceID: 14492}
+    - Class: 114
+      Script: {instanceID: 14516}
+    - Class: 114
+      Script: {instanceID: 14518}
+    - Class: 114
+      Script: {instanceID: 14538}
+    - Class: 114
+      Script: {instanceID: 14572}
+    - Class: 114
+      Script: {instanceID: 14576}
+    - Class: 114
+      Script: {instanceID: 14586}
+    - Class: 114
+      Script: {instanceID: 14596}
+    - Class: 114
+      Script: {instanceID: 14604}
+    - Class: 114
+      Script: {instanceID: 14646}
+    - Class: 114
+      Script: {instanceID: 14702}
+    - Class: 114
+      Script: {instanceID: 14770}
+    - Class: 114
+      Script: {instanceID: 14896}
+    - Class: 114
+      Script: {instanceID: 14934}
+    - Class: 114
+      Script: {instanceID: 14948}
+    - Class: 114
+      Script: {instanceID: 15032}
+    - Class: 114
+      Script: {instanceID: 15062}
+    - Class: 114
+      Script: {instanceID: 15192}
+    - Class: 114
+      Script: {instanceID: 15292}
+    - Class: 114
+      Script: {instanceID: 15418}
+    - Class: 114
+      Script: {instanceID: 15426}
+    - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15480}
+    - Class: 114
+      Script: {instanceID: 15482}
+    - Class: 114
+      Script: {instanceID: 15564}
+    - Class: 114
+      Script: {instanceID: 15592}
+    - Class: 114
+      Script: {instanceID: 15848}
+    - Class: 114
+      Script: {instanceID: 15880}
+    - Class: 114
+      Script: {instanceID: 15904}
+    - Class: 114
+      Script: {instanceID: 15914}
+    - Class: 114
+      Script: {instanceID: 16154}
+    - Class: 114
+      Script: {instanceID: 16174}
+    - Class: 114
+      Script: {instanceID: 16288}
+    - Class: 114
+      Script: {instanceID: 87368}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 136
+      Script: {instanceID: 0}
+    - Class: 137
+      Script: {instanceID: 0}
+    - Class: 143
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 225
+      Script: {instanceID: 0}
+    - Class: 241
+      Script: {instanceID: 0}
+    - Class: 243
+      Script: {instanceID: 0}
+    - Class: 245
+      Script: {instanceID: 0}
+    Assets/Scenes/Mahjong VR Controllers.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 23
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 33
+      Script: {instanceID: 0}
+    - Class: 43
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 54
+      Script: {instanceID: 0}
+    - Class: 64
+      Script: {instanceID: 0}
+    - Class: 65
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 82
+      Script: {instanceID: 0}
+    - Class: 83
+      Script: {instanceID: 0}
+    - Class: 89
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 11460}
+    - Class: 114
+      Script: {instanceID: 11476}
+    - Class: 114
+      Script: {instanceID: 11558}
+    - Class: 114
+      Script: {instanceID: 11614}
+    - Class: 114
+      Script: {instanceID: 11794}
+    - Class: 114
+      Script: {instanceID: 11872}
+    - Class: 114
+      Script: {instanceID: 11918}
+    - Class: 114
+      Script: {instanceID: 11944}
+    - Class: 114
+      Script: {instanceID: 11948}
+    - Class: 114
+      Script: {instanceID: 12028}
+    - Class: 114
+      Script: {instanceID: 12054}
+    - Class: 114
+      Script: {instanceID: 12162}
+    - Class: 114
+      Script: {instanceID: 12260}
+    - Class: 114
+      Script: {instanceID: 12442}
+    - Class: 114
+      Script: {instanceID: 12730}
+    - Class: 114
+      Script: {instanceID: 12992}
+    - Class: 114
+      Script: {instanceID: 13194}
+    - Class: 114
+      Script: {instanceID: 13400}
+    - Class: 114
+      Script: {instanceID: 13476}
+    - Class: 114
+      Script: {instanceID: 13498}
+    - Class: 114
+      Script: {instanceID: 13778}
+    - Class: 114
+      Script: {instanceID: 13968}
+    - Class: 114
+      Script: {instanceID: 14058}
+    - Class: 114
+      Script: {instanceID: 14282}
+    - Class: 114
+      Script: {instanceID: 14538}
+    - Class: 114
+      Script: {instanceID: 14572}
+    - Class: 114
+      Script: {instanceID: 14998}
+    - Class: 114
+      Script: {instanceID: 15062}
+    - Class: 114
+      Script: {instanceID: 15192}
+    - Class: 114
+      Script: {instanceID: 15252}
+    - Class: 114
+      Script: {instanceID: 15322}
+    - Class: 114
+      Script: {instanceID: 15426}
+    - Class: 114
+      Script: {instanceID: 15450}
+    - Class: 114
+      Script: {instanceID: 15468}
+    - Class: 114
+      Script: {instanceID: 15728}
+    - Class: 114
+      Script: {instanceID: 15848}
+    - Class: 114
+      Script: {instanceID: 15904}
+    - Class: 114
+      Script: {instanceID: 16152}
+    - Class: 114
+      Script: {instanceID: 87368}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 120
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 135
+      Script: {instanceID: 0}
+    - Class: 154
+      Script: {instanceID: 0}
+    - Class: 156
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 196
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 218
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    - Class: 258
+      Script: {instanceID: 0}
+    - Class: 1953259897
+      Script: {instanceID: 0}
+  scriptHashData:
+  - hash:
+      serializedVersion: 2
+      Hash: a97ba28dafd3073609810ab89a54a7f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetSpriteRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 9ba26e4269220331e08a9e02a91b96d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Chip
+  - hash:
+      serializedVersion: 2
+      Hash: 80d2851602cb4bcb6f559596c5eb955b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PlayerListCell
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PunTeams
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPVersion
+  - hash:
+      serializedVersion: 2
+      Hash: 4bc4346a71a8df53a6b106f68ef3a190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: CanvasScaler
+  - hash:
+      serializedVersion: 2
+      Hash: c4d06f7141c81e5114a5c1c92b6cb894
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Models
+    className: Node
+  - hash:
+      serializedVersion: 2
+      Hash: 74494c459d8da1b3c2f0349d1d8534aa
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: DocLinkButton
+  - hash:
+      serializedVersion: 2
+      Hash: ab039a385ef4459756519a3fe91dccc6
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: SmoothSyncMovement
+  - hash:
+      serializedVersion: 2
+      Hash: bf5cb87c773ea378a3f5ac036aab367b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SocialPlatformManager
+  - hash:
+      serializedVersion: 2
+      Hash: 3c08375166df118bd1801438fc36b92f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SelectionCaret
+  - hash:
+      serializedVersion: 2
+      Hash: 329a4358a2c40fe3c40f44951200bd91
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarBody
+  - hash:
+      serializedVersion: 2
+      Hash: 4f417ca0a3b31b376eb402726c240bde
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RegionListView
+  - hash:
+      serializedVersion: 2
+      Hash: c581e4acad06778f54081fb9b74882f3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Check
+  - hash:
+      serializedVersion: 2
+      Hash: fd8ea043aa2b66fdd21904b2b937a479
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: UIButtonAutomatedTextValue
+  - hash:
+      serializedVersion: 2
+      Hash: 87ff43d2baf3385cba327d8f803a4ebb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 99d999018d3c1c5fb2bea275f7609d4d
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRMixedRealityCaptureSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 626925ef558787b2d85c809198164d19
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: 195554c2b0a48dd06c0375f2cc14471f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: ExampleProgressTargetAudioMixer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ButtonDownListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Integrations.Playmaker
+    className: PlaymakerEventDispatcher
+  - hash:
+      serializedVersion: 2
+      Hash: 0c2ecdae097ba779e0a9e100ed96bb10
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRCameraRig
+  - hash:
+      serializedVersion: 2
+      Hash: 4ededd67e218814aedcbffde9f06cf1a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Settings
+    className: DoozySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 2163458cae41cb1735c8b06fc34a9582
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: UserIdField
+  - hash:
+      serializedVersion: 2
+      Hash: d8480e85f0b78469a4ed2e78b29f4fa2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.SceneManagement
+    className: SceneLoader
+  - hash:
+      serializedVersion: 2
+      Hash: 11bdd61587db747672b66c52442395d8
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ServerAddressProperty
+  - hash:
+      serializedVersion: 2
+      Hash: ee1dba1a186ac062d564e9eb73a1c56f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: GraphicToggleIsOnTransition
+  - hash:
+      serializedVersion: 2
+      Hash: fb6fbda121d17c03aa85a449ce8e4f22
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OculusSpatializerUnity
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIPopupManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4b23d536e83c859aa9b7498765abcd97
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: ThemeNode
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomMaxPlayersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: e16938e6f1615830c6b53bafd21849d0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetText
+  - hash:
+      serializedVersion: 2
+      Hash: 3ba023cd67d72cace33969ab863e0fd4
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PhotonStatsGui
+  - hash:
+      serializedVersion: 2
+      Hash: e4c511fcf31a39b6e614595be7309046
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LipSyncDemo_Control
+  - hash:
+      serializedVersion: 2
+      Hash: 8ae3331b163cc121825eeed3975d6c4d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatGui
+  - hash:
+      serializedVersion: 2
+      Hash: eab5bd3b00133e5da9183176b8ee43ac
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRGazePointer
+  - hash:
+      serializedVersion: 2
+      Hash: ee064a1c4ba1f660af1c5b892fd2512c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: 74c875e0f15c48e0a55f06093aa93e15
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: LayoutElementMatchSize
+  - hash:
+      serializedVersion: 2
+      Hash: 6a409d7f800638743169af1c5a8c8c9e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIButtonListener
+  - hash:
+      serializedVersion: 2
+      Hash: e7a73f5f78ba6445195ec23b74a1ce2d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ScrollbarEventHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 1d15a4c58b0a7370ae09b19036a9ba4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Animation
+    className: UIAnimations
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocomotionSampleSupport
+  - hash:
+      serializedVersion: 2
+      Hash: ef3e81024497ac43977a1f13b573c58b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Tiles
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: P2PNetworkGoal
+  - hash:
+      serializedVersion: 2
+      Hash: f1117d85da0716733a048379349dcac4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: StartMenu
+  - hash:
+      serializedVersion: 2
+      Hash: bd4c580f02d31d4be48d7a47440392c4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerAnimatorManager
+  - hash:
+      serializedVersion: 2
+      Hash: 04e4a8b0447477cc4e933d9e5311188f
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: ArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: ac24b2648552eee64b91af065f0f820c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 1378007cdd363affd96829752a723a44
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: TextureTargetRawImage
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsOpenProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: GroupTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 2f10cc4ec84a9874cfdfe66177cccdd6
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRDebugHeadController
+  - hash:
+      serializedVersion: 2
+      Hash: 4c11ac8a43930d2850ad82497b69a35e
+    assemblyName: Unity.TerrainTools.dll
+    namespaceName: 
+    className: TerrainGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 2b1d1de79e4d31f1861f586502176c81
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonAnimatorView
+  - hash:
+      serializedVersion: 2
+      Hash: ee1dba1a186ac062d564e9eb73a1c56f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: TextToggleIsOnTransition
+  - hash:
+      serializedVersion: 2
+      Hash: ee1dba1a186ac062d564e9eb73a1c56f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: TextToggleIsOnTransition
+  - hash:
+      serializedVersion: 2
+      Hash: a5781dc71a671b1ad2b38de19f24b71f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 8e0f3ec8d75fb8795524bfa69489fa95
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarTextureCopyManager
+  - hash:
+      serializedVersion: 2
+      Hash: bc85ffeddf1ca0db77ce0cd8273f284f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.EntitlementCheck
+    className: EntitlementCheck
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: ButtonInsideScrollList
+  - hash:
+      serializedVersion: 2
+      Hash: 76085aff365b21fc39d19fa1c5fa1345
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8b9f42d72019bde2f9fe0667762eaff3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarRenderComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: CullingHandler
+  - hash:
+      serializedVersion: 2
+      Hash: b2c49db11310c73f73ac8c392fbc5715
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVR
+    className: SoundEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: 72712369a7c681ad84fc255a5ec0b333
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Text
+  - hash:
+      serializedVersion: 2
+      Hash: 499fd23433e68e265d153aa6b95d0047
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Scrollbar
+  - hash:
+      serializedVersion: 2
+      Hash: ac10e5fe3455baf14336675170ed0bae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: BoundsLockedObject
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: PositionAsUV1
+  - hash:
+      serializedVersion: 2
+      Hash: abf1930d8126d0b2e00e9449129a0190
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: TouchInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 60fb902c3bfc0533f4e7b79e5d161e78
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Hub
+    className: DemoHubManager
+  - hash:
+      serializedVersion: 2
+      Hash: a93617a51dcbbcf2870f6385590c226f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: Progressor
+  - hash:
+      serializedVersion: 2
+      Hash: f5266a5adcb8c50025b10c670fa5c92a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIView
+  - hash:
+      serializedVersion: 2
+      Hash: 8e0313c6f5e2ce35991fec2d64f8eaab
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Image
+  - hash:
+      serializedVersion: 2
+      Hash: 32c2e26363d3830b3fcd6735b46fef68
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: TrainButtonVisualController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: TestResultRendererCallback
+  - hash:
+      serializedVersion: 2
+      Hash: b3bb7c40cede9849e7814d6093dcfcea
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 234235b9fb07320d11497e08a726cc56
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 7ffa5a0944fe3f23d99ec567ae7ae898
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterCameraConstraint
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ThemeManager
+  - hash:
+      serializedVersion: 2
+      Hash: a0c8ebf11978d247aa1eab8d2659a2d4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine
+    className: GameEventListener
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: PauseOnInputLoss
+  - hash:
+      serializedVersion: 2
+      Hash: 07bbff34ca5d14ed9bffb0376c5ede5f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GuardianBoundaryEnforcer
+  - hash:
+      serializedVersion: 2
+      Hash: 36ae7cc3e989c6df9341b63a0b042603
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: BoardPosition
+  - hash:
+      serializedVersion: 2
+      Hash: b1f26da3046d8b188758169a9d6b1078
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: BezierSpline
+  - hash:
+      serializedVersion: 2
+      Hash: e6e8eb7576996efd6f1ee56f31ca7ade
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Settings
+    className: UIDrawerSettings
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfPlayersOnMasterProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c2275f76762caaa99cdd96b12b11ff08
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: SpriteTargetImage
+  - hash:
+      serializedVersion: 2
+      Hash: 7ab0e790220bdca831fdd886b339039d
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GridLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 443ad0bf402112d796f9db003ed0c504
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TurnManagerMJ
+  - hash:
+      serializedVersion: 2
+      Hash: 5b2a4204263cf91ee4a9c9fa933c2c58
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Input
+    className: KeyToGameEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 267e1e00a8f1d106bd614339db235595
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PunCockpit
+  - hash:
+      serializedVersion: 2
+      Hash: fee097d02613f2ca12f8c75d5228d3bd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Realtime.Demo
+    className: ConnectAndJoinRandomLb
+  - hash:
+      serializedVersion: 2
+      Hash: 4cdcd8ce71a6659d46efdb51e7c6d076
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: E11PopupScriptOne
+  - hash:
+      serializedVersion: 2
+      Hash: 2a190070f6cdfa268969e6612ffdf745
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRMixedRealityCaptureTest
+  - hash:
+      serializedVersion: 2
+      Hash: c51d2a1569bb404a12e837742887b609
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRPlayerController
+  - hash:
+      serializedVersion: 2
+      Hash: 8aa3d6ccbcb54ee8db6c1229854adaaa
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ContentSizeFitter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 558b301491aa906446760eed78a170c5
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRAudioSourceTest
+  - hash:
+      serializedVersion: 2
+      Hash: 98506727e8a54a769df6ab8c4a7305c5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Billboard
+  - hash:
+      serializedVersion: 2
+      Hash: 574548a369e199ea1d83b5331c5a911b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RichPresenceSample
+  - hash:
+      serializedVersion: 2
+      Hash: ba160f8fe96116c81151a9a24d7d9f4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RoomListCell
+  - hash:
+      serializedVersion: 2
+      Hash: c87a2744a4fec8052f557862b102c4e4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: FriendListCell
+  - hash:
+      serializedVersion: 2
+      Hash: 316725cbd01c92513cce9cf236f380fc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Models
+    className: Graph
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: IngameControlPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 0dbc3be398b4869a5c8d0d8481ee402c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: LayoutElement
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfPlayersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: PhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: d29554da4f32756eaad6ec0d568c5648
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarSDKManager
+  - hash:
+      serializedVersion: 2
+      Hash: 72f0e262cec16c9f4520dc3bf2b81796
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: BezierCurve
+  - hash:
+      serializedVersion: 2
+      Hash: bfd090288e2db0f06185d6536f23c71f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: TimeScaleNode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Hub
+    className: ToDemoHubButton
+  - hash:
+      serializedVersion: 2
+      Hash: 11df54cb47bd74c537f3c732a94ea97d
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonHandler
+  - hash:
+      serializedVersion: 2
+      Hash: e7dac3c9100823d6e750582bb7d6b5f8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportAimHandlerParabolic
+  - hash:
+      serializedVersion: 2
+      Hash: da14c05d71f0da0054d5a39955ae9218
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Nodes
+    className: SubGraphNode
+  - hash:
+      serializedVersion: 2
+      Hash: 2d6c48bcbb0c5879a658aca82ca624a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: TrainCar
+  - hash:
+      serializedVersion: 2
+      Hash: cd0ecdca0166232906c6f2df9dddc3d3
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRProfiler
+  - hash:
+      serializedVersion: 2
+      Hash: 329a4358a2c40fe3c40f44951200bd91
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarBase
+  - hash:
+      serializedVersion: 2
+      Hash: bd3cf68c8964d3c66d1c43f4f98508c9
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: Block
+  - hash:
+      serializedVersion: 2
+      Hash: 025866bb53162ac1e71a1b207ceca793
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarLocalDriver
+  - hash:
+      serializedVersion: 2
+      Hash: e5ba90f531fe4c602fc732d95c1eded6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportInputHandlerHMD
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundyPooler
+  - hash:
+      serializedVersion: 2
+      Hash: 7200fc309b0ed180a81fb45217da51e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: GameBoard
+  - hash:
+      serializedVersion: 2
+      Hash: cf9f5cf2c3145a37ac07f00e50e460f9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: AspectRatioFitter
+  - hash:
+      serializedVersion: 2
+      Hash: bd4c580f02d31d4be48d7a47440392c4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PlayerAnimatorManager
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: SendRateOnSerializeField
+  - hash:
+      serializedVersion: 2
+      Hash: df6d951b6ecf8a67b68b89b4c07d970b
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRVignette
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVROverlayMeshGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Touchy
+    className: TouchDetector
+  - hash:
+      serializedVersion: 2
+      Hash: 01af2a1ccde6f5a3777877fce1d85576
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: TabViewManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RectMask2D
+  - hash:
+      serializedVersion: 2
+      Hash: f567adef2b413f8c95c4f966001c7e25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocomotionTeleport
+  - hash:
+      serializedVersion: 2
+      Hash: b45cd859b72f00579760e8f000b7a8e6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.SceneManagement
+    className: SceneDirector
+  - hash:
+      serializedVersion: 2
+      Hash: 4e9333594897a1fb8b136ad2eae996c7
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMeshUI
+  - hash:
+      serializedVersion: 2
+      Hash: 9c80efe996101ed2f2acdc43e1a95b5b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: AsteroidsGameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 52bcb9c2a78bdd8d98a59e915c346e75
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: TransitionArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo
+    className: WebRpcImplementationExample
+  - hash:
+      serializedVersion: 2
+      Hash: 5ab533713adae59372fb3e10a585c186
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AnimationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 78e6820c1b226e780eaa88f26356421b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIButton
+  - hash:
+      serializedVersion: 2
+      Hash: e0b0ed6e8583d0545fde275d5caaf83f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: TextureTargetUnityEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 08620780b69fc9e76cd687022de1f5b6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: ControllerBoxController
+  - hash:
+      serializedVersion: 2
+      Hash: a3d1f52d83f058b4557b96b9ac692b76
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: HandsManager
+  - hash:
+      serializedVersion: 2
+      Hash: 1283539fac16179e3e70c0832e77742e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Nodes
+    className: ExitNode
+  - hash:
+      serializedVersion: 2
+      Hash: 2535168d4111c89c25c9e5df7d237600
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressTargetText
+  - hash:
+      serializedVersion: 2
+      Hash: caf27b6b72eb1c27445495431511c61a
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRControllerHelper
+  - hash:
+      serializedVersion: 2
+      Hash: 1617f63f40e4cfa654388e0d91e132ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Settings
+    className: UIPopupSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRResources
+  - hash:
+      serializedVersion: 2
+      Hash: aba7b2852ef61d175dd9602e7723d5e5
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Mask
+  - hash:
+      serializedVersion: 2
+      Hash: 9337d9b49ef69a8f6b3c9e840a9d2fe6
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: GrabbableCrosshair
+  - hash:
+      serializedVersion: 2
+      Hash: 0927e41b46e1bd11671f9b5adda4b832
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonRigidbody2DView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundyManager
+  - hash:
+      serializedVersion: 2
+      Hash: c87c1a613a1d921a59610974a6f5f9fc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIToggle
+  - hash:
+      serializedVersion: 2
+      Hash: cddda176806387fb79934d7957e07c80
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRMesh
+  - hash:
+      serializedVersion: 2
+      Hash: d251bf88db6c95a6b1aa0b69298da9ef
+    assemblyName: UnityEngine.SpatialTracking.dll
+    namespaceName: UnityEngine.SpatialTracking
+    className: TrackedPoseDriver
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Shadow
+  - hash:
+      serializedVersion: 2
+      Hash: 1b67d4bb4648cb7d784398ebb0539b1b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: GameController
+  - hash:
+      serializedVersion: 2
+      Hash: b91c8e6d466992f4dca9529697a7a59e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPSettings
+  - hash:
+      serializedVersion: 2
+      Hash: e29dc6e16288125d4ed363e0cad86897
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: BackButtonNode
+  - hash:
+      serializedVersion: 2
+      Hash: 1f74ed43dcd4b6debc2d1978f9f32eba
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GazeTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnStartDelete
+  - hash:
+      serializedVersion: 2
+      Hash: c62775f7279ea30b4981a8322d28585a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.SimplePlatformSample
+    className: DataEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 5ae36aa27e46b25633847fc7cb6b5c87
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: CullArea
+  - hash:
+      serializedVersion: 2
+      Hash: 9f20756fa866d9331f9096772af0b319
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPAudioSource
+  - hash:
+      serializedVersion: 2
+      Hash: b25c2463ba9144686d18d7707733226b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: NamePickGui
+  - hash:
+      serializedVersion: 2
+      Hash: 24f79094aff162c9aa69c31d64d777d3
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnClickRpc
+  - hash:
+      serializedVersion: 2
+      Hash: 4810b3707d5fd5dc0d4e93afb64fcd4b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 17506aed23f5e4891023d05d1cf8f394
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.MyCompany.MyGame
+    className: PlayerUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PunPlayerScores
+  - hash:
+      serializedVersion: 2
+      Hash: a3454b83b4f54d4ed521c79635c758ee
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: ConnectAndJoinRandom
+  - hash:
+      serializedVersion: 2
+      Hash: 1aec3137280638278bc9bcbe5b3bc1b3
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PunCockpitEmbed
+  - hash:
+      serializedVersion: 2
+      Hash: 5777c70a25f193ad387a5581565b81b9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVR
+    className: AudioManager
+  - hash:
+      serializedVersion: 2
+      Hash: 48e7b286157118d9659dd0bcf5e4c0c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Base
+    className: NamesDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: cc4274b586df3c02688bac01b88bd16c
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventSystem
+  - hash:
+      serializedVersion: 2
+      Hash: e269129a92a880f5211d20d6b89e9cf1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: IAPManager
+  - hash:
+      serializedVersion: 2
+      Hash: 0fb27be807aa299702f28ad0bcad1f46
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 6ccef259da155e93c32ed2677c987be7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportTransitionWarp
+  - hash:
+      serializedVersion: 2
+      Hash: 54d21921884d2016832d4505e337a3f0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: DistanceGrabber
+  - hash:
+      serializedVersion: 2
+      Hash: 117e94af12d2e42e9e17b73f2602978e
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: CreateRoomUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: 84f118e8bb01e4e536b4fe72b0493ca3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncMicInput
+  - hash:
+      serializedVersion: 2
+      Hash: 6648079fbb0ecae6f3fe6220e9a161b1
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRCustomSkeleton
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: AutoSyncSceneToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 63a46f57d97b4fb9f8823bdcc6212f65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPProfiler
+  - hash:
+      serializedVersion: 2
+      Hash: b8a5e8091ab0b8861d2add371082c5e0
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: AIPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsVisibleToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine
+    className: Coroutiner
+  - hash:
+      serializedVersion: 2
+      Hash: 1f0d54fdeae9284266d001d7b60bbc1c
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVROverlay
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ControlTrack
+  - hash:
+      serializedVersion: 2
+      Hash: ce11ea1f2e0fa5c0dde8c309002e8479
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIPopupDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: 8dc90e648ac06f43bdd31ac9fa8f4579
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Selectable
+  - hash:
+      serializedVersion: 2
+      Hash: 6ed0a296f1f1c9a2b22c6f8e635be7c9
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRProgressIndicator
+  - hash:
+      serializedVersion: 2
+      Hash: 2fc58a32f99d25dfb6db33aebcbd9a9b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Layouts
+    className: LayoutController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRAutoDestroyInMRC
+  - hash:
+      serializedVersion: 2
+      Hash: f8f5c34557f4103b6547d8f956cec6ea
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer
+    className: PlayerControl
+  - hash:
+      serializedVersion: 2
+      Hash: c6436612801bbcef0d551fdc56133de7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: WaitNode
+  - hash:
+      serializedVersion: 2
+      Hash: 80913a2dbb708e0f503739c081ba230f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: TrainTrack
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: BestRegionInPrefsProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 76056c447cc3c6f6ef56bfcaed33514e
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRPlatformMenu
+  - hash:
+      serializedVersion: 2
+      Hash: f6d3f53988465db91af90171954f7b5e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: RayTool
+  - hash:
+      serializedVersion: 2
+      Hash: 329a4358a2c40fe3c40f44951200bd91
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarComponent
+  - hash:
+      serializedVersion: 2
+      Hash: a8c61f120a248e691d195a82070bb1fb
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRHeadsetEmulator
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: InteractableRegistry
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomPlayerTtlProperty
+  - hash:
+      serializedVersion: 2
+      Hash: f41dc612e461acf568bc5ca2f9d3c8ea
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportOrientationHandlerThumbstick
+  - hash:
+      serializedVersion: 2
+      Hash: 025866bb53162ac1e71a1b207ceca793
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarTestDriver
+  - hash:
+      serializedVersion: 2
+      Hash: b513130c9334a17678c64caa3b633b4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: UnloadSceneNode
+  - hash:
+      serializedVersion: 2
+      Hash: 0be4c5c10ae412b122a47f0f79c6f324
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncSequence
+  - hash:
+      serializedVersion: 2
+      Hash: 373688f86e51a7cff81489e2b39ee3bb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportTargetHandlerPhysical
+  - hash:
+      serializedVersion: 2
+      Hash: 4c99ee0145faab3931c9377720ed7e38
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: handtrackinggrabber
+  - hash:
+      serializedVersion: 2
+      Hash: 0498232dd48b097128db9129acff161b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarTouchController
+  - hash:
+      serializedVersion: 2
+      Hash: 8d11668e45eb708bd63c6ae9fe5099dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.MyCompany.MyGame
+    className: PlayerManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: DetectBasket
+  - hash:
+      serializedVersion: 2
+      Hash: f941c3a384168571b7d90f58ec4986bc
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: InfosPanelPlaceholder
+  - hash:
+      serializedVersion: 2
+      Hash: bb416e9a49fa1056a851e29bfaeebe51
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPReflectionZone
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsOpenToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 1e11aa27a6e812df11ae8d908a0dfc24
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressTargetAudioMixer
+  - hash:
+      serializedVersion: 2
+      Hash: f2804c5e7659d20873aa628b628aaa3b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandsActiveChecker
+  - hash:
+      serializedVersion: 2
+      Hash: 2d75dd1753213123772f51e8448cd92e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: GamePiece
+  - hash:
+      serializedVersion: 2
+      Hash: 6529848e3bbeb97fdff7ea6e01133d21
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportOrientationHandlerHMD
+  - hash:
+      serializedVersion: 2
+      Hash: f4e32de47f8394dfed04483bf157042e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Utils
+    className: DoozyPath
+  - hash:
+      serializedVersion: 2
+      Hash: b3ab2106268377ffe25dd18ac23dca28
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Asset
+  - hash:
+      serializedVersion: 2
+      Hash: 7b2b15eaf43a9b54445bbc09d96f9233
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: FontTargetText
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRDebugInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: EventSystemSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 8b9f42d72019bde2f9fe0667762eaff3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarSkinnedMeshRenderPBSComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 004c08043a58a7eea00923be42d08ebc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIDrawerArrowAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: 57d2b3ca58a430f7cf319bb757c1f0f5
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnClickInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: d4020bafcd3ccbb5601a6e6c8ac78be0
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ScrollRect
+  - hash:
+      serializedVersion: 2
+      Hash: 1eb9aed3cd6453fbc580cf51127908af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform
+    className: CallbackRunner
+  - hash:
+      serializedVersion: 2
+      Hash: f7fddb89ccc6de709bd65b996e8cbf7f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Animation
+    className: UIAnimationData
+  - hash:
+      serializedVersion: 2
+      Hash: 997414a45d5266d93abbea01c1bce413
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnvironmentSound
+  - hash:
+      serializedVersion: 2
+      Hash: 7136ccb8970d7b5b2feefcae2f0d201d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoviePlayerSampleControls
+  - hash:
+      serializedVersion: 2
+      Hash: c4d06f7141c81e5114a5c1c92b6cb894
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: ApplicationQuitNode
+  - hash:
+      serializedVersion: 2
+      Hash: 9dac07391de41cfe62679ab7cfb4ed85
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIDrawer
+  - hash:
+      serializedVersion: 2
+      Hash: 6fb402875e8be17971c4e99a766c42f7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Orientation
+    className: OrientationDetector
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CloudRegionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: ee84478990d29c6d64a8d3003b44725c
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: PlayerOverviewPanel
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalTrack
+  - hash:
+      serializedVersion: 2
+      Hash: af5627345cf1970e27bfd9a7fb498b45
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Input
+    className: KeyToAction
+  - hash:
+      serializedVersion: 2
+      Hash: 9edf0788742c31d8eaaf32cf4feac747
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRResetOrientation
+  - hash:
+      serializedVersion: 2
+      Hash: 7602c8d40ade510f4c0e781c7062b246
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChannelSelector
+  - hash:
+      serializedVersion: 2
+      Hash: 14f6e7d5314d3aff9265172f9d1e95a9
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: StatesGui
+  - hash:
+      serializedVersion: 2
+      Hash: 0927e41b46e1bd11671f9b5adda4b832
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonRigidbodyView
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: IgnoreUiRaycastWhenInactive
+  - hash:
+      serializedVersion: 2
+      Hash: 18d89cb858d0cf8a1f38bb786789eaa7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ChatAppIdCheckerUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: P2PNetworkBall
+  - hash:
+      serializedVersion: 2
+      Hash: 15f0f7b03aaa40a7bdff0753b208a9ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ThemesSettings
+  - hash:
+      serializedVersion: 2
+      Hash: f5c49605360921b2748d61c4cb038a81
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: SpriteTargetSpriteRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 81a9bc1d83e1fd490e1a64683068d55e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: FontTargetTextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PingProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 11df54cb47bd74c537f3c732a94ea97d
+    assemblyName: PhotonRealtime.dll
+    namespaceName: Photon.Realtime
+    className: ConnectionHandler
+  - hash:
+      serializedVersion: 2
+      Hash: 22dc216204f0e65ce2161bd7b6ecf06b
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRScreenFade
+  - hash:
+      serializedVersion: 2
+      Hash: fe9e00068283ef13b28a703001e08184
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: GrabManager
+  - hash:
+      serializedVersion: 2
+      Hash: 19c703fb20b3231dbd1a21248e8bb11b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PlayerDetailsController
+  - hash:
+      serializedVersion: 2
+      Hash: 32cb18cd5ad8276bea4ff86b3a04274b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVRTouchSample
+    className: HandPose
+  - hash:
+      serializedVersion: 2
+      Hash: f8bdc5302f6dd3ca0d6feb313e913f0a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: OVROverlaySample
+  - hash:
+      serializedVersion: 2
+      Hash: 0f4941a17b7d2df8af5184db12cb663b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetRawImage
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: GameVersionField
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SpriteAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: b5d01a44c9a694c6b9bce4626dd0a12e
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRHandTest
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: BallEjector
+  - hash:
+      serializedVersion: 2
+      Hash: 61c7e440799059d089dd591427242f79
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncContextBase
+  - hash:
+      serializedVersion: 2
+      Hash: 13e22b494eec27d9cfde697f4dccc527
+    assemblyName: Unity.TerrainTools.dll
+    namespaceName: UnityEngine.Experimental.TerrainAPI
+    className: TerrainGizmos
+  - hash:
+      serializedVersion: 2
+      Hash: 55e82a8a3e3fb6a5866ec61b18795810
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: TrainCrossingController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSync
+  - hash:
+      serializedVersion: 2
+      Hash: c21f52cd4abfd3b2a702ab1637dd117f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: groundcheck
+  - hash:
+      serializedVersion: 2
+      Hash: 0182aac3fd8bfdeff27021b9548c3a6a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: ColorGrabbable
+  - hash:
+      serializedVersion: 2
+      Hash: 259988b2d867e1586634d64379c5ff81
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonTransformView
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomPropertiesListedInLobbyProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 6d39c48b69b486476ba524949d845693
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LocomotionController
+  - hash:
+      serializedVersion: 2
+      Hash: 704dcd31abc789439bc3f3cd10b58c2b
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 3043290b08d2ce331b80366f9694a5c5
+    assemblyName: DOTween.dll
+    namespaceName: DG.Tweening.Core
+    className: DOTweenSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 45f2a4e63a8b43166e3f85c4d543f00d
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRSceneLoader
+  - hash:
+      serializedVersion: 2
+      Hash: a7879b2482b664da0feca522227757fb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: E11PopupScriptThree
+  - hash:
+      serializedVersion: 2
+      Hash: d329540117e6b6c523bded68046af505
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PropertyListenerBase
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: BackgroundTimeOutField
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfPlayersInRoomProperty
+  - hash:
+      serializedVersion: 2
+      Hash: a59e183d3f86325b6f381a8fc91f951c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: DistanceGrabbable
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: InteractableToolsInputRouter
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: RemoteTestResultSender
+  - hash:
+      serializedVersion: 2
+      Hash: 15fed5cf26dd184ba830fcd9b873bd9d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIDrawerListener
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: StringInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 4fdfe530ffd5f502ce72adb104fc64e2
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnClickDestroy
+  - hash:
+      serializedVersion: 2
+      Hash: 1283539fac16179e3e70c0832e77742e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Nodes
+    className: StartNode
+  - hash:
+      serializedVersion: 2
+      Hash: d5e68cf575436610637b84e945549def
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressTargetAnimator
+  - hash:
+      serializedVersion: 2
+      Hash: ab9b3242e7f7cea8eb7d313db01cc29d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncContextCanned
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: FlyText
+  - hash:
+      serializedVersion: 2
+      Hash: a4b88f3b08f1f148e04c6c3d7544c9ec
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRMonoscopic
+  - hash:
+      serializedVersion: 2
+      Hash: 98e5fd32952d6cca03aab18bfaee5139
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRSkeletonRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: 92999935e7b91b636ce8ed70aab3dc1d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncContextMorphTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 157538f8f4891e8727c599fd613d7108
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncDebugConsole
+  - hash:
+      serializedVersion: 2
+      Hash: 8a472b9d30acaab8e6257c7f673e2479
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVRTouchSample
+    className: Hand
+  - hash:
+      serializedVersion: 2
+      Hash: 7d3b4419890d47df531f3744ef978ef0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportInputHandlerTouch
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Utils
+    className: LanguagePack
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsVisibleProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 0182aac3fd8bfdeff27021b9548c3a6a
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRGrabbable
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomEmptyRoomTtlProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 961ad5bdeb8370430561d1d105e57e87
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIPopupLink
+  - hash:
+      serializedVersion: 2
+      Hash: 9fce3d3ad5943924497902d7085db4c5
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRCubemapCapture
+  - hash:
+      serializedVersion: 2
+      Hash: b9567902f8e3a4a8e3ebfbcfdc430b33
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Animation
+    className: UIAnimationDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: e1ca8f8609ae109158b50ac13a67fa0b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportAimVisualLaser
+  - hash:
+      serializedVersion: 2
+      Hash: c62775f7279ea30b4981a8322d28585a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.NetChat
+    className: DataEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 4fd8bf02e3089425d3502e26c44ba31a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextContainer
+  - hash:
+      serializedVersion: 2
+      Hash: 2107ba5751259d2765462f06cbf41371
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UICanvas
+  - hash:
+      serializedVersion: 2
+      Hash: 8f71d2ab3258f223c82a0616125cd43f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: CharacterCapsule
+  - hash:
+      serializedVersion: 2
+      Hash: 5f1752ed2092162f016c19510c28a8b9
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Button
+  - hash:
+      serializedVersion: 2
+      Hash: 50ed2751f7b39ef122ae2de986a3421b
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRHand
+  - hash:
+      serializedVersion: 2
+      Hash: 05e1dfe9d112a8058e2b93c0a658e3a7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: FingerTipPokeToolView
+  - hash:
+      serializedVersion: 2
+      Hash: 7643d76970fa2ed168a388f2eaeac83a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MoviePlayerSample
+  - hash:
+      serializedVersion: 2
+      Hash: aaa7e7fd415114b3b243b3a618492d76
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportAimHandlerLaser
+  - hash:
+      serializedVersion: 2
+      Hash: feb9a5a121d15fa3654d4e50a5233045
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: RawImage
+  - hash:
+      serializedVersion: 2
+      Hash: f79d2161c56775fea247a430c491e86b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrVoiceChat
+    className: PlatformManager
+  - hash:
+      serializedVersion: 2
+      Hash: d9aa52c5a283a9b8a790e55c0dee9ccf
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RegionListCell
+  - hash:
+      serializedVersion: 2
+      Hash: 8fb3d6b79e9539c38197df7ed25fc22d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: InteractableToolsCreator
+  - hash:
+      serializedVersion: 2
+      Hash: c4d06f7141c81e5114a5c1c92b6cb894
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: ActivateLoadedScenesNode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: PlatformManager
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: IsConnectedProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 9edf0788742c31d8eaaf32cf4feac747
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRModeParms
+  - hash:
+      serializedVersion: 2
+      Hash: 8373d1df912629aac44f2174881658d9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MediaPlayerImage
+  - hash:
+      serializedVersion: 2
+      Hash: 1594aa47c198fea82029a38ab5f6050c
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: ServerSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 11bdd61587db747672b66c52442395d8
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: GameVersionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: b5d01a44c9a694c6b9bce4626dd0a12e
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRGearVrControllerTest
+  - hash:
+      serializedVersion: 2
+      Hash: c380fc5ce39348202e0a58fe3e243a74
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: SetRoomCustomPropertyUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: 82f888518833e5fa8c86e3e1a06b4a4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVRTouchSample
+    className: TouchController
+  - hash:
+      serializedVersion: 2
+      Hash: 4fe8955e1c662935371b0936cafbb89b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: TextButtonTransition
+  - hash:
+      serializedVersion: 2
+      Hash: 4fe8955e1c662935371b0936cafbb89b
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: TextButtonTransition
+  - hash:
+      serializedVersion: 2
+      Hash: e37675de1ea5e56da90f5600d33587bd
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ToggleExpand
+  - hash:
+      serializedVersion: 2
+      Hash: c6c39ad48c140a867a97bff30ed415e8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GuardianBoundaryDisplay
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportOrientationHandler360
+  - hash:
+      serializedVersion: 2
+      Hash: 8e50f2f016aa1b89cded2dbc8066fa11
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Shop.UIPacks
+    className: UIPackData
+  - hash:
+      serializedVersion: 2
+      Hash: 3ff7162c4f60aff70ea81999c707a877
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Layouts
+    className: RadialLayout
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: HandedInputSelector
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: RemotePlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: VerticalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: ab0a308aacb67350e8cee127a7df04d2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVR
+    className: AmbienceEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: bf8312e5e419f0f7299da40aabf2d600
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: RemoteLoopbackManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8e592b2e954c9a9874358cee7ca5fe87
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: RayToolView
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: NickNameField
+  - hash:
+      serializedVersion: 2
+      Hash: 4d9f3379d9846c3f857ff61792c5ee3b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerUI
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: LocalPlayer
+  - hash:
+      serializedVersion: 2
+      Hash: 1283539fac16179e3e70c0832e77742e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Nodes
+    className: EnterNode
+  - hash:
+      serializedVersion: 2
+      Hash: 69428909a6a3692b66f4c1d7ab9baa65
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetSelectable
+  - hash:
+      serializedVersion: 2
+      Hash: 9f7fd5f1cdce7cb0cbd6b8430ff831c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: EyeCamera
+  - hash:
+      serializedVersion: 2
+      Hash: df2297df44ab7385b5b83d7afd66483d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Touchy
+    className: GestureListener
+  - hash:
+      serializedVersion: 2
+      Hash: c0582a643137d322deb9522910ecdcf0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetTextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 9e5b79eaffb4a828a08c59fb1d2f2d1a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: TrackSegment
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: LoadLevelUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: a3b5c7ace69ce05da7ac8052564f6656
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportPoint
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: Bullet
+  - hash:
+      serializedVersion: 2
+      Hash: ff7457f736b7a8c348d3498f09b3d520
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPAmbisonicsNative
+  - hash:
+      serializedVersion: 2
+      Hash: 4ce15e99c635d2567873d27549d1f16f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PointedAtGameObjectInfo
+  - hash:
+      serializedVersion: 2
+      Hash: 14994ae85a430e38936aa8c55b0450b2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform
+    className: PlatformSettings
+  - hash:
+      serializedVersion: 2
+      Hash: c1da47489a01b8d168c5e96ef2251cf9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: a4ab9532686dbd13bc2c5bb58a3781ce
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MouseLook
+  - hash:
+      serializedVersion: 2
+      Hash: 37b66d97ccef5607e80037acafe51b3b
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: SplineWalker
+  - hash:
+      serializedVersion: 2
+      Hash: 4c063458ca029e84d4f59c22fc3c5fca
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportTargetHandlerNode
+  - hash:
+      serializedVersion: 2
+      Hash: b4f33769b4be9dc6ee0546bbfc960cbb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncContext
+  - hash:
+      serializedVersion: 2
+      Hash: a7f25f0f8502f346a9fecfc529196cd9
+    assemblyName: Unity.CircuitStream.PortalSDK.runtime.dll
+    namespaceName: CircuitStream.Unity
+    className: Portal
+  - hash:
+      serializedVersion: 2
+      Hash: 6aefcb69e398b783525b31c9fd3e99b1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: ButtonTriggerZone
+  - hash:
+      serializedVersion: 2
+      Hash: 783f593b9380cf72d0f7ebfd4a0d4bcd
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: InputField
+  - hash:
+      serializedVersion: 2
+      Hash: 45f9387638e0ddebbd2fcc6da812f557
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Touchy
+    className: TouchySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 6eec73ef93bfe43ef513041177529a3d
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRWaitCursor
+  - hash:
+      serializedVersion: 2
+      Hash: c9a8b80298a116835b51ba1cf9284367
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalReceiver
+  - hash:
+      serializedVersion: 2
+      Hash: ddb88151c19644f8893fc50abf00c917
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatar
+  - hash:
+      serializedVersion: 2
+      Hash: 92b8fbb1b8e53469d7549c58a3fe58fe
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: LobbyMainPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 025866bb53162ac1e71a1b207ceca793
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarRemoteDriver
+  - hash:
+      serializedVersion: 2
+      Hash: 5ad4aa237d47ac2bab17bacb672edf7a
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: HorizontalLayoutGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 35a9693c388776aaf487636491a20f11
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_FontAsset
+  - hash:
+      serializedVersion: 2
+      Hash: a77a6b59fc1ef13d1af8692c0c19290b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Settings
+    className: UICanvasSettings
+  - hash:
+      serializedVersion: 2
+      Hash: b5ab642aae745563519c07fced7e64d7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody
+    className: NodySettings
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: Cluster
+  - hash:
+      serializedVersion: 2
+      Hash: e1300922cc039f41ab46a47f4cb05898
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_Settings
+  - hash:
+      serializedVersion: 2
+      Hash: a4b88f3b08f1f148e04c6c3d7544c9ec
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRChromaticAberration
+  - hash:
+      serializedVersion: 2
+      Hash: 3a0fa4528690e89614a27f9b88a889c4
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRSceneSampleController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: ActivationPlayableAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 486ce52ccf2e4e0744583a345f2e5f7b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Settings
+    className: UIButtonSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 18c222bef9ae745ce69ddde9b74337ca
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: Physics2DRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: PlatformManager
+  - hash:
+      serializedVersion: 2
+      Hash: 8c945d889670ae0b8c526258c8d2f758
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: SpriteTargetSelectable
+  - hash:
+      serializedVersion: 2
+      Hash: 9b961e3ef864534f7304c8f8b3e15fe3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.MyCompany.MyGame
+    className: Launcher
+  - hash:
+      serializedVersion: 2
+      Hash: c4d06f7141c81e5114a5c1c92b6cb894
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: RandomNode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarSettingsEditor
+  - hash:
+      serializedVersion: 2
+      Hash: 11bdd61587db747672b66c52442395d8
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: AppVersionProperty
+  - hash:
+      serializedVersion: 2
+      Hash: d708fae9e4e4dfa7abf89bf3b80dc979
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ThemesDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: 8302a05adec609c4b10f8b6cc3443e4c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: PoseEditHelper
+  - hash:
+      serializedVersion: 2
+      Hash: ae1347d9113eee8b83c5c8047dcf31a8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: FriendItem
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: Camera2DController
+  - hash:
+      serializedVersion: 2
+      Hash: c1933cc0a2f4ff6eb13333347497beb3
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: TimelineAsset
+  - hash:
+      serializedVersion: 2
+      Hash: e1e615eaf73e560828f53edc8952e615
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PunTurnManager
+  - hash:
+      serializedVersion: 2
+      Hash: ec862e8b183e2b6469813dc75e9c1231
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetUnityEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 3bc1aed92f631557698cd251a40822c8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: PlayerArea
+  - hash:
+      serializedVersion: 2
+      Hash: e4316571779021b969790af4a77452dd
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: RoomListEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 6870e222087159de2335bf601bdb5ad4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIPopup
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ServerProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportTransitionInstant
+  - hash:
+      serializedVersion: 2
+      Hash: d2a2698b314a20912af1eb2b1758dc90
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PropertyCell
+  - hash:
+      serializedVersion: 2
+      Hash: 57f180a5003248da76cab9f40f315b05
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugUIBuilder
+  - hash:
+      serializedVersion: 2
+      Hash: cba6cca6bb3290c4c00d709cf63843db
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: SendRateField
+  - hash:
+      serializedVersion: 2
+      Hash: a6ded2673e2fb033edf3bf8af9c7c7dc
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarMaterialManager
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomNameProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 32f8aa17c8c80321b4c28ac9073a84b3
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: RoomListView
+  - hash:
+      serializedVersion: 2
+      Hash: c994e8cd5bf738217d0febac18d8e533
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetImage
+  - hash:
+      serializedVersion: 2
+      Hash: 1bbce36c26e06daa73238c07c42b2bc9
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: CameraWork
+  - hash:
+      serializedVersion: 2
+      Hash: 505a6714ae02fdc2e1ba29de535a4cc5
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRMeshRenderer
+  - hash:
+      serializedVersion: 2
+      Hash: e10400e84c8c573b2b5e4088aca77453
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerManager
+  - hash:
+      serializedVersion: 2
+      Hash: a8d3c943d9168cbdd8596f040ff02ff4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: Asteroid
+  - hash:
+      serializedVersion: 2
+      Hash: 349fc863c5f9c0b3f7471af2e318712a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: EnableSwitch
+  - hash:
+      serializedVersion: 2
+      Hash: 3cfcdbcae969980277d46c3a17789761
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SetupGameM
+  - hash:
+      serializedVersion: 2
+      Hash: a0c8681ff4572b36feba85977d117d5e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Buttons
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: ExampleShowPopup
+  - hash:
+      serializedVersion: 2
+      Hash: dbb1a6051987b4922d94d1caad387b1c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPPropagationMaterial
+  - hash:
+      serializedVersion: 2
+      Hash: c8fe7e466f79d7d996678fdcd8e865d8
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Settings
+    className: UIToggleSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 458215150b18ad62be70c422736998f8
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnJoinedInstantiate
+  - hash:
+      serializedVersion: 2
+      Hash: d7f7bc402888d42a0dbb080693e6863c
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: LoaderAnime
+  - hash:
+      serializedVersion: 2
+      Hash: 3b760e6526e13f7504f59e210145899a
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshProUGUI
+  - hash:
+      serializedVersion: 2
+      Hash: bbf6c8bbcb3097b51034aeb2a5b7693a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: MatchController
+  - hash:
+      serializedVersion: 2
+      Hash: 7221ab9307aaa6b66a416e2e4561f420
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: ScoreHelper
+  - hash:
+      serializedVersion: 2
+      Hash: e80cf4684910fdd7f091d85a19a93603
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer
+    className: SlotLanes
+  - hash:
+      serializedVersion: 2
+      Hash: 25de9a355a02358f42956639cea7595d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI
+    className: UIViewListener
+  - hash:
+      serializedVersion: 2
+      Hash: 4ca6f90afe62fc92d15b7d34228515d1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GazeTargetSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: 2acfd6a4079fb2ab3b393d232a0923d3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Input
+    className: BackButton
+  - hash:
+      serializedVersion: 2
+      Hash: f8438efc679de058330bd3e038df1378
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPPropagationSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 3f70808c2961a598688d62ac6c3c9016
+    assemblyName: Oculus.VR.dll
+    namespaceName: UnityEngine.EventSystems
+    className: OVRPhysicsRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a8a4fba96bef6fccf7bb4be2f06c16b6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: IntInputField
+  - hash:
+      serializedVersion: 2
+      Hash: f336e086360abe49a3323e5f1583c35a
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 5421466ed6291c1ab2d1650a128005b2
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PhotonLagSimulationGui
+  - hash:
+      serializedVersion: 2
+      Hash: ce638e2dcac0548a4a3e456d5051c131
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: GoalMover
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: EventSystemSpawner
+  - hash:
+      serializedVersion: 2
+      Hash: ae83e830e7a90c0aff918c4c2e520825
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: GraphicRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 34c971ccf5a4d4c276f7753251cba95d
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRGridCube
+  - hash:
+      serializedVersion: 2
+      Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools
+    className: BeforeAfterTestCommandState
+  - hash:
+      serializedVersion: 2
+      Hash: 48804c7edfd2998cdab1bf456d8dbfd0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: PlayerListView
+  - hash:
+      serializedVersion: 2
+      Hash: b779fd3924160dc8878276046c65a333
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Audiom
+  - hash:
+      serializedVersion: 2
+      Hash: c91f167855df48e73b2d722074e6224d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressTargetImage
+  - hash:
+      serializedVersion: 2
+      Hash: ced5ab017e4503e782dadad7429503ae
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: PortalNode
+  - hash:
+      serializedVersion: 2
+      Hash: b00ce1f32326f1cd1160488ffd14965a
+    assemblyName: Oculus.VR.Editor.dll
+    namespaceName: 
+    className: OVRConfig
+  - hash:
+      serializedVersion: 2
+      Hash: 8b9f42d72019bde2f9fe0667762eaff3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarSkinnedMeshRenderComponent
+  - hash:
+      serializedVersion: 2
+      Hash: 57bbc7ecf7a22767c1b9015689b1da78
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: CowController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: ProceduralController
+  - hash:
+      serializedVersion: 2
+      Hash: c1f288a15dcded561b56b165b28ba9c1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DetectPlayed
+  - hash:
+      serializedVersion: 2
+      Hash: 8b751ea9ac08c048355865b722865681
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: PanelHMDFollower
+  - hash:
+      serializedVersion: 2
+      Hash: 1bde4438b9dc184303634a5777fc036e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: E12PopupManagerScript
+  - hash:
+      serializedVersion: 2
+      Hash: bfec7dfd0c88ae56777ca61fb95262eb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: AudioController
+  - hash:
+      serializedVersion: 2
+      Hash: c5fd97cc10b89deaf7c60af66a6b0d5a
+    assemblyName: PhotonRealtime.dll
+    namespaceName: Photon.Realtime
+    className: SupportLogger
+  - hash:
+      serializedVersion: 2
+      Hash: 3fea08a1eec999ffb74fb2ce61ca28e4
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ColorTargetParticleSystem
+  - hash:
+      serializedVersion: 2
+      Hash: 76b80dd1b65f63dfa63cf0ea8a906f3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SimpleCapsuleWithStickMovement
+  - hash:
+      serializedVersion: 2
+      Hash: 20acf3c1667c3fcaf430a03c1274c6e5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrBoardGame
+    className: MatchmakingManager
+  - hash:
+      serializedVersion: 2
+      Hash: 50502e1095f9e1ea7bccce1cafa26e69
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundGroupData
+  - hash:
+      serializedVersion: 2
+      Hash: 492e4075bfded9fb3f0d520048f29f83
+    assemblyName: Oculus.VR.dll
+    namespaceName: UnityEngine.EventSystems
+    className: OVRInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 3f600ad0f750f59238a91f7513b927c1
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonTransformViewClassic
+  - hash:
+      serializedVersion: 2
+      Hash: e0fd6b206f44251ddce06e242ee39fb8
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRGrabber
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CrcCheckToggle
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnPointerOverTooltip
+  - hash:
+      serializedVersion: 2
+      Hash: 253040b08417b9191bd313fbda6fc919
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: UIManager
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Photon.Chat.UtilityScripts
+    className: OnStartDelete
+  - hash:
+      serializedVersion: 2
+      Hash: 7751bd3193994439eeb92c1c893ed331
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: GameEventNode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Com.MyCompany.MyGame
+    className: PlayerNameInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 0dc3080ce4e132f93f868c36bc45e03a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Utils
+    className: UILanguagePack
+  - hash:
+      serializedVersion: 2
+      Hash: 00c99ff3f40bd11590c670580e513825
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PhotonTeamsManager
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: IsConnectedAndReadyProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 893dbdbfe611d62e230a686ea89f1efd
+    assemblyName: UnityEngine.XR.LegacyInputHelpers.dll
+    namespaceName: UnityEngine.XR.LegacyInputHelpers
+    className: SwingArmModel
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: MarkerTrack
+  - hash:
+      serializedVersion: 2
+      Hash: b5be90544603fd5604bfcc31deb77313
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ONSPPropagationGeometry
+  - hash:
+      serializedVersion: 2
+      Hash: 1561b9b9e317aa0cd0269e41a361310c
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Settings
+    className: UIViewSettings
+  - hash:
+      serializedVersion: 2
+      Hash: 0498232dd48b097128db9129acff161b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OvrAvatarHand
+  - hash:
+      serializedVersion: 2
+      Hash: 393c59b202b0e7b6b9fee142f9310de1
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform
+    className: VoipAudioSourceHiLevel
+  - hash:
+      serializedVersion: 2
+      Hash: d791aa6007fa3640be1164ea75bb087d
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_StyleSheet
+  - hash:
+      serializedVersion: 2
+      Hash: cd06391f9225499fb9ea605ab668b015
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrVoiceChat
+    className: VREyeRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: 7b83fb600b2f1bdc1cbefa7be51302c0
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody
+    className: GraphController
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ReadmeScript
+  - hash:
+      serializedVersion: 2
+      Hash: 2b53d93770b9036b2fd1c7854560bc69
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: MoveByKeys
+  - hash:
+      serializedVersion: 2
+      Hash: 7eb4f88c4cecd919d35b29d61805705b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: UIDrawerNode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: OnEscapeQuit
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: PlayerNameInputField
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomMasterClientIdProperty
+  - hash:
+      serializedVersion: 2
+      Hash: e90137b14c2644736d5abeafc2b26c9a
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: OnlineDocButton
+  - hash:
+      serializedVersion: 2
+      Hash: 505e6789aad191f472c90e87ae228dbb
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: ShuffleFinal
+  - hash:
+      serializedVersion: 2
+      Hash: 0206d628903d330ab486ebffa9dc4292
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OVR
+    className: TestScript
+  - hash:
+      serializedVersion: 2
+      Hash: ea4e73561703f90fbdc820af646becad
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer
+    className: SlotRacerSplashScreen
+  - hash:
+      serializedVersion: 2
+      Hash: d1f07c9e64b7817e6271f80bb03de25f
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.PunBasics
+    className: GameManager
+  - hash:
+      serializedVersion: 2
+      Hash: 4c0ebd9e77f5bc0558d19d8313e54bb9
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: SplinePosition
+  - hash:
+      serializedVersion: 2
+      Hash: 1b862038859b267ceaddb5cf7530c567
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LipSyncDemo_SetCurrentTarget
+  - hash:
+      serializedVersion: 2
+      Hash: 9a8997ca62d5a9ec2b23594602a7d0f9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: TrainLocomotive
+  - hash:
+      serializedVersion: 2
+      Hash: df434544c9f7b33d1cc7e635b180d279
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: b89ca8c8ae7041500fa1df2b061f55c9
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.SlotRacer.Utils
+    className: Line
+  - hash:
+      serializedVersion: 2
+      Hash: 3165968ba45c74472d279ba04455fccb
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_ColorGradient
+  - hash:
+      serializedVersion: 2
+      Hash: 4d737f41c0a2e8bc5392eb11a73acb25
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: SelectionCylinder
+  - hash:
+      serializedVersion: 2
+      Hash: 650c402108f0fc687b451cc4578ed29d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: WindmillBladesController
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomAutoCleanupProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c1313d723d19b50c00b55c8ce726b990
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportTargetHandlerNavMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 39d80cc683459a8dcad09ae1ca115196
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: LaserPointer
+  - hash:
+      serializedVersion: 2
+      Hash: f0fa87a0357f9cb61ebbda947d77835b
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: UINode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner.Callbacks
+    className: PlayModeRunnerCallback
+  - hash:
+      serializedVersion: 2
+      Hash: 1ed6e7ce8508a9e67f4717b5ec2f2a70
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: ThemeData
+  - hash:
+      serializedVersion: 2
+      Hash: 9b217f9f369fcb0702b731ba905faf3a
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressTargetAction
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: BaseInput
+  - hash:
+      serializedVersion: 2
+      Hash: 1681b50fda03adbcfafda61fbd5cd1bc
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: FriendListView
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomPlayerCountProperty
+  - hash:
+      serializedVersion: 2
+      Hash: d9864ada3db659b8d6f66a20aff414b3
+    assemblyName: PhotonUnityNetworking.dll
+    namespaceName: Photon.Pun
+    className: PhotonView
+  - hash:
+      serializedVersion: 2
+      Hash: 17653b21203f576d6729f3490936652e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: FingerTipPokeTool
+  - hash:
+      serializedVersion: 2
+      Hash: d5b95ab81ae5dcc63acefaedc9872693
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundyDatabase
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine
+    className: GameEventManager
+  - hash:
+      serializedVersion: 2
+      Hash: caa533b001ae39b864ba8425019e2268
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Outline
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: OfflineModeProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 2c8713480afc658528751d731eed8a21
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportTransitionBlink
+  - hash:
+      serializedVersion: 2
+      Hash: a63fc1a3b035e5a0b5839cd7f7b3086e
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: EventTrigger
+  - hash:
+      serializedVersion: 2
+      Hash: 8649814970b42d345b89944b862453cc
+    assemblyName: Unity.TextMeshPro.dll
+    namespaceName: TMPro
+    className: TMP_SubMesh
+  - hash:
+      serializedVersion: 2
+      Hash: 55c5d4231b5b81f8762aca1b7e16819e
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: PlayerListEntry
+  - hash:
+      serializedVersion: 2
+      Hash: 87207d40b89ca632396b05b3cb1e69b0
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: PlayerNumbering
+  - hash:
+      serializedVersion: 2
+      Hash: a694f613519aff12934c5254ae2ca5f5
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressTargetTextMeshPro
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestRunner.Utils
+    className: TestRunCallbackListener
+  - hash:
+      serializedVersion: 2
+      Hash: 09a62226fbb2daf9a71275693093ac4e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Nody.Nodes
+    className: SwitchBackNode
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Soundy
+    className: SoundyController
+  - hash:
+      serializedVersion: 2
+      Hash: 4ef0f7d42cdb13479386e1f049c315aa
+    assemblyName: UnityEngine.TestRunner.dll
+    namespaceName: UnityEngine.TestTools.TestRunner
+    className: PlaymodeTestsController
+  - hash:
+      serializedVersion: 2
+      Hash: 2aeeec1b1a144c469cd2d37776bc2315
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Dropdown
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomExpectedUsersProperty
+  - hash:
+      serializedVersion: 2
+      Hash: 163c66cebee3ffd65522e6a24263575f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: BoneCapsuleTriggerLogic
+  - hash:
+      serializedVersion: 2
+      Hash: fbb319f69f4aa2697b2d24521cf3e61d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: WindmillController
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CurrentRoomIsOfflineProperty
+  - hash:
+      serializedVersion: 2
+      Hash: c3bd598ebf26a1734f4e48c8dfe999af
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TeleportDestination
+  - hash:
+      serializedVersion: 2
+      Hash: 7b7594defcc4a999c6b4ff0038c8d360
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Examples
+    className: E11PopupScriptTwo
+  - hash:
+      serializedVersion: 2
+      Hash: 2fe925fedc6684bfaaedfdd7284d7727
+    assemblyName: Oculus.VR.dll
+    namespaceName: 
+    className: OVRSkeleton
+  - hash:
+      serializedVersion: 2
+      Hash: 748dd2a2a28da4e618912da5ac45684b
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.EventSystems
+    className: StandaloneInputModule
+  - hash:
+      serializedVersion: 2
+      Hash: 18235af34262c9d1c806370a73196694
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: ButtonControllerMJ
+  - hash:
+      serializedVersion: 2
+      Hash: aa88ae22474df55295327e4ee99e5a24
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Toggle
+  - hash:
+      serializedVersion: 2
+      Hash: 8220b46879dc5e37db1b940c938f5744
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: SignalEmitter
+  - hash:
+      serializedVersion: 2
+      Hash: e4aa02db6487ad3aebb8e2f22ee6b699
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Procedural
+    className: WorldGenerator
+  - hash:
+      serializedVersion: 2
+      Hash: cd06391f9225499fb9ea605ab668b015
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Oculus.Platform.Samples.VrHoops
+    className: VREyeRaycaster
+  - hash:
+      serializedVersion: 2
+      Hash: a37d774102b637d4dab90d03452d444d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: Converters
+  - hash:
+      serializedVersion: 2
+      Hash: 55fd795e51da61232a17e9ce0af59f52
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: Spaceship
+  - hash:
+      serializedVersion: 2
+      Hash: 682d4da29621f1e31a31c1d5930918e6
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: ConnectToRegionUIForm
+  - hash:
+      serializedVersion: 2
+      Hash: afc5b93a7b192de2dcb3832fe35a5c7e
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: TileController
+  - hash:
+      serializedVersion: 2
+      Hash: 19b0e0715aa496fee3e015c02a654adb
+    assemblyName: Unity.CircuitStream.PortalSDK.runtime.dll
+    namespaceName: CircuitStream.Unity
+    className: TestPortal
+  - hash:
+      serializedVersion: 2
+      Hash: 0e8dbd0a181c0f62f8eb34001deff1c7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: DistanceGrabberSample
+  - hash:
+      serializedVersion: 2
+      Hash: 7072231382eb3c4871b3dd75ad0227e1
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: Slider
+  - hash:
+      serializedVersion: 2
+      Hash: 1edab86fc84b0cdc5d1d2e9e459640c3
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: SoundNode
+  - hash:
+      serializedVersion: 2
+      Hash: 8cf111447f1f4754264a4de62c3f57df
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: OVRLipSyncContextTextureFlip
+  - hash:
+      serializedVersion: 2
+      Hash: 20384a41cc26b77ba5cb2d0b6d2ce973
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Nodes
+    className: LoadSceneNode
+  - hash:
+      serializedVersion: 2
+      Hash: 5f4d6e57084c42d31cf00600fe2c939d
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: BoolInputField
+  - hash:
+      serializedVersion: 2
+      Hash: 60af225976688b974dd3a7776654363f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Progress
+    className: ProgressorGroup
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DebugUISample
+  - hash:
+      serializedVersion: 2
+      Hash: 0fd6822f6177297bd0eb4d83cc7a9030
+    assemblyName: UnityEngine.UI.dll
+    namespaceName: UnityEngine.UI
+    className: ToggleGroup
+  - hash:
+      serializedVersion: 2
+      Hash: c8283c7732e3b6aa70d28f1fed4430ca
+    assemblyName: PhotonUnityNetworking.Utilities.dll
+    namespaceName: Photon.Pun.UtilityScripts
+    className: CountdownTimer
+  - hash:
+      serializedVersion: 2
+      Hash: 775b2a8f01249ce8887bd5ebcd8d6997
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.Themes
+    className: SpriteTargetUnityEvent
+  - hash:
+      serializedVersion: 2
+      Hash: 491877540590e03bc0107ec60a521be4
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit.Forms
+    className: UserIdUiForm
+  - hash:
+      serializedVersion: 2
+      Hash: c656dcc13ae391b68d594cc8f9c590b0
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Cockpit
+    className: CountOfRoomsProperty
+  - hash:
+      serializedVersion: 2
+      Hash: f0c4eb24258257daca58a9939f0894d2
+    assemblyName: PhotonUnityNetworking.Demos.dll
+    namespaceName: Photon.Pun.Demo.Asteroids
+    className: LobbyTopPanel
+  - hash:
+      serializedVersion: 2
+      Hash: 18235af34262c9d1c806370a73196694
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: OculusSampleFramework
+    className: ButtonController
+  - hash:
+      serializedVersion: 2
+      Hash: c21f52cd4abfd3b2a702ab1637dd117f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: interactableBehaviors
+  - hash:
+      serializedVersion: 2
+      Hash: c3d3430df9e3ea95e3e3d587961390fb
+    assemblyName: Unity.Timeline.dll
+    namespaceName: UnityEngine.Timeline
+    className: PlayableTrack
+  - hash:
+      serializedVersion: 2
+      Hash: f97251aaf71f6c2b5cabb35e5213a1a2
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: Doozy.Engine.UI.Base
+    className: ListOfNames
+  - hash:
+      serializedVersion: 2
+      Hash: c6b2f4b4112e3c30224dd4d7e998e2fd
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: AssignText
+  platform: 19
+  scenePathNames:
+  - Assets/Scenes/Launcher.unity
+  - Assets/Scenes/Mahjong VR Controllers.unity
+  playerPath: C:/Users/Andrew/Documents/Unity Projects/Mahjong-VR/MahjongVR/Builds/PC/Quest
+    Setup.exe

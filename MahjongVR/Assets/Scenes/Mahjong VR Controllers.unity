@@ -294,7 +294,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &16183651
 MonoBehaviour:
@@ -406,7 +406,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &26837124
 MonoBehaviour:
@@ -512,7 +512,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &30473842
 MonoBehaviour:
@@ -618,7 +618,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &32379660
 MonoBehaviour:
@@ -1062,7 +1062,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &52866090
 MonoBehaviour:
@@ -1101,18 +1101,6 @@ MonoBehaviour:
   viewIdField: 132
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!114 &54207200 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2876706255843827720, guid: dfe3620e85726944d9411ed73924a2bc,
-    type: 3}
-  m_PrefabInstance: {fileID: 2876706255824225000}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &55712521 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 520bf4a3ab2b71149b5843efd003c451,
@@ -1465,7 +1453,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &75974383
 MonoBehaviour:
@@ -2133,7 +2121,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &129951337
 MonoBehaviour:
@@ -2239,7 +2227,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &130086769
 MonoBehaviour:
@@ -2363,7 +2351,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &150639604
 MonoBehaviour:
@@ -2736,7 +2724,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &173324043
 MonoBehaviour:
@@ -2842,7 +2830,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &174313978
 MonoBehaviour:
@@ -2967,12 +2955,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 181087557}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.04, y: 0.86, z: 12.51}
-  m_LocalScale: {x: 30, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2042408, y: 0.16547656, z: 13.038174}
+  m_LocalScale: {x: 30, y: 3.5885444, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_Father: {fileID: 1687643188}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &183755689
 PrefabInstance:
@@ -3130,7 +3118,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &199033383
 MonoBehaviour:
@@ -3236,7 +3224,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &199750957
 MonoBehaviour:
@@ -3447,7 +3435,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &224756873
 MonoBehaviour:
@@ -3731,7 +3719,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &249826296
 MonoBehaviour:
@@ -3837,7 +3825,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &250786600
 MonoBehaviour:
@@ -3943,7 +3931,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &252620734
 MonoBehaviour:
@@ -4055,7 +4043,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &258561070
 MonoBehaviour:
@@ -4517,7 +4505,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &287726546
 MonoBehaviour:
@@ -4809,7 +4797,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &301593046
 MonoBehaviour:
@@ -4973,7 +4961,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 318269209}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0.053}
   m_LocalScale: {x: 0.17694564, y: 0.17694564, z: 0.17694564}
   m_Children:
   - {fileID: 2102782683}
@@ -5318,7 +5306,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &337210226
 MonoBehaviour:
@@ -5463,7 +5451,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &343498876
 MonoBehaviour:
@@ -5658,7 +5646,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &354335516
 MonoBehaviour:
@@ -5764,7 +5752,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &359933006
 MonoBehaviour:
@@ -5959,7 +5947,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &376904703
 MonoBehaviour:
@@ -6201,7 +6189,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &390703191
 MonoBehaviour:
@@ -6307,7 +6295,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &393994377
 MonoBehaviour:
@@ -6502,7 +6490,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &399017367
 MonoBehaviour:
@@ -6614,7 +6602,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &422856650
 MonoBehaviour:
@@ -6720,7 +6708,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &433831868
 MonoBehaviour:
@@ -6921,7 +6909,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &438392939
 MonoBehaviour:
@@ -7027,7 +7015,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &439179217
 MonoBehaviour:
@@ -7133,7 +7121,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &444914867
 MonoBehaviour:
@@ -7245,7 +7233,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &452769438
 MonoBehaviour:
@@ -7646,7 +7634,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &475767964
 MonoBehaviour:
@@ -7752,7 +7740,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &478328541
 MonoBehaviour:
@@ -8143,7 +8131,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &535456334
 MonoBehaviour:
@@ -8249,7 +8237,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &536172584
 MonoBehaviour:
@@ -8373,7 +8361,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &560392815
 MonoBehaviour:
@@ -8479,7 +8467,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &562577183
 MonoBehaviour:
@@ -8585,7 +8573,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &568556546
 MonoBehaviour:
@@ -8697,7 +8685,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &572856343
 MonoBehaviour:
@@ -8803,7 +8791,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &577490237
 MonoBehaviour:
@@ -9010,7 +8998,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &598069952
 MonoBehaviour:
@@ -9205,7 +9193,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &602952860
 MonoBehaviour:
@@ -9311,7 +9299,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &603769256
 MonoBehaviour:
@@ -9417,7 +9405,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &604445873
 MonoBehaviour:
@@ -9523,7 +9511,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &604694771
 MonoBehaviour:
@@ -9629,7 +9617,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &607248047
 MonoBehaviour:
@@ -9741,7 +9729,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &616391440
 MonoBehaviour:
@@ -9847,7 +9835,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &616990067
 MonoBehaviour:
@@ -9953,7 +9941,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &619428427
 MonoBehaviour:
@@ -10247,7 +10235,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &641230971
 MonoBehaviour:
@@ -10468,7 +10456,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &652225272
 AudioSource:
@@ -10633,7 +10621,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &653310147
 MonoBehaviour:
@@ -10871,12 +10859,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667747528}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: -11.38, y: 0.86, z: 2.37}
-  m_LocalScale: {x: 30, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -11.544241, y: 0.16547656, z: 2.8981729}
+  m_LocalScale: {x: 30, y: 3.5885444, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 14
+  m_Father: {fileID: 1687643188}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!4 &676557740 stripped
 Transform:
@@ -11046,7 +11034,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &707504530
 MonoBehaviour:
@@ -11241,7 +11229,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &709858892
 MonoBehaviour:
@@ -11347,7 +11335,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &712199807
 MonoBehaviour:
@@ -11637,7 +11625,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &725697932
 MonoBehaviour:
@@ -12474,7 +12462,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &773874509
 MonoBehaviour:
@@ -12669,7 +12657,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &780131855
 MonoBehaviour:
@@ -12775,7 +12763,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &785021961
 MonoBehaviour:
@@ -12957,7 +12945,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &790747621
 MonoBehaviour:
@@ -13237,7 +13225,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &809782533
 MonoBehaviour:
@@ -13427,7 +13415,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &817259600
 MonoBehaviour:
@@ -13533,7 +13521,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &825258824
 MonoBehaviour:
@@ -13728,7 +13716,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &835833673
 MonoBehaviour:
@@ -13767,12 +13755,6 @@ MonoBehaviour:
   viewIdField: 72
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!223 &840032767 stripped
-Canvas:
-  m_CorrespondingSourceObject: {fileID: 7994561379440537034, guid: 60266a37671dbd04f8361cce2e88f20b,
-    type: 3}
-  m_PrefabInstance: {fileID: 7994561378667842613}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &852200447 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: 67901d17d1a108c4ab67c9db285e5126,
@@ -13840,7 +13822,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &852200452
 MonoBehaviour:
@@ -13946,7 +13928,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &855312454
 MonoBehaviour:
@@ -14052,7 +14034,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &856161861
 MonoBehaviour:
@@ -14265,7 +14247,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &889436817
 MonoBehaviour:
@@ -14377,7 +14359,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &908093488
 MonoBehaviour:
@@ -14483,7 +14465,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &913533604
 MonoBehaviour:
@@ -15021,7 +15003,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &944278155
 MonoBehaviour:
@@ -15240,7 +15222,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &986706834
 MonoBehaviour:
@@ -15530,7 +15512,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1008119909
 MonoBehaviour:
@@ -15814,7 +15796,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1031651191
 MonoBehaviour:
@@ -15926,7 +15908,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1047112649
 MonoBehaviour:
@@ -16032,7 +16014,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1047153839
 MonoBehaviour:
@@ -16071,6 +16053,37 @@ MonoBehaviour:
   viewIdField: 59
   InstantiationId: 0
   isRuntimeInstantiated: 0
+--- !u!1 &1048854752
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1048854753}
+  m_Layer: 0
+  m_Name: Positions
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1048854753
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1048854752}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16424079, y: 0.27452344, z: -0.52817297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1551828047}
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1052369889 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 5c1422e585493d64b8ab12b80ad55be1,
@@ -16144,7 +16157,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1070195229
 MonoBehaviour:
@@ -16363,7 +16376,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1104604390
 MonoBehaviour:
@@ -16558,7 +16571,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1107027672
 MonoBehaviour:
@@ -16698,7 +16711,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1123522720
 MonoBehaviour:
@@ -16883,7 +16896,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1138442696
 MonoBehaviour:
@@ -16995,7 +17008,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1151543736
 MonoBehaviour:
@@ -17190,7 +17203,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1170803837
 MonoBehaviour:
@@ -17474,7 +17487,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1197363745
 MonoBehaviour:
@@ -18001,7 +18014,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1230601427
 MonoBehaviour:
@@ -18107,7 +18120,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1243584803
 MonoBehaviour:
@@ -18218,7 +18231,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1272788553 stripped
 GameObject:
@@ -18287,7 +18300,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1272788558
 MonoBehaviour:
@@ -18577,7 +18590,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1280712276
 MonoBehaviour:
@@ -18695,7 +18708,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1288543357
 MonoBehaviour:
@@ -19003,7 +19016,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1332710134
 MonoBehaviour:
@@ -19194,7 +19207,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1360738706
 MonoBehaviour:
@@ -19496,7 +19509,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1394450560
 MonoBehaviour:
@@ -19710,12 +19723,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1408237897}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.04, y: 0.86, z: -8.64}
-  m_LocalScale: {x: 30, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.2042408, y: 0.16547656, z: -8.111828}
+  m_LocalScale: {x: 30, y: 3.5885444, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_Father: {fileID: 1687643188}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1414565913
 GameObject:
@@ -19803,12 +19816,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1414565913}
-  m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 10.16, y: 0.86, z: 2.37}
-  m_LocalScale: {x: 30, y: 5, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 9.995759, y: 0.16547656, z: 2.8981729}
+  m_LocalScale: {x: 30, y: 3.5885444, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 15
+  m_Father: {fileID: 1687643188}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
 --- !u!1001 &1419878686
 PrefabInstance:
@@ -20050,7 +20063,6 @@ GameObject:
   - component: {fileID: 1430961431}
   - component: {fileID: 1430961432}
   - component: {fileID: 1430961433}
-  - component: {fileID: 1430961434}
   m_Layer: 0
   m_Name: Gamemanager
   m_TagString: Untagged
@@ -20071,6 +20083,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   state: 0
+  launchstate: {fileID: 0}
+  testcube: {fileID: 0}
   tile_speed: 0.1
   pai_obj: []
   length_table: 0
@@ -20097,7 +20111,7 @@ MonoBehaviour:
   - playerchips: []
     revealedchips: []
     temporaryrevealedchips: []
-  action: {fileID: 54207200}
+  action: {fileID: 0}
 --- !u!4 &1430961427
 Transform:
   m_ObjectHideFlags: 0
@@ -20110,7 +20124,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1430961428
 MonoBehaviour:
@@ -20144,7 +20158,7 @@ MonoBehaviour:
   turn: 0
   previousturn: 0
   tile: 53
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   chow: 0
   pong: 0
   kong: 0
@@ -20198,7 +20212,8 @@ MonoBehaviour:
   TurnMJ: {fileID: 1430961429}
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
+  assignTextScript: {fileID: 0}
 --- !u!114 &1430961433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20213,19 +20228,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerPrefab: {fileID: 8398354211766893819, guid: f309ede40cd4bd844aa51a336dece875,
     type: 3}
---- !u!114 &1430961434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1430961425}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f8fb4a4dda49210438afe6a3e6ddd7a7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  UI: {fileID: 840032767}
+  SettingsUIPrefab: {fileID: 7994561379440537038, guid: 60266a37671dbd04f8361cce2e88f20b,
+    type: 3}
+  UpdateUIPrefab: {fileID: 2876706256013685180, guid: dfe3620e85726944d9411ed73924a2bc,
+    type: 3}
+  EastPos: {fileID: 1551828046}
+  SouthPos: {fileID: 0}
+  WestPos: {fileID: 0}
+  NorthPos: {fileID: 0}
 --- !u!4 &1434806390 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: 89d5f5fe0a969dd4fb275861ab715e5c,
@@ -20738,7 +20748,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1470814843
 MonoBehaviour:
@@ -21022,7 +21032,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1482674616
 MonoBehaviour:
@@ -21128,7 +21138,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1482756219
 MonoBehaviour:
@@ -21338,7 +21348,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1492061922
 MonoBehaviour:
@@ -21527,7 +21537,7 @@ Transform:
   m_Children:
   - {fileID: 789815070}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1528475198 stripped
 GameObject:
@@ -21596,7 +21606,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1528475203
 MonoBehaviour:
@@ -21988,7 +21998,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1541454098
 MonoBehaviour:
@@ -22094,7 +22104,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1542378738
 MonoBehaviour:
@@ -22378,7 +22388,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1548022005
 MonoBehaviour:
@@ -22423,6 +22433,36 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1447885156}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1551828046
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551828047}
+  m_Layer: 0
+  m_Name: EastPos
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1551828047
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551828046}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.211, y: -0.565, z: -0.704}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1048854753}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1552646742
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -23155,7 +23195,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1584935024
 MonoBehaviour:
@@ -23261,7 +23301,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1588189894
 MonoBehaviour:
@@ -23460,7 +23500,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1590601627
 MonoBehaviour:
@@ -23756,7 +23796,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1617701572
 MonoBehaviour:
@@ -23862,7 +23902,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1618473273
 MonoBehaviour:
@@ -24342,7 +24382,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1646547973
 MonoBehaviour:
@@ -24448,7 +24488,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1652200229
 MonoBehaviour:
@@ -24760,7 +24800,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1681364723
 MonoBehaviour:
@@ -24866,7 +24906,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1682828803
 MonoBehaviour:
@@ -24911,6 +24951,40 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 987061041}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1687643187
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1687643188}
+  m_Layer: 0
+  m_Name: Walls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1687643188
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1687643187}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.16424079, y: 0.27452344, z: -0.52817297}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 181087561}
+  - {fileID: 1408237901}
+  - {fileID: 667747532}
+  - {fileID: 1414565917}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1688604807 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: -927199367670048503, guid: bb288479b728c6e4cbb2559bd3d33e7b,
@@ -24978,7 +25052,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1688604812
 MonoBehaviour:
@@ -25084,7 +25158,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1703902429
 MonoBehaviour:
@@ -25375,7 +25449,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1750032136
 MonoBehaviour:
@@ -25481,7 +25555,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1755616811
 MonoBehaviour:
@@ -25781,7 +25855,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1789848278
 MonoBehaviour:
@@ -25887,7 +25961,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1792815394
 MonoBehaviour:
@@ -26171,7 +26245,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1795498204
 MonoBehaviour:
@@ -26277,7 +26351,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1799040845
 MonoBehaviour:
@@ -26749,7 +26823,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1815270327
 MonoBehaviour:
@@ -27140,7 +27214,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1842924027
 MonoBehaviour:
@@ -27252,7 +27326,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1844308086
 MonoBehaviour:
@@ -27447,7 +27521,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1851963450
 MonoBehaviour:
@@ -28016,7 +28090,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1886801715
 MonoBehaviour:
@@ -28229,7 +28303,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1921710170
 MonoBehaviour:
@@ -28596,7 +28670,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1937583338
 MonoBehaviour:
@@ -28797,7 +28871,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1942881152
 MonoBehaviour:
@@ -28903,7 +28977,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1946339337
 MonoBehaviour:
@@ -29381,7 +29455,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &1990582863
 MonoBehaviour:
@@ -29525,7 +29599,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2016993125
 MonoBehaviour:
@@ -29631,7 +29705,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2018122059
 MonoBehaviour:
@@ -30390,7 +30464,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2100245718
 MonoBehaviour:
@@ -30594,7 +30668,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2104511295
 MonoBehaviour:
@@ -30789,7 +30863,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2109609219
 MonoBehaviour:
@@ -30895,7 +30969,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2117624531
 MonoBehaviour:
@@ -31102,7 +31176,7 @@ MonoBehaviour:
   hands: {fileID: 1430961426}
   convert: {fileID: 1430961430}
   lastplayed: {fileID: 288610552}
-  action: {fileID: 54207200}
+  action: {fileID: 0}
   audiom: {fileID: 652225270}
 --- !u!114 &2136828948
 MonoBehaviour:
@@ -31141,12 +31215,6 @@ MonoBehaviour:
   viewIdField: 1
   InstantiationId: 0
   isRuntimeInstantiated: 0
---- !u!1 &1038145590708688 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2464672345647950626, guid: 73c6f0f643e089b43b01688b1ff4f73e,
-    type: 3}
-  m_PrefabInstance: {fileID: 2465710078854685426}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1132931415039102
 GameObject:
   m_ObjectHideFlags: 0
@@ -31263,7 +31331,7 @@ Transform:
   - {fileID: 4802745695282182}
   - {fileID: 4012482021931542}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &6795346411754881
 MeshRenderer:
@@ -31465,7 +31533,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005543647312895261}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0.000000055352, y: -0.039604, z: 0.000000018451}
+  m_LocalPosition: {x: -0.000000055352, y: -0.039604, z: 0.05300002}
   m_LocalScale: {x: 2.150867, y: 2.150867, z: 2.150867}
   m_Children: []
   m_Father: {fileID: 5006512735952254222}
@@ -31508,7 +31576,7 @@ MonoBehaviour:
     type: 3}
   m_PrefabInstance: {fileID: 2465710078854685426}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1038145590708688}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b558aa8ebb866bd4da56c536a7b4eb71, type: 3}
@@ -33662,145 +33730,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2693984404212554234}
   m_Mesh: {fileID: 6416380553841766443, guid: 4eb37c150bc72b34b9acdea4d59a3efe, type: 3}
---- !u!1001 &2876706255824225000
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 2876706255869728354, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: pointer
-      value: 
-      objectReference: {fileID: 1038145590708688}
-    - target: {fileID: 2876706256013685180, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_Name
-      value: GameUpdateCanvas
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.79130155
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0.24192187
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: -0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 0.9702957
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 9
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 28
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0.027
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: -0.173
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 1013
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 417
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256013685181, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256021927401, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256021927401, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 2876706256021927401, guid: dfe3620e85726944d9411ed73924a2bc,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: dfe3620e85726944d9411ed73924a2bc, type: 3}
 --- !u!4 &2922256355489489207
 Transform:
   m_ObjectHideFlags: 0
@@ -35701,8 +35630,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8296172668050327325}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.2117941, y: 1.2117941, z: 1.2117941}
+  m_LocalPosition: {x: 0.00000012394, y: -0.037, z: -0.071062}
+  m_LocalScale: {x: 1.6318021, y: 1.6318021, z: 1.6318021}
   m_Children:
   - {fileID: 6523177856916643917}
   - {fileID: 90154562367089835}
@@ -35711,7 +35640,7 @@ Transform:
   - {fileID: 1119897455}
   - {fileID: 1421749319}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &5057635337615972458
 Transform:
@@ -36899,7 +36828,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4797762519850260249}
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: 0.0030000021, y: -0.15999995, z: 0}
+  m_LocalPosition: {x: 0.0030000021, y: -0.15999995, z: 0.053000003}
   m_LocalScale: {x: 0.14065771, y: 0.14065771, z: 0.14065771}
   m_Children: []
   m_Father: {fileID: 5006512735952254222}
@@ -37991,140 +37920,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!1001 &7994561378667842613
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 7994561378875282432, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: targetTransform
-      value: 
-      objectReference: {fileID: 8398354211401062546}
-    - target: {fileID: 7994561378875282438, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: pointer
-      value: 
-      objectReference: {fileID: 1038145590708688}
-    - target: {fileID: 7994561379440537038, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_Name
-      value: Menu UI
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_SizeDelta.x
-      value: 911
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_SizeDelta.y
-      value: 439
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_AnchorMin.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_AnchorMax.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_Pivot.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561379440537141, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_Pivot.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7994561380023816751, guid: 60266a37671dbd04f8361cce2e88f20b,
-        type: 3}
-      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
-      value: 
-      objectReference: {fileID: 1430961433}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 60266a37671dbd04f8361cce2e88f20b, type: 3}
 --- !u!33 &8007506487211656217
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -38532,12 +38327,6 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!4 &8398354211401062546 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1045834174464030191, guid: 85c9502afcc1f944c9bb041364d0e89f,
-    type: 3}
-  m_PrefabInstance: {fileID: 8795387184372985213}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &8399302886331957566
 GameObject:
   m_ObjectHideFlags: 0
@@ -38914,80 +38703,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!1001 &8795387184372985213
-PrefabInstance:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 97876932782987090, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: viewIdField
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174463994313, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_Name
-      value: ControllerTrackingRigSinglePlayer
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.038
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0.331
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalPosition.z
-      value: -0.754
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_RootOrder
-      value: 11
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1045834174464030185, guid: 85c9502afcc1f944c9bb041364d0e89f,
-        type: 3}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: 85c9502afcc1f944c9bb041364d0e89f, type: 3}
 --- !u!23 &8801589245479202168
 MeshRenderer:
   m_ObjectHideFlags: 0

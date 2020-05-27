@@ -9,6 +9,8 @@ namespace Com.MyCompany.MyGame
     public class Launcher : MonoBehaviourPunCallbacks
     {
         public GameObject vRRig;
+        public bool joinedroom = false;
+        public GameObject testcube;
         #region Private Serializable Fields
 
         [Tooltip("The maximum number of players per room. When a room is full, it can't be joined by new players, and so new room will be created")]
@@ -43,6 +45,7 @@ namespace Com.MyCompany.MyGame
         /// </summary>
         void Awake()
         {
+            DontDestroyOnLoad(transform.gameObject);
             // #Critical
             // this makes sure we can use PhotonNetwork.LoadLevel() on the master client and all clients in the same room sync their level automatically
             PhotonNetwork.AutomaticallySyncScene = true;
@@ -72,6 +75,7 @@ namespace Com.MyCompany.MyGame
             {
                 // #Critical: The first we try to do is to join a potential existing room. If there is, good, else, we'll be called back with OnJoinRandomFailed()
                 PhotonNetwork.JoinRandomRoom();
+                joinedroom = true; //setting for testing
                 isConnecting = false;
             }
         }
@@ -90,6 +94,7 @@ namespace Com.MyCompany.MyGame
 
             // #Critical: we failed to join a random room, maybe none exists or they are all full. No worries, we create a new room.
             PhotonNetwork.CreateRoom(null, new RoomOptions { MaxPlayers = maxPlayersPerRoom });
+            testcube.GetComponent<Renderer>().material.SetColor("_Color", Color.red); //when created room
         }
 
         public override void OnJoinedRoom()

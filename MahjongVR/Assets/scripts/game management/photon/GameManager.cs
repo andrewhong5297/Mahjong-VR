@@ -12,6 +12,15 @@ public class GameManager : MonoBehaviourPunCallbacks
 {
     [Tooltip("The prefab to use for representing the player")]
     public GameObject playerPrefab;
+    public GameObject SettingsUIPrefab;
+    public GameObject UpdateUIPrefab; //authority? 
+
+    //spawn positions
+    public GameObject EastPos;
+    public GameObject SouthPos;
+    public GameObject WestPos;
+    public GameObject NorthPos;
+
     public static GameManager Instance;
 
     public void Start()
@@ -33,21 +42,27 @@ public class GameManager : MonoBehaviourPunCallbacks
                 //count number of players so we can instantiate in a seperate location?
                 if (PhotonNetwork.CurrentRoom.PlayerCount == 0) //east
                 {
-                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, EastPos.transform.position, Quaternion.identity, 0);
+                    Instantiate(UpdateUIPrefab, new Vector3(0.027f, -.237f, -1.071f), Quaternion.identity);
+                    UpdateUIPrefab.SetActive(true);
                 }
                 if (PhotonNetwork.CurrentRoom.PlayerCount == 1) //south
                 {
-                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, EastPos.transform.position, Quaternion.identity, 0);
+                    Instantiate(UpdateUIPrefab, new Vector3(0.027f, -.237f, -1.071f), Quaternion.identity);
+                    UpdateUIPrefab.SetActive(true);
                 }
                 if (PhotonNetwork.CurrentRoom.PlayerCount == 2) //west
                 {
-                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, EastPos.transform.position, Quaternion.identity, 0);
+                    Instantiate(UpdateUIPrefab, new Vector3(0.027f, -.237f, -1.071f), Quaternion.identity);
                 }
                 if (PhotonNetwork.CurrentRoom.PlayerCount == 3) //north
                 {
-                    PhotonNetwork.Instantiate(this.playerPrefab.name, new Vector3(0.05f, 0.4f, -0.5f), Quaternion.identity, 0);
+                    PhotonNetwork.Instantiate(this.playerPrefab.name, EastPos.transform.position, Quaternion.identity, 0);
+                    Instantiate(UpdateUIPrefab, new Vector3(0.027f, -.237f, -1.071f), Quaternion.identity);
                 }
-
+                Instantiate(SettingsUIPrefab, new Vector3(0, -0, -0), Quaternion.identity);
             }
             else
             {

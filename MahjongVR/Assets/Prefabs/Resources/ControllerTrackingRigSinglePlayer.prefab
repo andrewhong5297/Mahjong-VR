@@ -279,6 +279,7 @@ GameObject:
   - component: {fileID: 1045834174454275111}
   - component: {fileID: 1045834174454275117}
   - component: {fileID: 1086841370181536617}
+  - component: {fileID: -2088261312774721134}
   m_Layer: 0
   m_Name: ControllerTrackingRigSinglePlayer
   m_TagString: Untagged
@@ -390,6 +391,19 @@ MonoBehaviour:
   resetHmdPoseByMiddleMouseButton: 1
   activateKeys: 3201000031010000
   pitchKeys: 3401000033010000
+--- !u!114 &-2088261312774721134
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045834174463994313}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8fb4a4dda49210438afe6a3e6ddd7a7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 7994561379440537034, guid: 60266a37671dbd04f8361cce2e88f20b, type: 3}
 --- !u!1 &1045834174463994315
 GameObject:
   m_ObjectHideFlags: 0

@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using Com.MyCompany.MyGame;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
@@ -10,6 +11,10 @@ public enum TurnManager { EASTTURN, SOUTHTURN, WESTTURN, NORTHTURN, START, WON, 
 public class ShuffleFinal : MonoBehaviour
 {
 	public int state;
+
+	//following two objects are only for testing connection with photon
+	public Launcher launchstate;
+	public GameObject testcube;
 
 	public float tile_speed;
 	int i = 4; //counting tiles for moving/distributing in state 2. Starting from 4 to include tiles 0-3 in first group
@@ -42,9 +47,14 @@ public class ShuffleFinal : MonoBehaviour
 
 		GameObject tile2 = GameObject.Find("psouzu_5"); //random tile to get size
 		BoxCollider tile_collider = tile2.GetComponent<BoxCollider>();
-		length_tile = tile_collider.size.x / 10f;
-		height_tile = tile_collider.size.y / 10f * 0.6f;
-		height_tile_double = height_tile * 2f;
+		length_tile = tile_collider.size.x / 10f * 1.35f; //adjust if scale of board and pieces changed
+		height_tile = tile_collider.size.y / 10f * 0.6f; //adjust if scale of board and pieces changed
+		height_tile_double = height_tile * 2f; //adjust if scale of board and pieces changed
+
+		//if(launchstate.joinedroom)
+		//{
+		//	testcube.GetComponent<Material>().SetColor("_Color", Color.green);
+		//}
 	}
 
 	void shuffle()
